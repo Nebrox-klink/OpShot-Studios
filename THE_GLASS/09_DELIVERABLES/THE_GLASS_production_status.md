@@ -15,6 +15,27 @@
 | Per-shot QC | `00_PROJECT_MANAGEMENT/shot_qc_v001.csv` | 102 rows |
 | Shot tracker with actual state | `00_PROJECT_MANAGEMENT/shot_tracker_v002.csv`: 102 × APPROVED FOR ROUGH CUT (QC: 5 PASS, 97 PASS WITH LIMITATIONS); none FINAL RENDERED | Generated from the manifest |
 
+
+## Update, 17 Nov 2026 late evening: rough cut v002 (Higgsfield scenes)
+**Rough cut v002 is rendered and verified:** `roughcut_v002/THE_GLASS_roughcut_v002_1080p.mp4`, 1920×1080, 18,720 frames = 780.0 s. It is still a ROUGH CUT, not publication-ready.
+
+What changed from v001: the 3D preview sequences 1–3 were replaced by Higgsfield scenes made with the course workflow (Blender blockout → reference video → Nano Banana look image → Seedance 2.0 video):
+
+| Scene | File | Notes |
+|---|---|---|
+| 3D 1 "Through the Glass" | `06_AI_VIDEO/approved/SH-031.mp4` | 0–15 s and 22–30 s from the blockout reference; the 15–22 s fog close-up was animated from a still |
+| 3D 2 "113" | `06_AI_VIDEO/approved/SH-050.mp4` | 0–8 s from the reference; 8–30 s from photoreal stills (the reference produced flat graphic "stars") |
+| 3D 3 "The Windshield" | `06_AI_VIDEO/approved/SH-064.mp4` | Hands and sleeve only, no head; the crack is fainter than planned |
+| 3D 4 "One Year to the Day" | still the Blender preview | Not generated yet |
+
+**Limits:**
+- All Higgsfield clips are Seedance 2.0 *fast* 480p drafts, upscaled, with no generated audio.
+- Final 1080p versions need a price check and the user's approval.
+
+**Credits:** about 220 Higgsfield credits used for drafts, look images and stills; balance about 990.
+
+**Resolve:** run `THE_GLASS_resolve_master_v003` from the Scripts menu. It puts the approved clips on V2 over the rough cut.
+
 ## Where the work ran (no blurring)
 - **Cloud container:** all 2D, all 3D previews, the audio and the assembly.
 - **Your laptop** (through the Higgsfield Blender bridge): the environment audit, starting/restarting DaVinci Resolve, the repo clone, and the local 1080p rebuild.
