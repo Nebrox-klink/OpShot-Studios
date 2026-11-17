@@ -1,0 +1,103 @@
+shot_id,chapter,type,shot_s,temp_vo_s,overrun_s,flag,vo_exact
+SH-001,00 · Cold open,2D,5,5.61,0.86,OVERRUN,"At eight o'clock on a Monday morning, in one of the safest cities in the world…"
+SH-002,00 · Cold open,2D,6,3.83,-1.92,OK,the police could not get out of their own police station.
+SH-003,00 · Cold open,2D,7,7.42,0.67,OVERRUN,Their exit was burning. Spikes were spread across the roads. Smoke drifted past the front door.
+SH-004,00 · Cold open,2D,9,8.27,-0.48,TIGHT,"And a short drive away, in the shadow of a 900-year-old cathedral, men in black were firing into a window."
+SH-005,00 · Cold open,2D,5,4.77,0.02,OVERRUN,They fired one hundred and thirteen bullets into one window.
+SH-006,00 · Cold open,2D,5,6.05,1.3,OVERRUN,This is the story of that window. Of the men who spent a year trying to break it.
+SH-007,00 · Cold open,2D,8,2.78,-4.97,OK,And of what it cost when they finally did.
+SH-008,01 · The City of Money,2D,8,5.95,-1.8,OK,"Stavanger, on Norway's west coast. A small city that struck it rich."
+SH-009,01 · The City of Money,2D,9,7.52,-1.23,OK,"Since the 1970s, oil from the North Sea has made it one of the wealthiest places on the planet."
+SH-010,01 · The City of Money,2D,8,5.44,-2.31,OK,"Where there is money, there is cash. And cash has to be counted somewhere."
+SH-011,01 · The City of Money,2D,10,4.36,-5.39,OK,"That somewhere was NOKAS, Norway's cash-handling service."
+SH-012,01 · The City of Money,2D,8,9.61,1.86,OVERRUN,"Behind these walls, millions of kroner moved every day. They were counted, sorted, sealed and sent out to banks across the region."
+SH-013,01 · The City of Money,2D,8,6.78,-0.97,OK,"The building sat in the middle of town, by the cathedral, the shops and a busy pedestrian street."
+SH-014,01 · The City of Money,2D,7,7.55,0.8,OVERRUN,Hiding in plain sight was its security. Nobody would dare rob a vault in the middle of the city.
+SH-015,01 · The City of Money,2D,8,8.63,0.88,OVERRUN,"The building's real defence wasn't a gun or a guard. It was glass. Armoured, layered, and built to take punishment."
+SH-016,01 · The City of Money,2D,9,1.89,-6.86,OK,Remember this window.
+SH-017,02 · The Architect,2D,8,5.13,-2.62,OK,"Five hundred kilometres east, in Oslo, a man was making a plan."
+SH-018,02 · The Architect,2D,8,2.36,-5.39,OK,His name was David Toska.
+SH-019,02 · The Architect,2D,8,7.24,-0.51,TIGHT,He was not the kind of criminal who kicks in a door and hopes for the best. Toska was a planner.
+SH-020,02 · The Architect,2D,8,3.13,-4.62,OK,"He thought in timelines, routes and minutes."
+SH-021,02 · The Architect,2D,9,3.92,-4.83,OK,His target was the NOKAS depot in Stavanger.
+SH-022,02 · The Architect,2D,8,9.07,1.32,OVERRUN,"The money was guarded by a building, and a building can be beaten. The police, however, can always come. Unless they can't."
+SH-023,02 · The Architect,2D,9,5.17,-3.58,OK,So the plan had two halves. One team would break into the depot.
+SH-024,02 · The Architect,2D,8,7.21,-0.54,TIGHT,"The other team's job was to freeze an entire city's police force in place, for just long enough."
+SH-025,02 · The Architect,2D,8,7.71,-0.04,TIGHT,"He built a crew of more than a dozen men. Among them was Erling Havnå, later known as the sledgehammer man."
+SH-026,02 · The Architect,2D,8,3.79,-3.96,OK,"There was Metkel Betew, one of the central figures."
+SH-027,02 · The Architect,2D,8,6.74,-1.01,OK,"And there was Kjell Alrich Schumann, a name that would come to matter more than any other in this story."
+SH-028,03a · The First Time,2D,7,3.05,-3.7,OK,Here is the part most people don't know.
+SH-029,03a · The First Time,2D,7,4.96,-1.79,OK,The fifth of April was not the first time they came for NOKAS.
+SH-030,03a · The First Time,2D,6,4.71,-1.04,OK,"Two months earlier, Toska was already inside the courtyard."
+SH-031,3D 1 · Through the Glass,3D,7,0.0,-6.75,OK,— (no VO)
+SH-032,3D 1 · Through the Glass,3D,8,0.0,-7.75,OK,— (no VO)
+SH-033,3D 1 · Through the Glass,3D,7,3.89,-2.86,OK,"Through the glass, he watched the money being moved away."
+SH-034,3D 1 · Through the Glass,3D,8,1.39,-6.36,OK,He called it off.
+SH-035,03b · Back to the Drawing Board,2D,7,4.0,-2.75,OK,"He had lain in that courtyard, freezing, for nothing."
+SH-036,03b · Back to the Drawing Board,2D,8,5.75,-2.0,OK,"In court, Toska would later insist it was never an attempt. Only a plan."
+SH-037,03b · Back to the Drawing Board,2D,7,5.4,-1.35,OK,Most crews would have walked away. Toska went back to the drawing board.
+SH-038,03b · Back to the Drawing Board,2D,8,6.41,-1.34,OK,And he made one assumption that would cost them dearly: that the window was ordinary glass.
+SH-039,03b · Back to the Drawing Board,2D,8,7.37,-0.38,TIGHT,"All through the late winter of 2004, the gang test-drove their escape route over and over,"
+SH-040,03b · Back to the Drawing Board,2D,8,5.42,-2.33,OK,from the city centre out to the woods at Sørmarka.
+SH-041,03b · Back to the Drawing Board,2D,9,6.95,-1.8,OK,"By April, they knew Stavanger's streets better than the people whose job was to protect them."
+SH-042,04a · 5 April 2004,2D,7,5.73,-1.02,OK,"In the early hours of Monday the fifth of April, the pieces moved onto the board."
+SH-043,04a · 5 April 2004,2D,8,5.21,-2.54,OK,"Weapons, spike strips and smoke grenades were all accounted for."
+SH-044,04a · 5 April 2004,2D,8,5.55,-2.2,OK,Stavanger is waking up. None of them know they are standing on the board.
+SH-045,04a · 5 April 2004,2D,7,3.0,-3.75,OK,Front one: the police station.
+SH-046,04a · 5 April 2004,2D,9,8.92,0.17,OVERRUN,A truck is set on fire across the garage exit. Tear gas is thrown at the main entrance. Spikes are laid across the roads.
+SH-047,04a · 5 April 2004,2D,8,5.45,-2.3,OK,"In a few moments, Stavanger's police are trapped behind their own doors."
+SH-048,04a · 5 April 2004,2D,6,2.42,-3.33,OK,Front two: the window.
+SH-049,04a · 5 April 2004,2D,7,2.06,-4.69,OK,It was not ordinary glass.
+SH-050,3D 2 · 113,3D,8,0.0,-7.75,OK,— (no VO)
+SH-051,3D 2 · 113,3D,12,0.0,-11.75,OK,— (no VO)
+SH-052,3D 2 · 113,3D,10,4.74,-5.01,OK,One hundred and thirteen shots. And finally… the glass gives.
+SH-053,04b · Inside the Counting Room,2D,9,5.69,-3.06,OK,"Inside, NOKAS employees watch armed men climb into their workplace."
+SH-054,04b · Inside the Counting Room,2D,7,5.78,-0.97,OK,They are not soldiers. They are people who came to work on a Monday morning.
+SH-055,04b · Inside the Counting Room,2D,8,3.24,-4.51,OK,"The robbers demand the money, and they get it:"
+SH-056,04b · Inside the Counting Room,2D,8,4.07,-3.68,OK,"bag after bag, more than 57 million kroner."
+SH-057,04b · Inside the Counting Room,2D,8,4.63,-3.12,OK,"At the time, it was the biggest robbery in Norwegian history."
+SH-058,04b · Inside the Counting Room,2D,10,1.43,-8.32,OK,"But outside,"
+SH-059,04b · Inside the Counting Room,2D,10,3.25,-6.5,OK,the plan was already starting to come apart.
+SH-060,05a · The Officer,2D,8,5.83,-1.92,OK,Not every police officer in Stavanger was trapped behind that burning truck.
+SH-061,05a · The Officer,2D,8,3.5,-4.25,OK,"Police lieutenant Arne Sigve Klungland was out,"
+SH-062,05a · The Officer,2D,7,2.19,-4.56,OK,in a police command vehicle.
+SH-063,05a · The Officer,2D,7,2.64,-4.11,OK,And he was heading toward the gunfire.
+SH-064,3D 3 · The Windshield,3D,8,0.0,-7.75,OK,— (no VO)
+SH-065,3D 3 · The Windshield,3D,8,0.0,-7.75,OK,— (no VO)
+SH-066,3D 3 · The Windshield,3D,4,0.0,-3.75,OK,— (no VO)
+SH-067,3D 3 · The Windshield,3D,10,0.0,-9.75,OK,— (no VO)
+SH-068,05b · Memorial,2D,6,4.25,-1.5,OK,One of the bullets struck Arne Sigve Klungland in the head.
+SH-069,05b · Memorial,2D,6,4.7,-1.05,OK,"He died there, in the middle of his own city, on a Monday morning."
+SH-070,05b · Memorial,2D,8,1.62,-6.13,OK,Remember his name.
+SH-071,06 · Into the Woods,2D,7,2.83,-3.92,OK,"The robbers loaded the money and ran,"
+SH-072,06 · Into the Woods,2D,8,6.23,-1.52,OK,"along the route they had driven all winter, into the forest at Sørmarka."
+SH-073,06 · Into the Woods,2D,7,7.64,0.89,OVERRUN,"Vehicles were swapped and evidence was burned. Within minutes, the men in black dissolved into the trees."
+SH-074,06 · Into the Woods,2D,9,5.16,-3.59,OK,"Toska had planned to beat a window, a police station and a city."
+SH-075,06 · Into the Woods,2D,9,8.34,-0.41,TIGHT,"He had not planned to kill a police officer. And from this moment, Norway would not rest until every man was found."
+SH-076,07a · The Hunt,2D,7,6.12,-0.63,OK,What followed became one of the largest criminal investigations in Norwegian history.
+SH-077,07a · The Hunt,2D,7,2.79,-3.96,OK,Arrests followed across the country.
+SH-078,07a · The Hunt,2D,7,6.37,-0.38,TIGHT,"That August, The Scream was stolen in Oslo. Some wondered whether it was a distraction."
+SH-079,07a · The Hunt,2D,7,2.15,-4.6,OK,That has never been proven.
+SH-080,07a · The Hunt,2D,7,3.86,-2.89,OK,One photo on the board had no X: David Toska.
+SH-081,07a · The Hunt,2D,7,5.44,-1.31,OK,"He had taken his partner and their one-year-old son, and fled to Spain."
+SH-082,07a · The Hunt,2D,8,8.01,0.26,OVERRUN,A new life on the Costa del Sol. But he kept using the same email address. The investigators traced it.
+SH-083,3D 4 · One Year to the Day,3D,7,0.0,-6.75,OK,— (no VO)
+SH-084,3D 4 · One Year to the Day,3D,6,3.39,-2.36,OK,"The fifth of April, 2005."
+SH-085,3D 4 · One Year to the Day,3D,9,0.0,-8.75,OK,— (no VO)
+SH-086,3D 4 · One Year to the Day,3D,8,0.0,-7.75,OK,— (no VO)
+SH-087,07b · Mugshot,2D,5,6.2,1.45,OVERRUN,Spanish police arrested David Toska in an internet café in Málaga.
+SH-088,07b · Mugshot,2D,5,3.03,-1.72,OK,One year to the day after the robbery.
+SH-089,08 · The Verdict,2D,8,7.87,0.12,OVERRUN,"On the tenth of March 2006, thirteen men were convicted in Stavanger for the NOKAS robbery."
+SH-090,08 · The Verdict,2D,8,6.58,-1.17,OK,"Together, they were sentenced to a total of one hundred and eighty-one years in prison."
+SH-091,08 · The Verdict,2D,8,2.9,-4.85,OK,"David Toska confessed to the robbery,"
+SH-092,08 · The Verdict,2D,9,2.52,-6.23,OK,but denied firing the fatal shot.
+SH-093,08 · The Verdict,2D,8,5.98,-1.77,OK,"In September 2006, during the appeal at the Gulating Court of Appeal,"
+SH-094,08 · The Verdict,2D,10,2.17,-7.58,OK,one man finally admitted it.
+SH-095,08 · The Verdict,2D,9,6.35,-2.4,OK,Kjell Alrich Schumann was the one who fired the shots that killed Arne Sigve Klungland.
+SH-096,09 · Epilogue,2D,5,5.58,0.83,OVERRUN,And the money? More than fifty-seven million kroner was taken that morning.
+SH-097,09 · Epilogue,2D,7,8.99,2.24,OVERRUN,"Only around six million has ever been accounted for. The rest, roughly fifty million kroner, has never been found."
+SH-098,09 · Epilogue,2D,6,4.3,-1.45,OK,The plan took more than a year. The robbery took minutes.
+SH-099,09 · Epilogue,2D,5,3.48,-1.27,OK,"First, they watched through the glass. Then they broke it."
+SH-100,09 · Epilogue,2D,6,8.21,2.46,OVERRUN,"Behind it, they found more money than anyone had ever stolen in Norway. They also lost everything else."
+SH-101,09 · Epilogue,2D,6,4.31,-1.44,OK,"Somewhere out there, fifty million kroner is still missing."
+SH-102,09 · Epilogue,2D,10,7.97,-1.78,OK,"And somewhere in Stavanger, a family still remembers the Monday he went to work… and drove toward the gunfire."

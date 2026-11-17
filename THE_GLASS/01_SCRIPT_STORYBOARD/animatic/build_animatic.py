@@ -79,7 +79,7 @@ for r in rows:
     d.text((W - 24, 38), f"P: {r['priority']}   status: {r['production_status']}", font=f_lab, fill=IVORY, anchor="ra")
     d.text((24, 88), sid, font=f_id, fill=AMBER)
     vo = r["vo_exact"] if not r["vo_exact"].startswith("—") else "(no voice-over)"
-    y = 180
+    y = 210
     d.text((24, y - 26), "VO", font=f_lab, fill=SLATE)
     for line in textwrap.wrap(f"“{vo}”" if not vo.startswith("(") else vo, 58)[:4]:
         d.text((24, y), line, font=f_vo, fill=IVORY)
