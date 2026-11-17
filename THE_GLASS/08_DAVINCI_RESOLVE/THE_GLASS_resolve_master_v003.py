@@ -12,7 +12,7 @@ WHAT IT DOES (it never deletes or overwrites anything):
   - Builds a new timeline (a new name if one already exists):
       V1 = rough cut, every shot at its exact timecode
       V2 = your Higgsfield clips (see below), trimmed to each shot's length, on top of V1
-      A1 = TEMP narration/sound mix
+      A1 = sound mix (ElevenLabs 'Verdict' narration if 07_AUDIO/final_mix/v002 exists, else the TEMP mix)
       markers on every shot (blue 2D, red 3D, green = Higgsfield replacement)
   - Sets high-quality render settings and adds ONE render job to the queue.
     It does NOT start the render unless START_RENDER = True below.
@@ -147,7 +147,10 @@ def main():
     log("Higgsfield clips found:", len(hf), sorted(hf) or "(none yet; folder " + HIGGSFIELD_DIR + ")")
 
     mp.SetCurrentFolder(bins["Audio TEMP"])
-    aud = mp.ImportMedia([os.path.join(RC, "THE_GLASS_roughcut_v001_mix_TEMP.flac")])
+    verdict = os.path.join(ROOT, "07_AUDIO", "final_mix", "v002", "THE_GLASS_mix_v002_VERDICT.flac")
+    audio_file = verdict if os.path.isfile(verdict) else os.path.join(RC, "THE_GLASS_roughcut_v001_mix_TEMP.flac")
+    log("audio:", audio_file)
+    aud = mp.ImportMedia([audio_file])
     log("imported audio:", bool(aud))
 
     # timeline

@@ -28,6 +28,9 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--vo", required=True)
 ap.add_argument("--proto", required=True)
 ap.add_argument("--out", required=True)
+ap.add_argument("--name", default="THE_GLASS_roughcut_v001_mix_TEMP.wav")
+ap.add_argument("--vo-in-proto", action="store_true", help="also place narration in 03:30-03:57 (use with a --proto mix that has no VO)")
+ap.add_argument("--vo-gain", type=float, default=0.55)
 a = ap.parse_args()
 os.makedirs(a.out, exist_ok=True)
 rng = np.random.default_rng(13)
@@ -85,13 +88,13 @@ prev_end = 0.0
 for r in rows:
     sid = r["shot_id"]
     st = tc(r["start"])
-    if 210 <= st < 237:          # prototype window has its own VO
+    if 210 <= st < 237 and not a.vo_in_proto:          # prototype window has its own VO
         continue
     p = os.path.join(a.vo, f"{sid}.wav")
     if not os.path.exists(p):
         continue
     x, sr = rd(p)
-    x = x / (np.abs(x).max() + 1e-9) * 0.55
+    x = x / (np.abs(x).max() + 1e-9) * a.vo_gain
     want = st + 0.25
     at = max(want, prev_end + 0.15)
     place(A1, x, at)
@@ -250,9 +253,9 @@ px, psr = rd(a.proto)
 if px.ndim == 1:
     px = np.stack([px, px], 1)
 i0 = int(210 * SR)
-mix[i0:i0 + len(px)] = px[: len(mix) - i0] * 0.9
+mix[i0:i0 + len(px)] = px[: len(mix) - i0] * 0.9 + (np.stack([A1, A1], 1)[i0:i0 + len(px)] if a.vo_in_proto else 0)
 mix /= max(1e-9, np.abs(mix).max()) / 0.89
-out = os.path.join(a.out, "THE_GLASS_roughcut_v001_mix_TEMP.wav")
+out = os.path.join(a.out, a.name)
 with wave.open(out, "w") as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
     w.writeframes((mix * 32767).astype(np.int16).tobytes())

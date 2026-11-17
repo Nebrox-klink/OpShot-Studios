@@ -22,6 +22,7 @@ N = int(SR * DUR)
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--out", required=True)
+ap.add_argument("--no-vo", action="store_true", help="leave the VO out (the narrator is placed in the full mix instead)")
 args = ap.parse_args()
 OUT = args.out
 os.makedirs(OUT, exist_ok=True)
@@ -94,7 +95,7 @@ R = np.zeros(N, np.float32)
 vo_bus = np.zeros(N, np.float32)
 
 # ---------------- VO
-for shot, start, text in VO:
+for shot, start, text in ([] if args.no_vo else VO):
     x = tts(text, os.path.join(OUT, f"TEMP_VO_{shot}.wav"))
     place(vo_bus, x / (np.abs(x).max() + 1e-9) * 0.55, start)
     print(f"{shot}: VO {len(x) / SR:.2f}s starting {start:.2f}s")
@@ -167,7 +168,7 @@ L = bed2d + bed3d + scratch * 0.9 + vo_bus
 R = np.roll(bed2d, 240) + np.roll(bed3d, 480) * 0.95 + scratch + vo_bus
 mix = np.stack([L, R], 1)
 mix /= max(1e-9, np.abs(mix).max()) / 0.85
-out = os.path.join(OUT, "prototype_v001_mix_TEMP.wav")
+out = os.path.join(OUT, "prototype_v001_mix_NOVO.wav" if args.no_vo else "prototype_v001_mix_TEMP.wav")
 with wave.open(out, "w") as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
     w.writeframes((mix * 32767).astype(np.int16).tobytes())
