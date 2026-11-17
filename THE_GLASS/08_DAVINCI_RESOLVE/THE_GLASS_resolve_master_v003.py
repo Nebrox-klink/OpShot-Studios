@@ -21,7 +21,9 @@ HIGGSFIELD CLIPS:
   Put your exported Higgsfield videos in  THE_GLASS\\06_AI_VIDEO\\approved\\
   and name each one after the shot it replaces, e.g.  SH-064.mp4  or  SH-064_take2.mp4
   (the first file whose name starts with the shot ID is used). Any shot without a clip keeps
-  the rough-cut version on V1, so the film always plays end to end. If a clip is shorter than
+  the rough-cut version on V1, so the film always plays end to end.
+  With HIGGSFIELD_SEQUENCE_MODE = True (default), one 30 s Seedance clip named after a sequence's
+  first shot (SH-031, SH-050, SH-064, SH-083) covers the whole sequence. If a clip is shorter than
   the shot, the rough cut shows through for the rest of the shot.
 """
 import csv
@@ -38,6 +40,9 @@ RENDER_NAME = "THE_GLASS_roughcut_v002_1080p"
 RENDER_FORMAT, RENDER_CODEC = "mp4", "H264"   # Studio users can use "mov", "ProRes422HQ"
 VIDEO_QUALITY = "Best"                       # "Least" / "Low" / "Medium" / "High" / "Best"
 START_RENDER = False                          # True = start rendering straight away
+HIGGSFIELD_SEQUENCE_MODE = True               # a clip named after a sequence's FIRST shot fills the whole 30 s sequence
+SEQUENCES = {"SH-031": ["SH-031", "SH-032", "SH-033", "SH-034"], "SH-050": ["SH-050", "SH-051", "SH-052"],
+             "SH-064": ["SH-064", "SH-065", "SH-066", "SH-067"], "SH-083": ["SH-083", "SH-084", "SH-085", "SH-086"]}
 # ----------------------------------------------------------
 
 ROOT = os.environ.get("THE_GLASS_ROOT", ROOT)
@@ -171,7 +176,8 @@ def main():
         hf_placed = 0
         for sid, (item, fname) in sorted(hf.items()):
             t = tracker[sid]
-            dur = max(1, int(float(t["duration_s"]) * FPS))
+            covered = SEQUENCES.get(sid, [sid]) if HIGGSFIELD_SEQUENCE_MODE else [sid]
+            dur = max(1, int(sum(float(tracker[x]["duration_s"]) for x in covered) * FPS))
             ok = mp.AppendToTimeline([{"mediaPoolItem": item, "trackIndex": 2, "mediaType": 1,
                                        "startFrame": 0, "endFrame": dur - 1,
                                        "recordFrame": start + tc2f(t["start"])}])
