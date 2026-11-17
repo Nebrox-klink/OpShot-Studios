@@ -6,14 +6,14 @@
 
 | Deliverable | State | Evidence |
 |---|---|---|
-| Rough cut, 13:00, all **102 shot positions** | **Rendered**. Checked with ffprobe and by eye on contact sheets | `09_DELIVERABLES/roughcut_v001/` (`THE_GLASS_roughcut_v001_1080p.mp4` is built locally; the shot clips and `roughcut_manifest.csv` are in git) |
+| Rough cut, 13:00, all **102 shot positions**, **0 placeholders** | **Rendered and verified**: 1920×1080, 18,720 frames = 780.0 s, audio −16.4 LUFS integrated; sample frames from every sequence checked by eye | `09_DELIVERABLES/roughcut_v001/` (`THE_GLASS_roughcut_v001_1080p.mp4` is built locally; the shot clips and `roughcut_manifest.csv` are in git) |
 | 2D animation, **84 shots** (tg2d engine, layered 2.5D, procedural art) | Rendered, 1280×720, 24 fps. Every frame count and resolution checked | `04_2D_ANIMATION/engine/` |
 | Prototype SH-028–031 (notebook → glass → 3D) | Rendered (prototype v001) | `09_DELIVERABLES/tests/` |
 | 3D, **15 shots in 4 sequences**, Blender | **Preview rendered**: EEVEE 640×360, 4 samples, every 2nd frame (12 fps doubled), upscaled | `.blend` builders in `05_BLENDER/scripts/` |
 | Audio, 13:00 | TEMP: Festival TTS narration, procedural ambience/SFX/pad/piano, loudness-normalised to −16 LUFS | `07_AUDIO/build_roughcut_audio.py`, `vo_drift_roughcut_v001.csv` |
 | Málaga correction (Chicoti internet café, no seafront) | Implemented in the script v004, storyboard v1.1, 3D 4 and 2D SH-082/087 | `source_log.csv` S06–S10 |
 | Per-shot QC | `00_PROJECT_MANAGEMENT/shot_qc_v001.csv` | 102 rows |
-| Shot tracker with actual state | `00_PROJECT_MANAGEMENT/shot_tracker_v002.csv` | Generated from the manifest |
+| Shot tracker with actual state | `00_PROJECT_MANAGEMENT/shot_tracker_v002.csv`: 102 × APPROVED FOR ROUGH CUT (QC: 5 PASS, 97 PASS WITH LIMITATIONS); none FINAL RENDERED | Generated from the manifest |
 
 ## Where the work ran (no blurring)
 - **Cloud container:** all 2D, all 3D previews, the audio and the assembly.
