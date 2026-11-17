@@ -1415,8 +1415,8 @@ def SH_097():
         p = ease(seg(t, 0.5, 3))
         d.rectangle([340, 240, 340 + 600 * 6 / 57, 320], fill=(*IVORY, 255))
         d.rectangle([340 + 600 * 6 / 57 + 8 * p, 240, 940 + 8 * p, 320], fill=(*AMBER, int(255 * (1 - 0.5 * p))))
-        d.text((340, 340), "≈ 6 M accounted for", font=font("card", 34), fill=IVORY)
-        d.text((940, 340), "≈ 50 M never found", font=font("card", 34), fill=AMBER, anchor="ra")
+        d.text((340, 340), "approx. 6 M accounted for", font=font("card", 34), fill=IVORY)
+        d.text((940, 340), "approx. 50 M never found", font=font("card", 34), fill=AMBER, anchor="ra")
     s.over(fn)
     s.over(screen_text("figures as reported; status may change", "card_l", 22, (160, 160, 156), (640, 660), 2, 3))
     return s
@@ -1433,7 +1433,7 @@ def SH_098():
         d.text((950, 160), "the robbery", font=font("card", 44), fill=IVORY, anchor="mm")
         m = int(seg(t, 0.2, 4) * 14)
         d.text((330, 360), f"{m} months", font=font("card", 90), fill=AMBER, anchor="mm")
-        d.text((950, 360), f"{int(seg(t, 0.2, 2) * 20)} minutes", font=font("card", 90), fill=OXIDE, anchor="mm")
+        d.text((950, 360), "minutes", font=font("card", 90), fill=(*OXIDE, int(255 * ease(seg(t, 0.4, 1.4)))), anchor="mm")
         d.text((330, 450), "(more than a year – to be verified)", font=font("card_l", 22), fill=(150, 150, 146), anchor="mm")
     s.over(fn)
     return s
