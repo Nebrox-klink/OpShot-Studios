@@ -43,10 +43,13 @@ def get_resolve():
     g = globals()
     if g.get("resolve"):
         return g["resolve"]
-    try:
-        return bmd.scriptapp("Resolve")  # noqa: F821  (inside Resolve)
-    except Exception:
-        pass
+    for getter in (lambda: bmd.scriptapp("Resolve"), lambda: app.GetResolve()):  # noqa: F821 (inside Resolve)
+        try:
+            r = getter()
+            if r:
+                return r
+        except Exception:
+            pass
     api = os.environ.get("RESOLVE_SCRIPT_API", r"C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting")
     os.environ.setdefault("RESOLVE_SCRIPT_LIB", r"C:\Program Files\Blackmagic Design\DaVinci Resolve\fusionscript.dll")
     sys.path.append(os.path.join(api, "Modules"))
