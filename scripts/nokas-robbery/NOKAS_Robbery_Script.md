@@ -369,7 +369,7 @@ The video is **2D animation** throughout. It switches to **3D cinematic animatio
 
 ## Production notes
 
-**Runtime:** about 13:00. That is 9 minutes of 2D and 4 minutes of 3D cinematic. The four 3D minutes replace 2D minutes that were already in the timeline, and the narration around them was tightened, so the video is not longer than before. The narration is now about 1,300 words, because the 3D minutes carry far fewer words.
+**Runtime:** about 13:00. That is 9 minutes of 2D and 4 minutes of 3D cinematic. The four 3D minutes replace 2D minutes that were already in the timeline, and the narration around them was tightened, so the video is not longer than before. The narration is now about 1,100 words, because the 3D minutes carry far fewer words. The rest of the time goes to pauses, music beats and the 3D minutes, which are mostly picture.
 
 **3D production priorities**, from the most to the least demanding:
 1. **🎬 2 "08:00"** has two locations, fire, smoke, slow-motion glass and the most shots. Budget it first.
