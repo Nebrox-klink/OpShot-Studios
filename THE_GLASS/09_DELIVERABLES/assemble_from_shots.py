@@ -25,7 +25,7 @@ with open(lst, "w", encoding="utf-8") as fh:
 out = D / "THE_GLASS_roughcut_v001_1080p.mp4"
 cmd = [FF, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
        "-i", str(D / "THE_GLASS_roughcut_v001_mix_TEMP.flac"), "-map", "0:v", "-map", "1:a",
-       "-vf", "scale=1920:1080:flags=lanczos,format=yuv420p", "-c:v", "libx264", "-crf", "20", "-preset", "medium",
+       "-vf", "scale=1920:1080:flags=lanczos,format=yuv420p", "-c:v", "libx264", "-crf", "21", "-preset", os.environ.get("THE_GLASS_PRESET", "veryfast"),
        "-af", "loudnorm=I=-16:LRA=11:TP=-1.5", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "-shortest",
        "-movflags", "+faststart", str(out)]
 print("running:", " ".join(cmd[:6]), "...")
