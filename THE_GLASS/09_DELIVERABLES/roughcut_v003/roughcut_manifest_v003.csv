@@ -1,0 +1,103 @@
+shot_id,type,source_kind,clip,frames
+SH-001,2D,2D tg2d v001,shots/SH-001.mp4,120
+SH-002,2D,2D tg2d v001,shots/SH-002.mp4,144
+SH-003,2D,2D tg2d v001,shots/SH-003.mp4,168
+SH-004,2D,2D tg2d v001,shots/SH-004.mp4,216
+SH-005,2D,2D tg2d v001,shots/SH-005.mp4,120
+SH-006,2D,2D tg2d v001,shots/SH-006.mp4,120
+SH-007,2D,2D tg2d v001,shots/SH-007.mp4,192
+SH-008,2D,2D tg2d v001,shots/SH-008.mp4,192
+SH-009,2D,2D tg2d v001,shots/SH-009.mp4,216
+SH-010,2D,2D tg2d v001,shots/SH-010.mp4,192
+SH-011,2D,2D tg2d v001,shots/SH-011.mp4,240
+SH-012,2D,2D tg2d v001,shots/SH-012.mp4,192
+SH-013,2D,2D tg2d v001,shots/SH-013.mp4,192
+SH-014,2D,2D tg2d v001,shots/SH-014.mp4,168
+SH-015,2D,2D tg2d v001,shots/SH-015.mp4,192
+SH-016,2D,2D tg2d v001,shots/SH-016.mp4,216
+SH-017,2D,2D tg2d v001,shots/SH-017.mp4,192
+SH-018,2D,2D tg2d v001,shots/SH-018.mp4,192
+SH-019,2D,2D tg2d v001,shots/SH-019.mp4,192
+SH-020,2D,2D tg2d v001,shots/SH-020.mp4,192
+SH-021,2D,2D tg2d v001,shots/SH-021.mp4,216
+SH-022,2D,2D tg2d v001,shots/SH-022.mp4,192
+SH-023,2D,2D tg2d v001,shots/SH-023.mp4,216
+SH-024,2D,2D tg2d v001,shots/SH-024.mp4,192
+SH-025,2D,2D tg2d v001,shots/SH-025.mp4,192
+SH-026,2D,2D tg2d v001,shots/SH-026.mp4,192
+SH-027,2D,2D tg2d v001,shots/SH-027.mp4,192
+SH-028,2D,PROTOTYPE v001 (2D+3D),shots/SH-028-030_prototype_trim.mp4,168
+SH-029,2D,PROTOTYPE v001 (2D+3D),shots/SH-028-030_prototype_trim.mp4,168
+SH-030,2D,PROTOTYPE v001 (2D+3D),shots/SH-028-030_prototype_trim.mp4,144
+SH-031,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-031_HIGGSFIELD_seq.mp4,168
+SH-032,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-031_HIGGSFIELD_seq.mp4,192
+SH-033,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-031_HIGGSFIELD_seq.mp4,168
+SH-034,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-031_HIGGSFIELD_seq.mp4,192
+SH-035,2D,2D tg2d v001,shots/SH-035.mp4,168
+SH-036,2D,2D tg2d v001,shots/SH-036.mp4,192
+SH-037,2D,2D tg2d v001,shots/SH-037.mp4,168
+SH-038,2D,2D tg2d v001,shots/SH-038.mp4,192
+SH-039,2D,2D tg2d v001,shots/SH-039.mp4,192
+SH-040,2D,2D tg2d v001,shots/SH-040.mp4,192
+SH-041,2D,2D tg2d v001,shots/SH-041.mp4,216
+SH-042,2D,2D tg2d v001,shots/SH-042.mp4,168
+SH-043,2D,2D tg2d v001,shots/SH-043.mp4,192
+SH-044,2D,2D tg2d v001,shots/SH-044.mp4,192
+SH-045,2D,2D tg2d v001,shots/SH-045.mp4,168
+SH-046,2D,2D tg2d v001,shots/SH-046.mp4,216
+SH-047,2D,2D tg2d v001,shots/SH-047.mp4,192
+SH-048,2D,2D tg2d v001,shots/SH-048.mp4,144
+SH-049,2D,2D tg2d v001,shots/SH-049.mp4,168
+SH-050,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-050_HIGGSFIELD_seq.mp4,192
+SH-051,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-050_HIGGSFIELD_seq.mp4,288
+SH-052,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-050_HIGGSFIELD_seq.mp4,240
+SH-053,2D,2D tg2d v001,shots/SH-053.mp4,216
+SH-054,2D,2D tg2d v001,shots/SH-054.mp4,168
+SH-055,2D,2D tg2d v001,shots/SH-055.mp4,192
+SH-056,2D,2D tg2d v001,shots/SH-056.mp4,192
+SH-057,2D,2D tg2d v001,shots/SH-057.mp4,192
+SH-058,2D,2D tg2d v001,shots/SH-058.mp4,240
+SH-059,2D,2D tg2d v001,shots/SH-059.mp4,240
+SH-060,2D,2D tg2d v001,shots/SH-060.mp4,192
+SH-061,2D,2D tg2d v001,shots/SH-061.mp4,192
+SH-062,2D,2D tg2d v001,shots/SH-062.mp4,168
+SH-063,2D,2D tg2d v001,shots/SH-063.mp4,168
+SH-064,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-064_HIGGSFIELD_seq.mp4,192
+SH-065,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-064_HIGGSFIELD_seq.mp4,192
+SH-066,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-064_HIGGSFIELD_seq.mp4,96
+SH-067,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-064_HIGGSFIELD_seq.mp4,240
+SH-068,2D,2D tg2d v001,shots/SH-068.mp4,144
+SH-069,2D,2D tg2d v001,shots/SH-069.mp4,144
+SH-070,2D,2D tg2d v001,shots/SH-070.mp4,192
+SH-071,2D,2D tg2d v001,shots/SH-071.mp4,168
+SH-072,2D,2D tg2d v001,shots/SH-072.mp4,192
+SH-073,2D,2D tg2d v001,shots/SH-073.mp4,168
+SH-074,2D,2D tg2d v001,shots/SH-074.mp4,216
+SH-075,2D,2D tg2d v001,shots/SH-075.mp4,216
+SH-076,2D,2D tg2d v001,shots/SH-076.mp4,168
+SH-077,2D,2D tg2d v001,shots/SH-077.mp4,168
+SH-078,2D,2D tg2d v001,shots/SH-078.mp4,168
+SH-079,2D,2D tg2d v001,shots/SH-079.mp4,168
+SH-080,2D,2D tg2d v001,shots/SH-080.mp4,168
+SH-081,2D,2D tg2d v001,shots/SH-081.mp4,168
+SH-082,2D,2D tg2d v001,shots/SH-082.mp4,192
+SH-083,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-083_HIGGSFIELD_seq.mp4,168
+SH-084,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-083_HIGGSFIELD_seq.mp4,144
+SH-085,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-083_HIGGSFIELD_seq.mp4,216
+SH-086,3D,HIGGSFIELD Seedance 2.0 draft 480p (upscaled),shots/SH-083_HIGGSFIELD_seq.mp4,192
+SH-087,2D,2D tg2d v001,shots/SH-087.mp4,120
+SH-088,2D,2D tg2d v001,shots/SH-088.mp4,120
+SH-089,2D,2D tg2d v001,shots/SH-089.mp4,192
+SH-090,2D,2D tg2d v001,shots/SH-090.mp4,192
+SH-091,2D,2D tg2d v001,shots/SH-091.mp4,192
+SH-092,2D,2D tg2d v001,shots/SH-092.mp4,216
+SH-093,2D,2D tg2d v001,shots/SH-093.mp4,192
+SH-094,2D,2D tg2d v001,shots/SH-094.mp4,240
+SH-095,2D,2D tg2d v001,shots/SH-095.mp4,216
+SH-096,2D,2D tg2d v001,shots/SH-096.mp4,120
+SH-097,2D,2D tg2d v001,shots/SH-097.mp4,168
+SH-098,2D,2D tg2d v001,shots/SH-098.mp4,144
+SH-099,2D,2D tg2d v001,shots/SH-099.mp4,120
+SH-100,2D,2D tg2d v001,shots/SH-100.mp4,144
+SH-101,2D,2D tg2d v001,shots/SH-101.mp4,144
+SH-102,2D,2D tg2d v001,shots/SH-102.mp4,240
