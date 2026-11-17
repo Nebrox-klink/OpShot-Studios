@@ -1,0 +1,6 @@
+date,item,service,environment,cost_usd,approved_by,status,note
+2026-11-17,bpy 5.0.1 (Blender as Python module),PyPI,cloud container,0.00,n/a (free),used,Rendering for prototype v001
+2026-11-17,Festival TTS + cmu_us_slt_arctic_hts voice,Ubuntu apt,cloud container,0.00,n/a (free),used,TEMP VO timing guide only; must be replaced
+2026-11-17,Fonts Caveat / Oswald / EB Garamond (OFL) + Special Elite (Apache-2.0),npm @fontsource,cloud container,0.00,n/a (free),used,Licences in 03_2D_ASSETS/typography
+2026-11-17,Higgsfield / Kling style pass test,Higgsfield / Kling,—,0.00,PENDING USER APPROVAL,not started,Spending limit $0. Prompts prepared in 06_AI_VIDEO/prompts
+2026-11-17,ElevenLabs narration,ElevenLabs (connected),—,0.00,PENDING USER APPROVAL,not started,Connector available in this session but generation spends credits. Not used
