@@ -32,9 +32,10 @@ ap.add_argument("--slates", required=True)
 ap.add_argument("--audio", required=True)
 ap.add_argument("--out", required=True)
 ap.add_argument("--ffmpeg", default=shutil.which("ffmpeg") or "ffmpeg")
+ap.add_argument("--reuse", action="store_true", help="keep already-normalised shot clips")
 a = ap.parse_args()
 FF = a.ffmpeg
-OUT = pathlib.Path(a.out)
+OUT = pathlib.Path(a.out).resolve()
 (OUT / "shots").mkdir(parents=True, exist_ok=True)
 PROTO = ROOT / "09_DELIVERABLES/tests/THE_GLASS_prototype_v001_0330-0357.mp4"
 FONT = ROOT / "03_2D_ASSETS/typography/oswald-latin-500-normal.woff"
@@ -53,6 +54,8 @@ def run(cmd):
 
 
 def norm(vf_in, src_args, dst, n):
+    if a.reuse and os.path.exists(dst) and os.path.getsize(dst) > 0:
+        return
     run([FF, "-y", "-loglevel", "error", *src_args, "-vf",
          f"{vf_in}scale=1280:720:flags=lanczos,fps={FPS},format=yuv420p,setsar=1,tpad=stop_mode=clone:stop=-1",
          "-frames:v", str(n), "-an", "-c:v", "libx264", "-crf", "23", "-preset", "medium", str(dst)])
