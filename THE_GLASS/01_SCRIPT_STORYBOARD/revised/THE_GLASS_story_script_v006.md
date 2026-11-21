@@ -3,7 +3,8 @@
 **Status:** draft for review. No images, voice or video will be generated until this is approved.
 **Event:** the NOKAS robbery, Stavanger, Norway, Monday 5 April 2004
 **Target length:** 13:00 | **Narration:** English | **Audience:** adults, general public
-**Narrator:** ElevenLabs "Verdict". A deep, calm male voice, 40–60, warm but serious, like a storyteller by a fire.
+**Narrator:** ElevenLabs **"Atlas – Deep, Gravelly Narrator"** (voice id `3YzGaTGef0x5PLEK9yGq`), chosen by the director. A deep, gravelly, unhurried male voice.
+Direction: keep him low and intimate, not trailer-like. Use softer, slower delivery in Scenes 13–15 (Klungland, the memorial) so his weight reads as grief, not menace.
 
 ---
 
@@ -27,9 +28,22 @@
 
 ## 2 · Character sheet and visual style guide
 
+### Achievability rules (apply to every shot)
+The aim is a look the tools can do **well every time**, not an ambitious look they do badly. A simple, consistent, stylised film looks deliberate. A failed attempt at realism looks cheap.
+1. **Stylised, never photoreal.** Flat-shaded 2D illustration with simple shapes, few details and a limited palette. No "realistic", "8K", "hyper-detailed" or "cinematic lighting" prompts.
+2. **One subject, one action, one camera move per shot.** E.g. "a man sits still at a table, slow push-in". No combined actions.
+3. **Camera:** only a static frame, a slow push-in, a slow pan or a slow parallax drift. No handheld shake, whip pans, orbiting or complex tracking.
+4. **People:** mostly silhouettes, figures seen from behind, or medium/wide shots. Close-ups only on still faces or eyes. **No talking mouths and no lip sync.** Dialogue lines are voiceover over a still or a back view.
+5. **Avoid what AI video does badly:** hands doing precise tasks (counting money, typing, loading guns), crowds, fast action, fights, vehicles crashing or turning, fire spreading onto objects, glass shattering in motion, readable text or signs, and more than two people interacting.
+6. **Show action indirectly:** shadows on a wall, light flashes, smoke drifting in the sky, a reflection, the result after the event, or a cut to an object. Let sound and narration carry the drama.
+7. **Text, maps and numbers** (dates, "113", sentences, map labels) are added in the edit as clean graphics, never generated inside the image.
+8. **Short shots:** 3–6 s per generated clip. Longer moments are built from several simple shots or a slow move on a still.
+9. **Hard VFX moments** (the window cracking, the hole, the windscreen) use the existing **Blender 3D sequences** (Scenes 7, 11, 14, 18) or a simple 2D crack overlay in the edit. They are not generated.
+10. **Consistency:** reuse the same character reference images and the same three or four background plates (courtyard, counting room, cathedral square, Kongsgata) across scenes.
+
 ### Style
-- **Look:** cinematic 2D with painterly backgrounds (gouache texture, soft edges, visible brushwork in the skies and in wet asphalt), clean character line art (2 px dark-umber line, not black), and limited but expressive animation: held poses, breathing, blinks, cloth and smoke on loops. Animatic-plus quality, like modern animated documentaries.
-- **Camera:** establishing wides on parallax layers, slow push-ins for tension, held close-ups on hands and eyes at decision points, top-down "chessboard" maps for the plan, and handheld shake only in the gunfire scenes.
+- **Look:** simple stylised 2D. Flat colour shapes with soft painterly texture only in the backgrounds (sky, walls, wet street), clean outlines and limited animation: held poses, slow drift, smoke and light on loops. Closer to a motion-comic or animated-documentary look than to a feature film.
+- **Camera:** static frames, slow push-ins, slow pans and gentle parallax only. The "chessboard map" is a 2D graphic made in the edit.
 - **Rule for the robbers:** they are never glamorised. They appear as dark, faceless silhouettes with masks or helmets. No hero shots, no slow-motion gun poses. Only Toska has a visible face, and only before and after the robbery.
 - **Rule for violence:** no blood, no wounds, no bodies. Gunfire is shown through muzzle light on walls, cracks in glass and sound. Klungland's death is told through absence: an empty frame, silence.
 
@@ -90,7 +104,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 1 · Cold Open: "08:03" (0:00–0:45)
 
-**VISUAL:** Black. A single crack appears, white and branching. Pull back: we're inside a quiet counting room, looking at a thick green window from inside. Grey morning light. Outside, a black silhouette swings a sledgehammer. *Thud.* The glass shivers and holds. A second silhouette raises a rifle. The camera slowly pushes in on the glass as the first bullet star blooms.
+**VISUAL:** Shot list (achievable):
+1. A black screen. A simple white crack line draws itself (a 2D graphic in the edit).
+2. Static: the counting-room window seen from inside, green glass, grey light. Outside, a dark silhouette lifts a hammer (only the shadow moves). Slow push-in.
+3. Cut on the impact to the glass alone: one bullet-star crack appears (a 2D overlay in the edit).
 
 **NARRATION:**
 > Eight o'clock on a Monday morning.
@@ -105,7 +122,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 2 · Title (0:45–0:55)
 
-**VISUAL:** The cracks in the glass rearrange into the title: **THE GLASS**. Beneath, in small type: *Stavanger, Norway. 5 April 2004.*
+**VISUAL:** A title card made in the edit: **THE GLASS** in clean type over a dark green glass texture. A subtitle line: *Stavanger, Norway. 5 April 2004.*
 
 **NARRATION:**
 > To understand how a man ends up there, we have to go back. To a chessboard.
@@ -116,7 +133,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 3 · The City of Money (0:55–1:50)
 
-**VISUAL:** Painterly aerial of Stavanger at golden hour: white wooden houses, the harbour, platform supply ships. A slow pan to the cathedral, and next to it an ordinary old office block. Inside: hands counting notes, the gentle clatter of counting machines, sealed bags on a trolley. The camera finds the window from inside: thick and green-tinted, with a dark courtyard beyond.
+**VISUAL:** Shot list:
+1. A wide illustrated view of Stavanger harbour, white wooden houses and a calm sea. Slow pan.
+2. Static: the cathedral, with a plain old office block beside it. Slow push-in.
+3. Close: a neat stack of banknote bundles on a table. Static. No hands.
+4. Static: the window from inside the counting room, dark courtyard behind it. Slow push-in on "Remember this window."
 
 **NARRATION:**
 > Stavanger is a small city that struck it rich. Since the seventies, oil from the North Sea has poured money into this coastline.
@@ -131,7 +152,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 4 · The Chess Player (1:50–3:00)
 
-**VISUAL:** An Oslo flat at night, ink-blue light. A young man sits at a chessboard, alone, perfectly still. Close-up on his eyes, then his hand moving a knight. Montage on the chessboard: pieces fall and the board briefly becomes a newspaper headline, a rammed shop window and a police search. Toska sits through it all without moving.
+**VISUAL:** Shot list:
+1. A dim flat at night. A young man (Toska) sits motionless at a chessboard, seen from the side. Slow push-in.
+2. Close: a chessboard with one knight. Static. (The piece move is a simple 2D animation in the edit.)
+3. Three still "evidence" illustrations with a slow push-in on each: a shop window with a car-shaped dent, a closed door with a police tape graphic, a duffel bag on a floor.
+4. Close: Toska's eyes, still, lit from one side. The inner-voice line plays over this still.
 
 **NARRATION:**
 > David Toska grew up in Oslo. As a boy he was good at chess, a game you win by seeing several moves ahead.
@@ -149,7 +174,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 5 · A Blind Spot (3:00–3:50)
 
-**VISUAL:** Late 2003. A smoky kitchen table. A contact's hand (faceless) slides a sketch of a building across. Toska leans in. The chessboard dissolves into a top-down map of central Stavanger: the NOKAS building as the king, and the police station a short drive away as a rook.
+**VISUAL:** Shot list:
+1. A kitchen table at night with a sketch of a building on paper, and two silhouettes either side, seen from behind. Static.
+2. A top-down chessboard that cross-fades into a simple 2D map of central Stavanger (a graphic made in the edit, with the NOKAS and police-station icons as chess pieces).
+The dialogue lines play over the static silhouettes. No mouths.
 
 **NARRATION:**
 > In late 2003, someone told him about NOKAS. About a building with a blind spot.
@@ -169,7 +197,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 6 · The Crew (3:50–4:25)
 
-**VISUAL:** On the map, pawns appear one by one: faceless black figures. Names appear as typed labels for only two of them, *Erling Havnå* and *Kjell Alrich Schumann*. Schumann's piece is drawn slightly heavier.
+**VISUAL:** A 2D graphic in the edit: on the map, simple black pawn icons appear one by one. Name labels in clean type for two of them. The Schumann pawn is slightly larger. No generated people.
 
 **NARRATION:**
 > He built a crew. Old prison contacts, school friends, new faces. More than a dozen men.
@@ -182,7 +210,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 7 · February ★ 3D 1, "Through the Glass" (4:25–5:20)
 
-**VISUAL:** Night, February. Frost on the cobbles. Toska crouches below the counting-room window, breath steaming. Through the green glass: staff wheeling trolleys of cash away, *out* of reach. His eyes follow the money. He waits. He looks at his watch. He stands and walks away into the dark.
+**VISUAL:** ★ Existing Blender **3D 1** sequence ("Through the Glass"), unchanged. Optional 2D insert: a still of a frosty courtyard at night with one crouched silhouette, a slow push-in.
 
 **NARRATION:**
 > Here is the part most people never hear.
@@ -199,7 +227,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 8 · Rehearsal (5:20–6:05)
 
-**VISUAL:** Late winter. A montage of a car on wet roads, then men on foot through underpasses and along cycle paths, out to dark forest at Sørmarka. A stopwatch overlay. Back on the chessboard map, Toska taps the window square. **Dramatic irony:** a cross-section graphic shows the viewer the window's layered, armoured construction, while Toska writes "glass: ordinary" in his notebook.
+**VISUAL:** Shot list:
+1. A dark road at night with two headlights far away. Static. Rain.
+2. An empty underpass, then a cycle path into a dark forest. Static frames, each with a slow push-in.
+3. A cutaway diagram (2D graphic in the edit): the window drawn as three thick layers, labelled "laminated". This is the dramatic irony.
+4. Close: an open notebook. The handwritten words "glass: ordinary" are added in the edit.
 
 **NARRATION:**
 > All through the late winter, they rehearsed the escape. From the city centre to the woods at Sørmarka. Over and over. Where a car would be noticed, they walked.
@@ -215,7 +247,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 9 · 03:30 (6:05–6:45)
 
-**VISUAL:** 5 April 2004, before dawn. Sodium-amber streetlight outside a house near Stavanger. A van; men loading heavy bags (vests, helmets, spike strips; no lingering on weapons). Cut across town: an ordinary police locker room, a lieutenant buttoning his uniform, seen from behind, unhurried. He picks up his cap. We do not see his face yet.
+**VISUAL:** Shot list:
+1. Night, a house under a single orange streetlight, a parked van. Static.
+2. Close: three black bags on the ground, closed. Static.
+3. A quiet locker room. A uniformed man seen from behind, standing still in front of a locker. Slow push-in. Face never shown.
 
 **NARRATION:**
 > Monday, the fifth of April. Half past three in the morning.
@@ -232,7 +267,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 10 · Lock the Door (6:45–7:25)
 
-**VISUAL:** 08:00. A truck rolls across the police garage exit and bursts into flames. Smoke canisters bounce at the main entrance. Spike strips unroll across the roads. Inside: officers at the garage door, blocked by fire. **Dramatic irony:** a slow push-in on the truck's cargo (mattresses and towels from the hideout) as flames climb them.
+**VISUAL:** Shot list:
+1. A wide of a garage door in a brick building at dawn. Orange firelight flickers on the wall and dark smoke rises into the sky (a loop). No vehicle movement.
+2. Close: a stack of mattresses glowing orange at the edges. Static, flicker only.
+3. Static: the main entrance with drifting grey smoke.
+4. Close: a road with a spike-strip shape lying across it. Static.
 
 **NARRATION:**
 > Eight o'clock. The first move.
@@ -248,7 +287,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 11 · 113 ★ 3D 2, "113" (7:25–8:05)
 
-**VISUAL:** The courtyard. A sledgehammer: the glass holds. A battering ram: the glass holds. Toska raises a rifle and fires. Then he signals. A heavier silhouette steps up (Schumann) and fires magazine after magazine. The cracks spread into branching layers. Finally the glass sags inward, a hole tears open and a gloved hand reaches through.
+**VISUAL:** ★ Existing Blender **3D 2** sequence ("113"), unchanged. Optional: the "113" counter as a clean 2D number in the edit.
 
 **NARRATION:**
 > The second move. The window.
@@ -265,7 +304,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 12 · Monday Morning (8:05–8:45)
 
-**VISUAL:** Inside the counting room. Staff run for the far doors. One woman grabs a colleague's sleeve, and they get out. Black figures climb through the hole. Bags of notes are thrown from the cages into the courtyard. A wall clock ticks past 08:08.
+**VISUAL:** Shot list:
+1. Static: the counting room, empty chairs, an open door at the back with light spilling through. ("They got out.")
+2. Static: tall dark shadows stretching across the floor from the window. Slow push-in.
+3. Close: a wall clock, with the hands at 08:08. Static. The clock face is a 2D graphic in the edit, so the numbers stay clean.
+4. Wide: the cathedral square, empty. Faint blue light flickers on the walls (police lights, out of frame).
 
 **NARRATION:**
 > Inside were people who had come to work on a Monday morning. Several of them got out.
@@ -279,7 +322,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 13 · Kongsgata (8:45–9:20)
 
-**VISUAL:** Not every officer was trapped. A police command vehicle drives along Kongsgata, near the Maritim hotel. For the first time we see the lieutenant's face: calm and focused. Through the windscreen ahead, smoke rises over the rooftops.
+**VISUAL:** Shot list:
+1. A police van seen from behind, parked on a quiet street of old buildings. Static, with a slow push-in.
+2. A still portrait of the officer in profile at the wheel, calm, seen through the side window. No movement except a slow push-in.
+3. Point of view through the windscreen: grey smoke rising above distant rooftops. Static.
 
 **NARRATION:**
 > Not every officer in Stavanger was trapped behind that burning truck.
@@ -295,7 +341,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 14 · 08:17 ★ 3D 3, "The Windshield" (9:20–9:55)
 
-**VISUAL:** The command vehicle from outside, wide and still. A bus blocks the road behind. The vehicle tries to reverse. A muzzle flash is reflected only in a shop window across the street. Cut to: the windscreen, cracking. Fade to white. No body, no wound, no blood.
+**VISUAL:** ★ Existing Blender **3D 3** sequence ("The Windshield"), unchanged. It ends on white, held 6 s.
 
 **NARRATION:**
 > Seventeen minutes past eight.
@@ -307,7 +353,9 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 15 · Remember His Name (9:55–10:20)
 
-**VISUAL:** Soft warm grey. Candles at the cathedral square. A simple drawn portrait of Klungland in uniform, based on an approved photo, held for a long time. Slow, slow push-in.
+**VISUAL:** Shot list:
+1. Close: a row of lit candles on stone. Only the flames move (a loop).
+2. A simple drawn portrait of Klungland in uniform, from an approved photo. Static, with a very slow push-in.
 
 **NARRATION:**
 > He tried to back away, but a bus blocked the road. One of the bullets struck him.
@@ -321,7 +369,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 16 · Into the Trees (10:20–10:50)
 
-**VISUAL:** 08:19. Cars leave the square. The rehearsed route: underpasses, cycle paths, then the dark forest of Sørmarka. Vehicles are swapped. Smoke rises as evidence burns. The black silhouettes walk into the trees and dissolve. Close-up on Toska's face in a car mirror. For the first time, the stillness is gone.
+**VISUAL:** Shot list:
+1. An empty cathedral square, morning. Static.
+2. A dark pine forest. Static, slow push-in. A thin column of smoke rises between the trees (a loop).
+3. Close: a still of Toska's eyes reflected in a car mirror. Static.
 
 **NARRATION:**
 > At nineteen minutes past eight, they fled. Along the route they had practised all winter, into the woods.
@@ -336,7 +387,11 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 17 · The Hunt (10:50–11:35)
 
-**VISUAL:** An investigation room in fluorescent green: a wall of photos and red string. One by one, faces get a red X. A lab bench holds a scorched mattress sample. Then Toska in Sandnes, curtains drawn, then on a road south, then in Spanish sunlight. Close-up on a cheap laptop: the same email login, typed again and again.
+**VISUAL:** Shot list:
+1. A wall covered with photos and red string. The faces are simple blank shapes. Red X marks appear as a 2D overlay in the edit. Slow push-in.
+2. Close: an evidence bag holding a scorched piece of fabric on a table. Static.
+3. A window with closed curtains, then a sunlit Spanish street of white walls. Static frames, slow push-ins.
+4. Close: an old laptop screen glowing in a dark room. The login field is added as a graphic in the edit.
 
 **NARRATION:**
 > It became one of the biggest investigations Norway had ever seen. The mattresses held their DNA. Arrests followed, across the country.
@@ -352,7 +407,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 18 · One Year to the Day ★ 3D 4 (11:35–12:05)
 
-**VISUAL:** A small internet café in Málaga: CRT monitors and plastic chairs. Toska at a terminal, reading. The page loads slowly. Behind him, the door opens. Spanish police officers walk in quietly. He doesn't resist. The screen goes dark.
+**VISUAL:** ★ Existing Blender **3D 4** sequence ("One Year to the Day"), unchanged. The date "5 April 2005" is added in the edit.
 
 **NARRATION:**
 > Investigators traced his logins to the south of Spain. The provider slowed his connection to keep him online.
@@ -368,7 +423,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 19 · The Verdict (12:05–12:35)
 
-**VISUAL:** A courtroom in Stavanger, drawn in muted slate. Thirteen silhouettes in a row. The judge's hands. Numbers appear like chalk on a slate: *13 convicted · 181 years in total · Toska: 19 years.* Then the appeal court in September 2006: a single silhouette stands up.
+**VISUAL:** Shot list:
+1. A courtroom in muted grey: a wide, static view of an empty judge's bench. Slow push-in.
+2. A 2D graphic in the edit: "13 convicted · 181 years in total · Toska: 19 years" in clean type.
+3. One dark silhouette standing alone in a row of empty seats. Static.
 
 **NARRATION:**
 > Toska admitted planning the robbery. He denied firing the shot that killed Arne Sigve Klungland.
@@ -382,7 +440,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ### Scene 20 · The Glass (12:35–13:00)
 
-**VISUAL:** The present day. The same courtyard window, now new, clear and unbroken, in warm morning light. Reflected in it: the cathedral, people walking past. Slow push-in until the glass fills the frame. On it, faintly, a reflection of the candle-lit portrait from Scene 15. Then black.
+**VISUAL:** Shot list:
+1. Morning: the courtyard window, intact and clear, with warm light. Static, then a slow push-in until the glass fills the frame.
+2. A cross-fade overlay (in the edit) of the candle portrait faintly reflected in the glass.
+3. Fade to black.
 
 **NARRATION:**
 > More than fifty-one million kroner has never been found.
@@ -425,7 +486,7 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 - The Scene 9 locker-room image (a generic, wordless shift start, not Klungland's documented morning).
 - Weather, frost, breath, rain, light and sounds throughout.
 - The police radio chatter and Klungland's expression in Scene 13 (no invented words for him).
-- Small staff actions in Scene 12 (a colleague grabbing a sleeve).
+- The empty-room framing of the staff's escape in Scene 12 (documented: several staff fled).
 - The café atmosphere in Scene 18 (the documented elements are the café, the computer, the arrest and no resistance).
 - The closing image of the replaced window and reflection (symbolic).
 
@@ -435,5 +496,5 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ## 5 · Fit with existing work (for later, after approval)
 - The four existing Blender 3D sequences fit Scenes 7, 11, 14 and 18 without changes to their camera paths.
-- The narration is about 1,060 words, roughly 6,000 characters. With Verdict at about 15–17 characters per second, that's about 6–7 minutes of speech across the 13:00. That is less than v005 (about 8,600 characters), which you felt had too little talking. It can be expanded to about 8,500 characters if you want, mainly in Scenes 3–8 and 16–19.
+- The narration is about 1,060 words, roughly 6,000 characters. With Atlas at an unhurried pace of about 13–15 characters per second, that's about 7 minutes of speech across the 13:00. That is less than v005 (about 8,600 characters), which you felt had too little talking. It can be expanded to about 8,500 characters if you want, mainly in Scenes 3–8 and 16–19.
 - Voice generation with ElevenLabs would cost about 6,000–8,500 credits, but only after approval.
