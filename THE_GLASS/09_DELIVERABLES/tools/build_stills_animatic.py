@@ -16,7 +16,12 @@ SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
 MIX = os.path.join(ROOT, "07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac")
-OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_stills_v008b")
+MOTION_DIR = os.path.join(ROOT, "06_AI_VIDEO/motion_v001/clips")
+MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 702, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
+          "S12_02": 1202, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,
+          "S18_04": 1804, "S19_02": 1902, "S21_01": 2101, "S22_02": 2202, "S24_01": 2401}
+USE_MOTION = os.environ.get("USE_MOTION", "1") == "1"
+OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008b")
 TMP = os.path.join(OUT, "clips")
 os.makedirs(TMP, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -97,7 +102,19 @@ def render(item, secs, extra, move):
     out = os.path.join(TMP, f"c{k:03d}.mp4")
     frames = max(1, round(secs * FPS))
     secs = frames / FPS
-    if item[0] == "img":
+    mclip = None
+    if item[0] == "img" and USE_MOTION:
+        key = os.path.basename(item[1])[:-4]
+        cand = os.path.join(MOTION_DIR, f"M_{MOTION.get(key, 0)}.mp4")
+        if key in MOTION and os.path.isfile(cand):
+            mclip = cand
+    if mclip:
+        mdur = dur(mclip)
+        slow = min(2.0, max(1.0, secs / mdur))
+        hold = max(0.0, secs - mdur * slow)
+        vf = f"scale={W}:{H},setpts={slow:.4f}*PTS,fps={FPS},tpad=stop_mode=clone:stop_duration={hold + 0.5:.2f},setsar=1"
+        inp = ["-i", mclip]
+    elif item[0] == "img":
         if move % 3 == 0:
             z, x, y = "1+0.07*on/{d}", "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
         elif move % 3 == 1:
@@ -167,7 +184,7 @@ with open(lst, "w") as fh:
     fh.writelines(f"file '{c}'\n" for c in clips)
 silent = os.path.join(OUT, "video_only.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent], check=True)
-final = os.path.join(OUT, "THE_GLASS_stills_animatic_v008b.mp4")
+final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008b.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", silent, "-i", MIX, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final], check=True)
 print(f"video {total:.1f} s; WROTE {final}")
