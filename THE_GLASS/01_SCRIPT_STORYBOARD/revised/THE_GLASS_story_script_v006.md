@@ -28,22 +28,31 @@ Direction: keep him low and intimate, not trailer-like. Use softer, slower deliv
 
 ## 2 · Character sheet and visual style guide
 
-### Achievability rules (apply to every shot)
-The aim is a look the tools can do **well every time**, not an ambitious look they do badly. A simple, consistent, stylised film looks deliberate. A failed attempt at realism looks cheap.
-1. **Stylised, never photoreal.** Flat-shaded 2D illustration with simple shapes, few details and a limited palette. No "realistic", "8K", "hyper-detailed" or "cinematic lighting" prompts.
-2. **One subject, one action, one camera move per shot.** E.g. "a man sits still at a table, slow push-in". No combined actions.
-3. **Camera:** only a static frame, a slow push-in, a slow pan or a slow parallax drift. No handheld shake, whip pans, orbiting or complex tracking.
-4. **People:** mostly silhouettes, figures seen from behind, or medium/wide shots. Close-ups only on still faces or eyes. **No talking mouths and no lip sync.** Dialogue lines are voiceover over a still or a back view.
-5. **Avoid what AI video does badly:** hands doing precise tasks (counting money, typing, loading guns), crowds, fast action, fights, vehicles crashing or turning, fire spreading onto objects, glass shattering in motion, readable text or signs, and more than two people interacting.
-6. **Show action indirectly:** shadows on a wall, light flashes, smoke drifting in the sky, a reflection, the result after the event, or a cut to an object. Let sound and narration carry the drama.
-7. **Text, maps and numbers** (dates, "113", sentences, map labels) are added in the edit as clean graphics, never generated inside the image.
-8. **Short shots:** 3–6 s per generated clip. Longer moments are built from several simple shots or a slow move on a still.
-9. **Hard VFX moments** (the window cracking, the hole, the windscreen) use the existing **Blender 3D sequences** (Scenes 7, 11, 14, 18) or a simple 2D crack overlay in the edit. They are not generated.
-10. **Consistency:** reuse the same character reference images and the same three or four background plates (courtyard, counting room, cathedral square, Kongsgata) across scenes.
+### Quality strategy: high ceiling, guaranteed floor
+Aim for the **highest quality the tools deliver reliably**. Every shot is built in two steps, so it can never fall below a good-looking result:
+
+**Step 1, the still (where the quality lives).** Each shot starts as a carefully art-directed key image (Nano Banana): richly painted, with lighting, depth and atmosphere. Stills are where today's tools are strongest, so we push hard here. Every still is approved before anything moves.
+
+**Step 2, the motion (only as much as stays clean).** Every shot has a tier:
+- **Tier A, guaranteed.** Camera move on the approved still: slow push-in, pan, or 2.5D parallax (the image split into foreground, midground and background layers in the edit). Plus overlays in the edit: rain, snow, smoke, dust, light flicker, film grain. This always looks good.
+- **Tier B, reliable.** Image-to-video (Seedance, 5 s, from the approved still) with **subtle, natural motion only**: breathing, a slow head turn, a blink, hair or clothes in wind, smoke rising, flames flickering, water moving, lights pulsing, clouds drifting, slow traffic far away.
+- **Tier C, ambitious.** Image-to-video with one clear character action (a figure walking away, standing up, looking down at a notebook). Used only where the story needs it. **Its fallback is always Tier B or A from the same still.**
+
+**Rule:** every generated clip is checked frame by frame. If anything warps, melts, morphs or looks uncanny, the shot drops to the tier below at once. No shot gets "fixed" with retries beyond two attempts.
+
+**Hard limits** (these never look good, so they are never generated): lip sync or talking mouths; hands doing precise work (counting money, typing, handling weapons); crowds or more than two interacting people; fast action, fights, vehicle crashes or turns; glass shattering in motion; fire spreading onto objects; readable text, signs or numbers inside images.
+
+**Handled outside the generators:**
+- Titles, dates, "113", maps, labels and sentences are clean graphics in the edit.
+- The window cracking, the hole and the windscreen use the existing **Blender 3D sequences** (Scenes 7, 11, 14, 18). Extra cracks are 2D overlays.
+
+**Consistency:**
+- Character reference sheets (Toska, Klungland, a robber silhouette) are generated once and used as references in every shot.
+- Four master background plates are reused with different light: the courtyard, the counting room, the cathedral square and Kongsgata.
 
 ### Style
-- **Look:** simple stylised 2D. Flat colour shapes with soft painterly texture only in the backgrounds (sky, walls, wet street), clean outlines and limited animation: held poses, slow drift, smoke and light on loops. Closer to a motion-comic or animated-documentary look than to a feature film.
-- **Camera:** static frames, slow push-ins, slow pans and gentle parallax only. The "chessboard map" is a 2D graphic made in the edit.
+- **Look:** premium stylised 2D. Painterly illustration with rich, motivated light (sodium streetlamps, grey dawn, firelight, candle glow), atmospheric depth (haze, rain, smoke), clean shapes and confident outlines. It follows the look of high-end animated documentaries and history channels: illustrated, never photoreal. Prompt words: *"painterly 2D illustration, graphic-novel lighting, soft gouache texture, muted palette, cinematic composition"*. Never *"photorealistic"* or *"8K"*.
+- **Camera:** slow, deliberate and motivated. Push-ins for tension, parallax for depth, static holds for weight. No handheld, whip pans or orbits.
 - **Rule for the robbers:** they are never glamorised. They appear as dark, faceless silhouettes with masks or helmets. No hero shots, no slow-motion gun poses. Only Toska has a visible face, and only before and after the robbery.
 - **Rule for violence:** no blood, no wounds, no bodies. Gunfire is shown through muzzle light on walls, cracks in glass and sound. Klungland's death is told through absence: an empty frame, silence.
 
@@ -105,9 +114,9 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 ### Scene 1 · Cold Open: "08:03" (0:00–0:45)
 
 **VISUAL:** Shot list (achievable):
-1. A black screen. A simple white crack line draws itself (a 2D graphic in the edit).
-2. Static: the counting-room window seen from inside, green glass, grey light. Outside, a dark silhouette lifts a hammer (only the shadow moves). Slow push-in.
-3. Cut on the impact to the glass alone: one bullet-star crack appears (a 2D overlay in the edit).
+1. A black screen. A simple white crack line draws itself (a 2D graphic in the edit). **[Tier A (crack graphic)]**
+2. Static: the counting-room window seen from inside, green glass, grey light. Outside, a dark silhouette lifts a hammer (only the shadow moves). Slow push-in. **[Tier B: still of the window from inside; the outside silhouette lifts the hammer slowly, as a shadow and shape only. Fallback A: still plus push-in plus a 2D shadow pass]**
+3. Cut on the impact to the glass alone: one bullet-star crack appears (a 2D overlay in the edit). **[Tier A: still of the glass plus a 2D bullet-star overlay]**
 
 **NARRATION:**
 > Eight o'clock on a Monday morning.
@@ -134,10 +143,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 ### Scene 3 · The City of Money (0:55–1:50)
 
 **VISUAL:** Shot list:
-1. A wide illustrated view of Stavanger harbour, white wooden houses and a calm sea. Slow pan.
-2. Static: the cathedral, with a plain old office block beside it. Slow push-in.
-3. Close: a neat stack of banknote bundles on a table. Static. No hands.
-4. Static: the window from inside the counting room, dark courtyard behind it. Slow push-in on "Remember this window."
+1. A wide illustrated view of Stavanger harbour, white wooden houses and a calm sea. Slow pan. **[Tier B: harbour wide, water moving, clouds drifting, a gull]**
+2. Static: the cathedral, with a plain old office block beside it. Slow push-in. **[Tier A: cathedral and office block, slow push-in, morning haze overlay]**
+3. Close: a neat stack of banknote bundles on a table. Static. No hands. **[Tier A: banknote bundles, raking light, push-in]**
+4. Static: the window from inside the counting room, dark courtyard behind it. Slow push-in on "Remember this window." **[Tier A: the window from inside, push-in]**
 
 **NARRATION:**
 > Stavanger is a small city that struck it rich. Since the seventies, oil from the North Sea has poured money into this coastline.
@@ -153,10 +162,10 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 ### Scene 4 · The Chess Player (1:50–3:00)
 
 **VISUAL:** Shot list:
-1. A dim flat at night. A young man (Toska) sits motionless at a chessboard, seen from the side. Slow push-in.
-2. Close: a chessboard with one knight. Static. (The piece move is a simple 2D animation in the edit.)
-3. Three still "evidence" illustrations with a slow push-in on each: a shop window with a car-shaped dent, a closed door with a police tape graphic, a duffel bag on a floor.
-4. Close: Toska's eyes, still, lit from one side. The inner-voice line plays over this still.
+1. A dim flat at night. A young man (Toska) sits motionless at a chessboard, seen from the side. Slow push-in. **[Tier B: Toska at the chessboard, lamplight, breathing and a blink only]**
+2. Close: a chessboard with one knight. Static. (The piece move is a simple 2D animation in the edit.) **[Tier A: the knight piece (its move is a 2D animation in the edit)]**
+3. Three still "evidence" illustrations with a slow push-in on each: a shop window with a car-shaped dent, a closed door with a police tape graphic, a duffel bag on a floor. **[Tier A: three evidence stills, a push-in on each]**
+4. Close: Toska's eyes, still, lit from one side. The inner-voice line plays over this still. **[Tier B: Toska's eyes, a slow blink and a slight turn toward the light]**
 
 **NARRATION:**
 > David Toska grew up in Oslo. As a boy he was good at chess, a game you win by seeing several moves ahead.
@@ -175,8 +184,8 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 ### Scene 5 · A Blind Spot (3:00–3:50)
 
 **VISUAL:** Shot list:
-1. A kitchen table at night with a sketch of a building on paper, and two silhouettes either side, seen from behind. Static.
-2. A top-down chessboard that cross-fades into a simple 2D map of central Stavanger (a graphic made in the edit, with the NOKAS and police-station icons as chess pieces).
+1. A kitchen table at night with a sketch of a building on paper, and two silhouettes either side, seen from behind. Static. **[Tier B: kitchen table, two silhouettes, cigarette smoke rising, lamp flicker]**
+2. A top-down chessboard that cross-fades into a simple 2D map of central Stavanger (a graphic made in the edit, with the NOKAS and police-station icons as chess pieces). **[Tier A: the chessboard dissolves into a map graphic (edit)]**
 The dialogue lines play over the static silhouettes. No mouths.
 
 **NARRATION:**
@@ -228,10 +237,10 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 8 · Rehearsal (5:20–6:05)
 
 **VISUAL:** Shot list:
-1. A dark road at night with two headlights far away. Static. Rain.
-2. An empty underpass, then a cycle path into a dark forest. Static frames, each with a slow push-in.
-3. A cutaway diagram (2D graphic in the edit): the window drawn as three thick layers, labelled "laminated". This is the dramatic irony.
-4. Close: an open notebook. The handwritten words "glass: ordinary" are added in the edit.
+1. A dark road at night with two headlights far away. Static. Rain. **[Tier B: a night road, rain falling, distant headlights]**
+2. An empty underpass, then a cycle path into a dark forest. Static frames, each with a slow push-in. **[Tier B: underpass and forest path, mist drifting]**
+3. A cutaway diagram (2D graphic in the edit): the window drawn as three thick layers, labelled "laminated". This is the dramatic irony. **[Tier A: the cut-away window diagram (edit graphic)]**
+4. Close: an open notebook. The handwritten words "glass: ordinary" are added in the edit. **[Tier C: Toska looks down at an open notebook. Fallback B: the notebook alone, page edge moving]**
 
 **NARRATION:**
 > All through the late winter, they rehearsed the escape. From the city centre to the woods at Sørmarka. Over and over. Where a car would be noticed, they walked.
@@ -248,9 +257,9 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 9 · 03:30 (6:05–6:45)
 
 **VISUAL:** Shot list:
-1. Night, a house under a single orange streetlight, a parked van. Static.
-2. Close: three black bags on the ground, closed. Static.
-3. A quiet locker room. A uniformed man seen from behind, standing still in front of a locker. Slow push-in. Face never shown.
+1. Night, a house under a single orange streetlight, a parked van. Static. **[Tier B: house and van under a streetlamp, light drizzle in the lamp cone]**
+2. Close: three black bags on the ground, closed. Static. **[Tier A: three closed bags, push-in]**
+3. A quiet locker room. A uniformed man seen from behind, standing still in front of a locker. Slow push-in. Face never shown. **[Tier C: the officer, seen from behind, lifts his cap from the locker shelf. Fallback B: standing still, breathing]**
 
 **NARRATION:**
 > Monday, the fifth of April. Half past three in the morning.
@@ -268,10 +277,10 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 10 · Lock the Door (6:45–7:25)
 
 **VISUAL:** Shot list:
-1. A wide of a garage door in a brick building at dawn. Orange firelight flickers on the wall and dark smoke rises into the sky (a loop). No vehicle movement.
-2. Close: a stack of mattresses glowing orange at the edges. Static, flicker only.
-3. Static: the main entrance with drifting grey smoke.
-4. Close: a road with a spike-strip shape lying across it. Static.
+1. A wide of a garage door in a brick building at dawn. Orange firelight flickers on the wall and dark smoke rises into the sky (a loop). No vehicle movement. **[Tier B: garage wall, firelight flicker and smoke rising into the dawn sky]**
+2. Close: a stack of mattresses glowing orange at the edges. Static, flicker only. **[Tier B: mattress edges glowing, embers drifting]**
+3. Static: the main entrance with drifting grey smoke. **[Tier B: entrance with drifting smoke]**
+4. Close: a road with a spike-strip shape lying across it. Static. **[Tier A: spike strip on wet asphalt, push-in]**
 
 **NARRATION:**
 > Eight o'clock. The first move.
@@ -305,10 +314,10 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 12 · Monday Morning (8:05–8:45)
 
 **VISUAL:** Shot list:
-1. Static: the counting room, empty chairs, an open door at the back with light spilling through. ("They got out.")
-2. Static: tall dark shadows stretching across the floor from the window. Slow push-in.
-3. Close: a wall clock, with the hands at 08:08. Static. The clock face is a 2D graphic in the edit, so the numbers stay clean.
-4. Wide: the cathedral square, empty. Faint blue light flickers on the walls (police lights, out of frame).
+1. Static: the counting room, empty chairs, an open door at the back with light spilling through. ("They got out.") **[Tier A: an empty counting room, light spilling through the back door, dust in the light]**
+2. Static: tall dark shadows stretching across the floor from the window. Slow push-in. **[Tier B: long shadows of figures sliding slowly across the floor]**
+3. Close: a wall clock, with the hands at 08:08. Static. The clock face is a 2D graphic in the edit, so the numbers stay clean. **[Tier A: the wall clock (clean 2D clock face in the edit)]**
+4. Wide: the cathedral square, empty. Faint blue light flickers on the walls (police lights, out of frame). **[Tier B: the empty cathedral square, blue light pulsing on the stone walls]**
 
 **NARRATION:**
 > Inside were people who had come to work on a Monday morning. Several of them got out.
@@ -323,9 +332,9 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 13 · Kongsgata (8:45–9:20)
 
 **VISUAL:** Shot list:
-1. A police van seen from behind, parked on a quiet street of old buildings. Static, with a slow push-in.
-2. A still portrait of the officer in profile at the wheel, calm, seen through the side window. No movement except a slow push-in.
-3. Point of view through the windscreen: grey smoke rising above distant rooftops. Static.
+1. A police van seen from behind, parked on a quiet street of old buildings. Static, with a slow push-in. **[Tier B: the command vehicle seen from behind, wipers moving, exhaust in cold air]**
+2. A still portrait of the officer in profile at the wheel, calm, seen through the side window. No movement except a slow push-in. **[Tier B: the officer in profile at the wheel, calm. Eyes and breathing only]**
+3. Point of view through the windscreen: grey smoke rising above distant rooftops. Static. **[Tier B: point of view through the windscreen, smoke rising above the rooftops]**
 
 **NARRATION:**
 > Not every officer in Stavanger was trapped behind that burning truck.
@@ -354,8 +363,8 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 15 · Remember His Name (9:55–10:20)
 
 **VISUAL:** Shot list:
-1. Close: a row of lit candles on stone. Only the flames move (a loop).
-2. A simple drawn portrait of Klungland in uniform, from an approved photo. Static, with a very slow push-in.
+1. Close: a row of lit candles on stone. Only the flames move (a loop). **[Tier B: candle flames, wax glistening]**
+2. A simple drawn portrait of Klungland in uniform, from an approved photo. Static, with a very slow push-in. **[Tier A: the portrait, a very slow push-in]**
 
 **NARRATION:**
 > He tried to back away, but a bus blocked the road. One of the bullets struck him.
@@ -370,9 +379,9 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 16 · Into the Trees (10:20–10:50)
 
 **VISUAL:** Shot list:
-1. An empty cathedral square, morning. Static.
-2. A dark pine forest. Static, slow push-in. A thin column of smoke rises between the trees (a loop).
-3. Close: a still of Toska's eyes reflected in a car mirror. Static.
+1. An empty cathedral square, morning. Static. **[Tier A: the empty square]**
+2. A dark pine forest. Static, slow push-in. A thin column of smoke rises between the trees (a loop). **[Tier B: pine forest, wind in the treetops, smoke rising]**
+3. Close: a still of Toska's eyes reflected in a car mirror. Static. **[Tier B: Toska's eyes in the mirror, a blink, light passing over his face]**
 
 **NARRATION:**
 > At nineteen minutes past eight, they fled. Along the route they had practised all winter, into the woods.
@@ -388,10 +397,10 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 17 · The Hunt (10:50–11:35)
 
 **VISUAL:** Shot list:
-1. A wall covered with photos and red string. The faces are simple blank shapes. Red X marks appear as a 2D overlay in the edit. Slow push-in.
-2. Close: an evidence bag holding a scorched piece of fabric on a table. Static.
-3. A window with closed curtains, then a sunlit Spanish street of white walls. Static frames, slow push-ins.
-4. Close: an old laptop screen glowing in a dark room. The login field is added as a graphic in the edit.
+1. A wall covered with photos and red string. The faces are simple blank shapes. Red X marks appear as a 2D overlay in the edit. Slow push-in. **[Tier A: the evidence wall plus red X overlays (edit)]**
+2. Close: an evidence bag holding a scorched piece of fabric on a table. Static. **[Tier A: the evidence bag]**
+3. A window with closed curtains, then a sunlit Spanish street of white walls. Static frames, slow push-ins. **[Tier B: a curtain moving slightly in a dark room, then a sunlit Spanish street with heat shimmer]**
+4. Close: an old laptop screen glowing in a dark room. The login field is added as a graphic in the edit. **[Tier B: laptop glow on a dark wall, the screen flickering]**
 
 **NARRATION:**
 > It became one of the biggest investigations Norway had ever seen. The mattresses held their DNA. Arrests followed, across the country.
@@ -424,9 +433,9 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 19 · The Verdict (12:05–12:35)
 
 **VISUAL:** Shot list:
-1. A courtroom in muted grey: a wide, static view of an empty judge's bench. Slow push-in.
-2. A 2D graphic in the edit: "13 convicted · 181 years in total · Toska: 19 years" in clean type.
-3. One dark silhouette standing alone in a row of empty seats. Static.
+1. A courtroom in muted grey: a wide, static view of an empty judge's bench. Slow push-in. **[Tier A: courtroom, push-in]**
+2. A 2D graphic in the edit: "13 convicted · 181 years in total · Toska: 19 years" in clean type. **[Tier A: graphic (edit)]**
+3. One dark silhouette standing alone in a row of empty seats. Static. **[Tier A: a lone silhouette in a row of seats, push-in]**
 
 **NARRATION:**
 > Toska admitted planning the robbery. He denied firing the shot that killed Arne Sigve Klungland.
@@ -441,9 +450,9 @@ The dialogue lines play over the static silhouettes. No mouths.
 ### Scene 20 · The Glass (12:35–13:00)
 
 **VISUAL:** Shot list:
-1. Morning: the courtyard window, intact and clear, with warm light. Static, then a slow push-in until the glass fills the frame.
-2. A cross-fade overlay (in the edit) of the candle portrait faintly reflected in the glass.
-3. Fade to black.
+1. Morning: the courtyard window, intact and clear, with warm light. Static, then a slow push-in until the glass fills the frame. **[Tier B: the new window, warm light, reflections of passers-by drifting on the glass]**
+2. A cross-fade overlay (in the edit) of the candle portrait faintly reflected in the glass. **[Tier A: reflection overlay (edit)]**
+3. Fade to black. **[Tier A: fade]**
 
 **NARRATION:**
 > More than fifty-one million kroner has never been found.
