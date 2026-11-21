@@ -21,7 +21,7 @@ SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 SFX = os.path.join(ROOT, "07_AUDIO/sfx_v008")
 MUS = os.path.join(ROOT, "07_AUDIO/music_v008")
-OUTDIR = os.path.join(ROOT, "09_DELIVERABLES/animatic_atlas_v008")
+OUTDIR = os.path.join(ROOT, "07_AUDIO/mix_v008b")
 
 
 def load(path):
@@ -69,7 +69,8 @@ for n in sorted(slots):
         b = load(os.path.join(ATLAS, f"S{n:02d}b.mp3"))
         chunks = [(LEAD, a), (LEAD + len(a) / SR + 6.0, b)]
         used = LEAD + len(a) / SR + 6.0 + len(b) / SR
-    length = max(slots[n], used + 0.5)
+    # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
+    length = slots[n] if n in (1, 13, 17, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
     starts[n], lengths[n] = t, length
     for off, au in chunks:
         narr_parts.append((t + off, au))
@@ -226,14 +227,12 @@ mix = mix[:int(TOTAL * SR)]
 os.makedirs(OUTDIR, exist_ok=True)
 raw = os.path.join(OUTDIR, "mix_raw.wav")
 sf.write(raw, mix, SR, subtype="FLOAT")
-wav = os.path.join(OUTDIR, "THE_GLASS_mix_v008.wav")
+wav = os.path.join(OUTDIR, "THE_GLASS_mix_v008b.wav")
 subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", raw, "-af", "loudnorm=I=-16:TP=-1.5:LRA=14",
                 "-ar", str(SR), wav], check=True)
 os.remove(raw)
-video = os.path.join(OUTDIR, "THE_GLASS_animatic_atlas_v008.mp4")
-mp4 = os.path.join(OUTDIR, "THE_GLASS_animatic_atlas_sound_v008.mp4")
-subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", video, "-i", wav, "-map", "0:v", "-map", "1:a",
-                "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", mp4], check=True)
+subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", wav, "-c:a", "flac", wav[:-4] + ".flac"], check=True)
+os.remove(wav)
 print(f"total {TOTAL:.1f} s; 08:17 silence {s17_silence_start:.1f}-{s17_silence_end:.1f} s")
 print("missing cues:", sorted(set(missing)) or "none")
-print("WROTE", mp4)
+print("WROTE", wav[:-4] + ".flac")

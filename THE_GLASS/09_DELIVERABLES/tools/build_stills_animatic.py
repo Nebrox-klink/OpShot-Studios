@@ -15,8 +15,8 @@ CARD, LEAD = 4.0, 1.0
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
-MIX = os.path.join(ROOT, "07_AUDIO/mix_v008/THE_GLASS_mix_v008.flac")
-OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_stills_v008")
+MIX = os.path.join(ROOT, "07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac")
+OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_stills_v008b")
 TMP = os.path.join(OUT, "clips")
 os.makedirs(TMP, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -44,7 +44,8 @@ for n in sorted(slots):
         a = dur(os.path.join(ATLAS, f"S{n:02d}a.mp3"))
         used = LEAD + a + 6.0 + dur(os.path.join(ATLAS, f"S{n:02d}b.mp3"))
         s17_sil = LEAD + a
-    length[n] = max(slots[n], used + 0.5)
+    # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
+    length[n] = slots[n] if n in (1, 13, 17, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
 
 
 def S(name):
@@ -145,10 +146,13 @@ for n in sorted(PLAN):
         elif it[1] == "SIL":
             fixed += s17_sil - 8.0
     free = [it for it in items if it[1] is None]
-    share = (L - fixed) / len(free) if free else 0
+    scale = 1.0
+    if free and (L - fixed) / len(free) < 3.0 and n not in (1, 13, 17):
+        scale = max(0.5, (L - 3.0 * len(free)) / fixed)
+    share = (L - fixed * scale) / len(free) if free else 0
     scene_t = 0.0
     for idx, it in enumerate(items):
-        secs = it[1] if isinstance(it[1], (int, float)) else (s17_sil - 8.0 if it[1] == "SIL" else share)
+        secs = it[1] * scale if isinstance(it[1], (int, float)) else (s17_sil - 8.0 if it[1] == "SIL" else share)
         if idx == len(items) - 1:
             secs = L - scene_t  # absorb rounding
         extra = it[2] if len(it) > 2 else None
@@ -163,7 +167,7 @@ with open(lst, "w") as fh:
     fh.writelines(f"file '{c}'\n" for c in clips)
 silent = os.path.join(OUT, "video_only.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent], check=True)
-final = os.path.join(OUT, "THE_GLASS_stills_animatic_v008.mp4")
+final = os.path.join(OUT, "THE_GLASS_stills_animatic_v008b.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", silent, "-i", MIX, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final], check=True)
 print(f"video {total:.1f} s; WROTE {final}")
