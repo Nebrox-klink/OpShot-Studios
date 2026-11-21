@@ -1,7 +1,7 @@
 # Shot stills v001 (script v008)
 
 **Model:** Higgsfield `nano_banana_2_1`, 2k, 16:9. The approved style references (`../style_refs_v001`) were passed as image references for consistency.
-**Count:** 63 final stills (`final_jpg/S<scene>_<shot>.jpg`). **Cost:** 134 credits (67 generations at 2 credits each, including 3 redos and the 2 extra stills for the chairs shot).
+**Count:** 63 final stills (`final_jpg/S<scene>_<shot>.jpg`, numbered as in script v008; the chairs shot 7.3 has three stills, S07_31 to S07_33). **Cost:** 134 credits (67 generations at 2 credits each, including 3 redos and the 2 extra stills for the chairs shot).
 **Masters:** the full-resolution PNGs are not in git (465 MB). Every one can be re-downloaded from the Higgsfield history using the job IDs in `jobs.tsv`. `final_map.tsv` shows which generation became each final still.
 
 **Not made, on purpose:**
