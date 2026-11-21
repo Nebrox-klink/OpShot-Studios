@@ -435,5 +435,5 @@ Times are approximate. The total runs 13:00. ★ marks scenes that reuse the fou
 
 ## 5 · Fit with existing work (for later, after approval)
 - The four existing Blender 3D sequences fit Scenes 7, 11, 14 and 18 without changes to their camera paths.
-- The narration is about 1,550 words, roughly 8,900 characters. With Verdict at about 15–17 characters per second, that's about 9–10 minutes of speech, leaving room for the silences the template asks for (Scenes 1, 11, 14, 15 and 20).
-- Voice generation with ElevenLabs would cost about 8,900 credits, but only after approval.
+- The narration is about 1,060 words, roughly 6,000 characters. With Verdict at about 15–17 characters per second, that's about 6–7 minutes of speech across the 13:00. That is less than v005 (about 8,600 characters), which you felt had too little talking. It can be expanded to about 8,500 characters if you want, mainly in Scenes 3–8 and 16–19.
+- Voice generation with ElevenLabs would cost about 6,000–8,500 credits, but only after approval.
