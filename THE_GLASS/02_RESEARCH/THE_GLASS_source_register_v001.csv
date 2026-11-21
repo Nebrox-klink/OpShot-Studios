@@ -1,0 +1,15 @@
+source_id,title,url,reliability
+R01,Wikipedia (no): NOKAS-ranet,https://no.wikipedia.org/wiki/NOKAS-ranet,"Tertiary; timeline appears drawn from court evidence and VG/Aftenbladet. Good index, verify key items."
+R02,Wikipedia (en): NOKAS robbery,https://en.wikipedia.org/wiki/NOKAS_robbery,Tertiary; partly a translation of R01.
+R03,NRK XL: Nokas-ranet del 1 (Ellingsen),https://www.nrk.no/rogaland/xl/nokas-ranet_-del-1_-bakmannen-william-ellingsen-ble-drept-for-han-fikk-delta-pa-ranet-i-stavanger-1.16737472,"Strong secondary: NRK long-read built on participant interviews (Schumann on record; others anonymous), documents and judgments."
+R04,NRK XL: Nokas-ranet del 2 (the robbery),https://www.nrk.no/rogaland/xl/nokas-ranet_-del-2_-ranerne-fikk-med-seg-57-millioner-kroner.-en-politimann-ble-drept.-1.16737475,"Strong secondary: as R03; includes Schumann, officer Erik Håland and Kjetil Klungland on record, and police photos."
+R05,NRK XL: Nokas-ranet del 3 (the hunt),https://www.nrk.no/rogaland/xl/nokas-ranet_-del-3_-slik-tok-politiet-ranerne.-brukte-helt-nye-metoder-for-a-fakke-david-toska.-1.16737478,Strong secondary: police surveillance officers (first names only) on record.
+R06,NRK XL: Nokas-ranet del 4 (victims of the robbery wave),https://www.nrk.no/rogaland/nokas-ranet_-del-4_-roy-torsoe-ble-truet-pa-livet.-den-brutale-ransbolgen-etterlot-seg-flere-offer.-1.16737509,Strong secondary.
+R07,Klikk.no: Nokas ble ranet på tredje forsøk,https://www.klikk.no/historie/nokas-ble-ranet-pa-tredje-forsok-3164347,"Popular-history summary of the book Dødsranet (Aass & Widerøe, Gyldendal 2009), which rests on hundreds of interviews incl. over half the robbers and Toska's 40-page forensic-psychiatric report. Get the book to confirm."
+R08,Stavanger Aftenblad: Dette er Nokas-saken,https://www.aftenbladet.no/lokalt/i/4rb76/dette-er-nokas-saken,"Strong: local newspaper of record, case chronology."
+R09,Aftenposten: Sterk kritikk av politiet i Stavanger (SEFO),https://www.aftenposten.no/norge/i/pQwxj/sterk-kritikk-av-politiet-i-stavanger,Strong: reports the official SEFO conclusion.
+R10,Wikipedia (no): Arne Sigve Klungland,https://no.wikipedia.org/wiki/Arne_Sigve_Klungland,"Tertiary; mainly sourced to the biography 'Jeg går først' (Frode Sandal, 2005) and Dødsranet."
+R11,NRK: Psykiske seinskadar etter Nokas-ran (2014),https://www.nrk.no/rogaland/psykiske-seinskadar-etter-nokas-ran-1.11648535,Strong: reports Finansforbundet's study of NOKAS staff.
+R12,NRK: Kronologi Nokas-ranet (CCTV-timed),https://www.nrk.no/rogaland/kronologi-nokas-ranet-1.1840143,Strong: second-precise times consistent with police CCTV evidence; identical text in Fædrelandsvennen's chronology.
+R13,Store norske leksikon: NOKAS-ranet,https://snl.no/NOKAS-ranet,Established reference work.
+R14,Lovdata index: HR-2007-1184-A (Rt-2007-1056),https://lovdata.no/dokument/HRSTR/avgjorelse/hr-2007-1184-a,"PRIMARY, but full text needs a Lovdata Pro subscription. Not read."
