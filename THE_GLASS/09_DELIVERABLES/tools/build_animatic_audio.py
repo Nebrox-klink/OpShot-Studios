@@ -64,8 +64,21 @@ for line in open(src, encoding="utf-8"):
         else:
             cur["items"].append(("say", re.sub(r"\s*`[^`]*`", "", body).strip()))
 
-k = Kokoro(os.path.join(models, "kokoro-v1.0.onnx"), os.path.join(models, "voices-v1.0.bin"))
-SR = 24000
+ATLAS = voice.startswith("atlas:")  # voice "atlas:DIR" = use pre-generated per-scene chunks (S01.mp3, S17a.mp3 ...)
+if ATLAS:
+    chunk_dir = voice[6:]
+    SR = 44100
+else:
+    k = Kokoro(os.path.join(models, "kokoro-v1.0.onnx"), os.path.join(models, "voices-v1.0.bin"))
+    SR = 24000
+
+
+def load(path):
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", path, "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"],
+                         check=True, capture_output=True).stdout
+    return np.frombuffer(raw, dtype=np.float32)
+
+
 lang = "en-us" if voice.startswith("a") else "en-gb"
 track, report, t = [], [], 0.0
 sil = lambda s: np.zeros(int(round(s * SR)), dtype=np.float32)
@@ -77,7 +90,14 @@ timeline = []
 for s in scenes:
     slot = s["end"] - s["start"]
     parts = [sil(LEAD)]
-    for kind, val in s["items"]:
+    if ATLAS:
+        one = os.path.join(chunk_dir, f"S{s['n']:02d}.mp3")
+        if os.path.isfile(one):
+            parts += [load(one)]
+        else:  # split around the white silence
+            parts += [load(os.path.join(chunk_dir, f"S{s['n']:02d}a.mp3")), sil(6.0),
+                      load(os.path.join(chunk_dir, f"S{s['n']:02d}b.mp3"))]
+    for kind, val in ([] if ATLAS else s["items"]):
         if kind == "pause":
             parts.append(sil(val))
             continue
@@ -98,7 +118,7 @@ for s in scenes:
 audio = np.concatenate(track)
 peak = float(np.max(np.abs(audio))) or 1.0
 audio = audio / peak * 0.89
-wav = os.path.join(out, "narration_placeholder.wav")
+wav = os.path.join(out, "narration_atlas.wav" if ATLAS else "narration_placeholder.wav")
 sf.write(wav, audio, SR)
 
 # Slates.
@@ -124,7 +144,7 @@ def slate(path, head, sub, lines, foot=""):
     if foot:
         for i, w in enumerate(textwrap.wrap(foot, 110)[:2]):
             d.text((80, H - 90 + i * 24), w, font=ft, fill=(110, 110, 120))
-    d.text((W - 360, H - 40), "AUDIO ANIMATIC · placeholder voice", font=ft, fill=(90, 90, 100))
+    d.text((W - 360, H - 40), ("AUDIO ANIMATIC · Atlas narration" if ATLAS else "AUDIO ANIMATIC · placeholder voice"), font=ft, fill=(90, 90, 100))
     im.save(path)
 
 
@@ -140,7 +160,7 @@ with open(lst, "w") as fh:
         slate(p, f"{s['n']} · {s['title']}", f"{s['act']}  ·  {mm}:{ss:02d}", s["shots"], "SOUND: " + s["sound"])
         fh.write(f"file '{p}'\nduration {length:.3f}\n")
     fh.write(f"file '{p}'\n")
-mp4 = os.path.join(out, "THE_GLASS_animatic_audio_v008.mp4")
+mp4 = os.path.join(out, "THE_GLASS_animatic_atlas_v008.mp4" if ATLAS else "THE_GLASS_animatic_audio_v008.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", lst, "-i", wav,
                 "-vf", "fps=6,format=yuv420p", "-c:v", "libx264", "-tune", "stillimage", "-crf", "28",
                 "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", mp4], check=True)
