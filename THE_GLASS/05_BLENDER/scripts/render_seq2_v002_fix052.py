@@ -1,11 +1,12 @@
 """Re-render SH-052 frames 106-240 of 3D 2 v002 and rebuild the 30 s reference video.
 
-Why: in the first laptop render the PC slept for ~4 h at frame 106; after waking, Blender kept
-rendering but the camera dolly-back stopped updating, so frames 106-240 stayed in close-up.
-The bad frames are moved (not deleted) to renders/SEQ2_v002/SH-052_bad_after_sleep/.
+Why: Blender 5.3 EEVEE renders SH-052 frozen from about frame 110 (every frame pixel-identical,
+so the glass sag, hole and glove never appear). Blender 5.0.1 renders the same .blend correctly,
+so run this with a portable Blender 5.0.1 (see SEQ2_V002_FIX.md).
+Existing frames 106-240 are moved (not deleted) to renders/SEQ2_v002/SH-052_bad_<timestamp>/.
 This process asks Windows to stay awake while it runs (released automatically when it exits).
 
-  & "C:\\Program Files\\Blender Foundation\\Blender 5.3\\blender.exe" -b -P THE_GLASS\\05_BLENDER\\scripts\\render_seq2_v002_fix052.py
+  & "$HOME\\Documents\\blender-5.0.1-windows-x64\\blender.exe" -b -P THE_GLASS\\05_BLENDER\\scripts\\render_seq2_v002_fix052.py
 """
 import ctypes
 import os
@@ -29,11 +30,11 @@ except Exception:
 
 t0 = time.time()
 d = os.path.join(FRAMES, "SH-052")
-bad = os.path.join(FRAMES, "SH-052_bad_after_sleep")
+bad = os.path.join(FRAMES, "SH-052_bad_" + time.strftime("%Y%m%d_%H%M%S"))
 os.makedirs(bad, exist_ok=True)
 for f in range(FIRST, LAST + 1):
     src = os.path.join(d, f"f_{f:04d}.png")
-    if os.path.isfile(src) and not os.path.isfile(os.path.join(bad, os.path.basename(src))):
+    if os.path.isfile(src):
         shutil.move(src, bad)
 
 bpy.ops.wm.open_mainfile(filepath=os.path.join(SEQ, "SH-052_v002.blend"))
