@@ -24,8 +24,8 @@ speed = float(sys.argv[5]) if len(sys.argv) > 5 else 0.9
 os.makedirs(os.path.join(out, "slates"), exist_ok=True)
 
 # Placeholder pronunciation respellings (see the script's pronunciation guide).
-SAY = [("Arne Sigve Klungland", "Arneh Sigveh Kloonglan"), ("Klungland", "Kloonglan"),
-       ("Kjell Alrich Schumann", "Shell Ahlrick Shoomahn"), ("Schumann", "Shoomahn"), ("Håland", "Hawlan"),
+SAY = [("Arne Sigve Klungland", "Arneh Sigveh Kloongland"), ("Klungland", "Kloongland"),
+       ("Kjell Alrich Schumann", "Shell Ahlrick Shooman"), ("Schumann", "Shooman"), ("Håland", "Hawlan"),
        ("Sørmarka", "Surmarka"), ("Nedre Dalgate", "Nehdreh Dahlgahteh"), ("NOKAS", "Nookahs"),
        ("Stavanger", "Stavahnger"), ("Sandnes", "Sahnness"), ("Toska", "Toskah")]
 GAP, LEAD, CARD = 0.45, 1.0, 4.0

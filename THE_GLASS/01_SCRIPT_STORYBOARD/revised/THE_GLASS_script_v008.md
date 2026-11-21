@@ -489,9 +489,9 @@ Spellings are English-reader respellings. **Verify each with a native Norwegian 
 |---|---|---|
 | Stavanger | stah-VAHNG-er | Stah-vahng-er |
 | NOKAS | NOO-kahs | Noo-kahs |
-| Arne Sigve Klungland | AHR-neh SIG-veh KLOONG-lahn | Arneh Sigveh Kloong-lahn |
+| Arne Sigve Klungland | AHR-neh SIG-veh KLOONG-land **(producer-confirmed)** | Arneh Sigveh Kloongland |
 | David Toska | DAH-vid TOSS-kah | Toss-kah |
-| Kjell Alrich Schumann | SHELL AHL-rikh SHOO-mahn | Shell Ahl-rick Shoo-mahn |
+| Kjell Alrich Schumann | SHELL AHL-rikh SHOO-man **(producer-confirmed)** | Shell Ahl-rick Shooman |
 | William Ellingsen | WIL-yam EL-ing-sen | — |
 | Erik Håland | EH-rik HAW-lahn | Ehrik Haw-lahn |
 | Steffen Thesen | STEF-en TEH-sen | Teh-sen |
