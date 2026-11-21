@@ -74,7 +74,7 @@ PLAN = {
     6: [(S("S06_01"), None)],
     7: [(S("S07_01"), 11.0), (S("S07_02"), 12.0), (S("S07_31"), 6.0), (S("S07_32"), 6.0), (S("S07_33"), 6.0), (S("S07_04"), None)],
     8: [(S("S08_01"), None), (S("S08_02"), None), (S("S08_03"), None)],
-    9: [(S("S09_01"), None), (S("S09_02"), None), (S("S09_03"), None), (PORTRAIT, None), (S("S09_05"), None)],
+    9: [(S("S09_01"), None), (S("S09_02"), None), (S("S09_03"), None), (S("S09_04"), None, "Arne Sigve Klungland"), (S("S09_05"), None)],
     10: [(S("S10_01"), None), (S("S10_02"), None), (S("S10_03"), None), (S("S10_04"), None)],
     11: [(S("S11_01"), 15.0, "Erik Håland, to NRK (2024)"), (S("S10_02"), None)],
     12: [(S("S12_01"), 6.5), (S("S12_02"), None)],
@@ -84,7 +84,7 @@ PLAN = {
     16: [(S("S16_01"), 14.0), (S("S16_02"), 12.0), (S("S16_03"), None, "as recounted to NRK (2024)")],
     17: [(S("S17_01"), 8.0), (S("S17_02"), "SIL"), (card("", False, "white"), 6.0), (S("S17_04"), None)],
     18: [(S("S18_01"), None), (S("S18_02"), None), (S("S18_03"), None), (S("S18_04"), None)],
-    19: [(S("S19_01"), None), (S("S19_02"), None), (PORTRAIT, None)],
+    19: [(S("S19_01"), None), (S("S19_02"), None), (S("S19_03"), None, "CAPTION:In memory of Arne Sigve Klungland  ·  1950 – 2004")],
     20: [(S("S20_01"), None), (S("S20_02"), None), (S("S14_02"), None)],
     21: [(S("S21_01"), None), (S("S21_02"), None), (card("Oslo  ·  Madrid  ·  Málaga"), 4.0)],
     22: [(card("5 April 2005"), 3.0), (S("S22_02"), None), (S("S22_03"), None), (S("S22_04"), None)],
@@ -139,6 +139,10 @@ def render(item, secs, extra, move):
         n = int(extra[5:])
         vf += (f",drawtext=fontfile={FONTB}:text='%{{eif\\:min({n}\\,floor(t*{n}/{secs - 1:.2f}))\\:d}}':"
                f"fontsize=46:fontcolor=white@0.85:x=w-text_w-40:y=36")
+    elif extra and extra.startswith("CAPTION:"):
+        txt = extra[8:]
+        vf += (f",drawtext=fontfile={FONTB}:text='{txt}':fontsize=34:fontcolor=white:box=1:boxcolor=black@0.45:"
+               f"boxborderw=16:x=(w-text_w)/2:y=h-110:alpha='min(1,t/1.5)'")
     elif extra == "FADEOUT":
         vf += f",fade=t=out:st={max(0, secs - 2.5):.2f}:d=2.5"
     elif extra:

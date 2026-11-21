@@ -28,3 +28,7 @@
 | 23.1 | The hall looks like an old church hall. |
 
 Everything is regenerable with `make_shot_prompts.py` (prompts) and `next.py` (queue).
+
+**Klungland shots (9.4 and 19.3), replaced at the producer's request:** instead of a portrait, each uses an anonymous officer in a 2004 Norwegian uniform, seen from behind with no face and no likeness. Captions are added in the edit:
+- **9.4:** the officer beside a patrol car, with the lower-third "Arne Sigve Klungland".
+- **19.3:** the officer walking away alone, with the caption "In memory of Arne Sigve Klungland · 1950 – 2004".
