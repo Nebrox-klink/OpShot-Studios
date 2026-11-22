@@ -21,7 +21,8 @@ SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 SFX = os.path.join(ROOT, "07_AUDIO/sfx_v008")
 MUS = os.path.join(ROOT, "07_AUDIO/music_v008")
-OUTDIR = os.path.join(ROOT, "07_AUDIO/mix_v008b")
+VER = os.environ.get("MIXVER", "v008d")  # v008d: the tail after "He was fifty-three" (scene 17) halved like other scenes
+OUTDIR = os.path.join(ROOT, f"07_AUDIO/mix_{VER}")
 
 
 def load(path):
@@ -70,7 +71,7 @@ for n in sorted(slots):
         chunks = [(LEAD, a), (LEAD + len(a) / SR + 6.0, b)]
         used = LEAD + len(a) / SR + 6.0 + len(b) / SR
     # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
-    length = slots[n] if n in (1, 13, 17, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
+    length = slots[n] if n in (1, 13, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
     starts[n], lengths[n] = t, length
     for off, au in chunks:
         narr_parts.append((t + off, au))
@@ -227,7 +228,7 @@ mix = mix[:int(TOTAL * SR)]
 os.makedirs(OUTDIR, exist_ok=True)
 raw = os.path.join(OUTDIR, "mix_raw.wav")
 sf.write(raw, mix, SR, subtype="FLOAT")
-wav = os.path.join(OUTDIR, "THE_GLASS_mix_v008b.wav")
+wav = os.path.join(OUTDIR, f"THE_GLASS_mix_{VER}_prelimit.wav")
 subprocess.run(["ffmpeg", "-nostdin", "-y", "-v", "error", "-i", raw, "-af", "loudnorm=I=-16:TP=-1.5:LRA=14",
                 "-ar", str(SR), wav], check=True)
 os.remove(raw)

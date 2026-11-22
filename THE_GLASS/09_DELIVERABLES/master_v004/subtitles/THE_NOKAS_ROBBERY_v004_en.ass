@@ -1,0 +1,203 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Netflix,Inter Medium,50,&H00FFFFFF,&H00FFFFFF,&H00101010,&H8C000000,0,0,0,0,100,100,0,0,1,1.6,2.2,2,160,160,72,1
+Style: Raised,Inter Medium,50,&H00FFFFFF,&H00FFFFFF,&H00101010,&H8C000000,0,0,0,0,100,100,0,0,1,1.6,2.2,2,160,160,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:05.00,0:00:08.25,Netflix,,0,0,0,,Two minutes past eight,\Non a Monday morning.
+Dialogue: 0,0:00:08.33,0:00:10.95,Netflix,,0,0,0,,A man swings a sledgehammer at a window.
+Dialogue: 0,0:00:11.04,0:00:12.33,Netflix,,0,0,0,,It bounces.
+Dialogue: 0,0:00:12.42,0:00:14.87,Netflix,,0,0,0,,Another man charges it\Nwith a battering ram.
+Dialogue: 0,0:00:14.95,0:00:17.11,Netflix,,0,0,0,,Seventy kilos.
+Dialogue: 0,0:00:17.19,0:00:18.91,Netflix,,0,0,0,,Nothing.
+Dialogue: 0,0:00:18.99,0:00:22.63,Netflix,,0,0,0,,The man who planned this had said\Nthe glass would break like a cracker.
+Dialogue: 0,0:00:22.72,0:00:25.60,Netflix,,0,0,0,,He had reportedly\Ngiven it fifteen seconds.
+Dialogue: 0,0:00:45.00,0:00:47.58,Netflix,,0,0,0,,Stavanger. Norway's oil city.
+Dialogue: 0,0:00:47.67,0:00:51.44,Netflix,,0,0,0,,Behind the old cathedral square,\Nbelow street level,
+Dialogue: 0,0:00:51.52,0:00:53.94,Netflix,,0,0,0,,was a room\Nwhere the region's cash was counted.
+Dialogue: 0,0:00:54.02,0:00:58.02,Netflix,,0,0,0,,In two thousand and four,\Nthe company that ran it,
+Dialogue: 0,0:00:58.10,0:01:01.20,Netflix,,0,0,0,,NOKAS, was about to move\Nsomewhere far more secure.
+Dialogue: 0,0:01:01.28,0:01:04.58,Netflix,,0,0,0,,For one man, that meant now, or never.
+Dialogue: 0,0:01:10.17,0:01:11.91,Netflix,,0,0,0,,His name was David Toska.
+Dialogue: 0,0:01:11.99,0:01:14.91,Netflix,,0,0,0,,In two thousand and three,\Nhe moved to Sandnes,
+Dialogue: 0,0:01:14.99,0:01:19.05,Netflix,,0,0,0,,just south of the city,\Nwith his partner and their newborn son.
+Dialogue: 0,0:01:19.13,0:01:22.29,Netflix,,0,0,0,,As a teenager,\Nhe had been a talented chess player.
+Dialogue: 0,0:01:22.37,0:01:24.10,Netflix,,0,0,0,,He thought in moves.
+Dialogue: 0,0:01:24.19,0:01:26.61,Netflix,,0,0,0,,And every board needs a way in.
+Dialogue: 0,0:01:31.26,0:01:33.65,Netflix,,0,0,0,,The way in came\Nfrom a young security guard.
+Dialogue: 0,0:01:33.73,0:01:35.17,Netflix,,0,0,0,,Twenty-six years old.
+Dialogue: 0,0:01:35.25,0:01:37.44,Netflix,,0,0,0,,He met Toska several times.
+Dialogue: 0,0:01:37.53,0:01:39.15,Netflix,,0,0,0,,He described the courtyard.
+Dialogue: 0,0:01:39.23,0:01:40.47,Netflix,,0,0,0,,He drew the rooms.
+Dialogue: 0,0:01:40.55,0:01:42.76,Netflix,,0,0,0,,And he talked about a window.
+Dialogue: 0,0:01:42.85,0:01:44.75,Netflix,,0,0,0,,The glass into the basement.
+Dialogue: 0,0:01:44.83,0:01:46.98,Netflix,,0,0,0,,He says he thought it was a burglary.
+Dialogue: 0,0:01:47.07,0:01:48.68,Netflix,,0,0,0,,He got three years.
+Dialogue: 0,0:01:50.34,0:01:52.36,Netflix,,0,0,0,,From a small atrium in that courtyard,
+Dialogue: 0,0:01:52.44,0:01:55.36,Netflix,,0,0,0,,you could see straight\Ninto the counting room.
+Dialogue: 0,0:01:55.45,0:01:58.23,Netflix,,0,0,0,,One of the robbers later described it.
+Dialogue: 0,0:01:58.31,0:02:00.70,Netflix,,0,0,0,,"You see the vaults being opened at eight.
+Dialogue: 0,0:02:00.78,0:02:02.59,Raised,,0,0,0,,You see pallets of money,
+Dialogue: 0,0:02:02.68,0:02:05.05,Raised,,0,0,0,,and you know there are\Nhundreds of millions
+Dialogue: 0,0:02:05.13,0:02:07.59,Raised,,0,0,0,,there." Between him and the money,
+Dialogue: 0,0:02:07.68,0:02:09.66,Raised,,0,0,0,,there was one pane of glass.
+Dialogue: 0,0:02:15.38,0:02:17.91,Netflix,,0,0,0,,Monday, the second of February.
+Dialogue: 0,0:02:18.00,0:02:21.77,Netflix,,0,0,0,,Toska lay in that courtyard,\Nfreezing, waiting.
+Dialogue: 0,0:02:21.86,0:02:24.64,Netflix,,0,0,0,,And the robbery was called off.
+Dialogue: 0,0:02:24.73,0:02:26.40,Netflix,,0,0,0,,Why depends on who you ask.
+Dialogue: 0,0:02:26.48,0:02:29.39,Netflix,,0,0,0,,One account says he saw\Nthe money being moved out.
+Dialogue: 0,0:02:29.47,0:02:32.05,Netflix,,0,0,0,,Another says the radios failed.
+Dialogue: 0,0:02:32.13,0:02:34.86,Netflix,,0,0,0,,Four days later, everything changed.
+Dialogue: 0,0:02:36.11,0:02:40.08,Netflix,,0,0,0,,On the sixth of February, in Oslo,\NToska's best friend was shot dead.
+Dialogue: 0,0:02:40.17,0:02:42.50,Netflix,,0,0,0,,His name was William Ellingsen.
+Dialogue: 0,0:02:42.59,0:02:43.92,Netflix,,0,0,0,,He was twenty-nine.
+Dialogue: 0,0:02:44.01,0:02:47.11,Netflix,,0,0,0,,And he had helped plan the robbery.
+Dialogue: 0,0:02:47.20,0:02:49.53,Netflix,,0,0,0,,A stray bullet, through a door.
+Dialogue: 0,0:02:49.61,0:02:51.90,Netflix,,0,0,0,,He was not the target.
+Dialogue: 0,0:02:51.98,0:02:55.57,Netflix,,0,0,0,,At the funeral, Toska gave the eulogy.
+Dialogue: 0,0:02:55.65,0:02:57.81,Netflix,,0,0,0,,Afterwards, the plan changed.
+Dialogue: 0,0:02:57.89,0:03:00.19,Netflix,,0,0,0,,It had to be spectacular, he decided.
+Dialogue: 0,0:03:00.28,0:03:02.23,Netflix,,0,0,0,,Massive. More men.
+Dialogue: 0,0:03:02.31,0:03:06.42,Netflix,,0,0,0,,One of them later said William's death led\Nto irrational planning.
+Dialogue: 0,0:03:06.50,0:03:11.43,Netflix,,0,0,0,,He wanted the robbery\Nto be a monument to his friend.
+Dialogue: 0,0:03:11.51,0:03:13.83,Netflix,,0,0,0,,It would become a monument.
+Dialogue: 0,0:03:13.91,0:03:15.45,Netflix,,0,0,0,,Just not to William.
+Dialogue: 0,0:03:23.80,0:03:27.83,Netflix,,0,0,0,,They rehearsed the escape,\Non footpaths and unfinished cycle paths.
+Dialogue: 0,0:03:27.91,0:03:30.43,Netflix,,0,0,0,,They gathered mattresses,\Nbedding and towels,
+Dialogue: 0,0:03:30.51,0:03:32.58,Netflix,,0,0,0,,to soak in fuel and burn inside a truck.
+Dialogue: 0,0:03:32.67,0:03:35.78,Netflix,,0,0,0,,Fire would take care of the evidence.
+Dialogue: 0,0:03:35.86,0:03:38.85,Netflix,,0,0,0,,Monday, the fifteenth of March.
+Dialogue: 0,0:03:38.93,0:03:40.31,Netflix,,0,0,0,,A second attempt.
+Dialogue: 0,0:03:40.39,0:03:41.89,Netflix,,0,0,0,,A red alarm light.
+Dialogue: 0,0:03:41.97,0:03:43.48,Netflix,,0,0,0,,A guard.
+Dialogue: 0,0:03:43.57,0:03:44.90,Netflix,,0,0,0,,Called off again.
+Dialogue: 0,0:03:49.72,0:03:51.13,Netflix,,0,0,0,,They chose a third date.
+Dialogue: 0,0:03:51.21,0:03:53.43,Netflix,,0,0,0,,Monday, the fifth of April.
+Dialogue: 0,0:03:53.51,0:03:55.08,Netflix,,0,0,0,,Easter week.
+Dialogue: 0,0:03:55.17,0:03:57.98,Netflix,,0,0,0,,Many police officers on holiday.
+Dialogue: 0,0:03:58.07,0:04:00.21,Netflix,,0,0,0,,But the police had heard something.
+Dialogue: 0,0:04:00.29,0:04:02.47,Netflix,,0,0,0,,Warnings. A working group.
+Dialogue: 0,0:04:02.55,0:04:05.42,Netflix,,0,0,0,,A thirteen-page intelligence document.
+Dialogue: 0,0:04:05.50,0:04:07.20,Netflix,,0,0,0,,On Friday, the second of April,
+Dialogue: 0,0:04:07.29,0:04:10.54,Netflix,,0,0,0,,revolvers went into three\Npatrol cars instead of two.
+Dialogue: 0,0:04:10.62,0:04:13.39,Netflix,,0,0,0,,The warning did not reach\Neveryone it should have.
+Dialogue: 0,0:04:13.47,0:04:16.92,Netflix,,0,0,0,,An official inquiry later\Ncalled it a system failure.
+Dialogue: 0,0:04:17.01,0:04:21.03,Raised,,0,0,0,,One of the men who did read it\Nwas Arne Sigve Klungland.
+Dialogue: 0,0:04:21.11,0:04:22.69,Raised,,0,0,0,,Fifty-three.
+Dialogue: 0,0:04:22.77,0:04:24.83,Raised,,0,0,0,,Thirty years in the police.
+Dialogue: 0,0:04:24.92,0:04:27.03,Raised,,0,0,0,,Dog handler. Rescue leader.
+Dialogue: 0,0:04:27.11,0:04:29.24,Netflix,,0,0,0,,He trained police students.
+Dialogue: 0,0:04:29.32,0:04:33.13,Netflix,,0,0,0,,And on church trips, he was the one\Nwho drove the pensioners' bus.
+Dialogue: 0,0:04:36.80,0:04:38.99,Netflix,,0,0,0,,Half past three in the morning.
+Dialogue: 0,0:04:39.07,0:04:42.76,Netflix,,0,0,0,,A van collected them from Toska's\Ntownhouse and drove them to the woods.
+Dialogue: 0,0:04:42.85,0:04:46.75,Netflix,,0,0,0,,Before they left, they taped\Nwhite bands onto their overalls.
+Dialogue: 0,0:04:46.84,0:04:48.24,Netflix,,0,0,0,,Mourning bands.
+Dialogue: 0,0:04:48.33,0:04:50.10,Netflix,,0,0,0,,For William.
+Dialogue: 0,0:04:50.19,0:04:51.49,Netflix,,0,0,0,,No battle cry.
+Dialogue: 0,0:04:51.57,0:04:52.93,Netflix,,0,0,0,,Just silence.
+Dialogue: 0,0:05:00.24,0:05:02.59,Raised,,0,0,0,,That morning, at the police briefing,
+Dialogue: 0,0:05:02.67,0:05:06.10,Raised,,0,0,0,,it was Klungland who passed\Nthe warning on to the patrols.
+Dialogue: 0,0:05:06.19,0:05:09.38,Raised,,0,0,0,,One of the officers,\NErik Håland, said later:
+Dialogue: 0,0:05:09.46,0:05:13.63,Raised,,0,0,0,,"That's when I understood\Nthis was serious." Two rooms,
+Dialogue: 0,0:05:13.71,0:05:16.30,Raised,,0,0,0,,getting ready for the same morning.
+Dialogue: 0,0:05:21.14,0:05:22.40,Netflix,,0,0,0,,Seven-forty.
+Dialogue: 0,0:05:22.48,0:05:25.95,Netflix,,0,0,0,,Security cameras show eleven men,\Ndressed and armed.
+Dialogue: 0,0:05:26.03,0:05:27.66,Netflix,,0,0,0,,Eight o'clock.
+Dialogue: 0,0:05:27.75,0:05:32.06,Netflix,,0,0,0,,A white truck is driven into the police\Nstation's driveway and set alight.
+Dialogue: 0,0:05:32.15,0:05:34.06,Netflix,,0,0,0,,Tear gas at the entrance.
+Dialogue: 0,0:05:35.48,0:05:37.99,Netflix,,0,0,0,,Two minutes,\Nfifty-eight seconds past eight.
+Dialogue: 0,0:05:38.08,0:05:40.68,Netflix,,0,0,0,,The police register the alarm.
+Dialogue: 0,0:05:40.77,0:05:43.19,Netflix,,0,0,0,,Toska fired at the glass himself.
+Dialogue: 0,0:05:43.28,0:05:44.94,Netflix,,0,0,0,,Then he fetched Schumann,
+Dialogue: 0,0:05:45.02,0:05:50.15,Netflix,,0,0,0,,who emptied magazine after magazine\Nalong the edge of the window.
+Dialogue: 0,0:05:50.24,0:05:52.89,Netflix,,0,0,0,,One hundred and thirteen shots.
+Dialogue: 0,0:06:10.48,0:06:14.59,Netflix,,0,0,0,,Below them, three women who worked there\Npushed two trolleys into the lift.
+Dialogue: 0,0:06:14.67,0:06:17.93,Netflix,,0,0,0,,On the trolleys: sixty million kroner.
+Dialogue: 0,0:06:18.01,0:06:21.25,Netflix,,0,0,0,,As the doors closed,\Nthey could hear the gunfire.
+Dialogue: 0,0:06:21.34,0:06:25.07,Netflix,,0,0,0,,Upstairs, the window finally gave way.
+Dialogue: 0,0:06:25.15,0:06:26.18,Netflix,,0,0,0,,They were in.
+Dialogue: 0,0:06:26.26,0:06:28.37,Netflix,,0,0,0,,It was eight minutes past eight.
+Dialogue: 0,0:06:28.45,0:06:30.73,Netflix,,0,0,0,,Six minutes behind the plan.
+Dialogue: 0,0:06:30.81,0:06:35.22,Netflix,,0,0,0,,And outside, the first police car had just\Nturned onto the cathedral square.
+Dialogue: 0,0:06:40.86,0:06:44.81,Netflix,,0,0,0,,They had brought fifteen bags,\Nfor three or four hundred million kroner.
+Dialogue: 0,0:06:44.89,0:06:48.52,Netflix,,0,0,0,,What they found was mostly\Nblue two-hundred-kroner notes.
+Dialogue: 0,0:06:48.60,0:06:51.92,Netflix,,0,0,0,,There was a barred gate to the main vault.
+Dialogue: 0,0:06:52.00,0:06:53.45,Netflix,,0,0,0,,They hit it with the ram.
+Dialogue: 0,0:06:53.53,0:06:55.33,Netflix,,0,0,0,,It didn't move.
+Dialogue: 0,0:06:55.42,0:06:58.75,Netflix,,0,0,0,,Toska ran from room to room\Nwith a watch in his hand.
+Dialogue: 0,0:06:58.83,0:07:00.75,Netflix,,0,0,0,,The plan said eight minutes.
+Dialogue: 0,0:07:00.84,0:07:03.16,Netflix,,0,0,0,,It was going to take nearly twenty.
+Dialogue: 0,0:07:07.39,0:07:11.14,Netflix,,0,0,0,,Outside, officer Erik Håland\Nand his partner had revolvers.
+Dialogue: 0,0:07:11.22,0:07:14.27,Netflix,,0,0,0,,Twelve rounds each.\NAgainst them, military rifles.
+Dialogue: 0,0:07:14.35,0:07:19.08,Netflix,,0,0,0,,At a street corner, Schumann forced\Na plain-clothes officer to the ground.
+Dialogue: 0,0:07:19.16,0:07:22.78,Netflix,,0,0,0,,"Who are you?" And all around them,\Nthe city kept going.
+Dialogue: 0,0:07:22.86,0:07:26.27,Netflix,,0,0,0,,A bus. People on their way to work.
+Dialogue: 0,0:07:26.35,0:07:27.95,Netflix,,0,0,0,,Women pushing prams.
+Dialogue: 0,0:07:28.03,0:07:29.90,Netflix,,0,0,0,,Some thought it was an exercise.
+Dialogue: 0,0:07:29.98,0:07:31.99,Netflix,,0,0,0,,Fourteen minutes past eight.
+Dialogue: 0,0:07:32.07,0:07:33.74,Raised,,0,0,0,,Shooting across the square.
+Dialogue: 0,0:07:33.82,0:07:36.47,Raised,,0,0,0,,One of the robbers was hit in the leg.
+Dialogue: 0,0:07:42.30,0:07:43.47,Netflix,,0,0,0,,More police came.
+Dialogue: 0,0:07:43.56,0:07:45.91,Netflix,,0,0,0,,Among them, the command vehicle.
+Dialogue: 0,0:07:45.99,0:07:50.85,Netflix,,0,0,0,,In it, Arne Sigve Klungland,\Ndriving toward the shooting.
+Dialogue: 0,0:07:50.94,0:07:52.58,Netflix,,0,0,0,,Seventeen minutes past eight.
+Dialogue: 0,0:07:52.67,0:07:54.15,Netflix,,0,0,0,,He tried to reverse.
+Dialogue: 0,0:07:54.24,0:07:56.27,Netflix,,0,0,0,,There was a bus behind him.
+Dialogue: 0,0:08:02.02,0:08:04.02,Netflix,,0,0,0,,Arne Sigve Klungland was killed there.
+Dialogue: 0,0:08:04.11,0:08:06.24,Netflix,,0,0,0,,He was fifty-three.
+Dialogue: 0,0:08:19.65,0:08:24.03,Netflix,,0,0,0,,At twenty past eight, the last car\Nleft the square, still firing.
+Dialogue: 0,0:08:24.11,0:08:28.32,Netflix,,0,0,0,,In the woods at Sørmarka, they set\Nthe cars on fire and drove on in others.
+Dialogue: 0,0:08:28.40,0:08:31.40,Netflix,,0,0,0,,The fire was supposed to erase them.
+Dialogue: 0,0:08:31.48,0:08:32.54,Netflix,,0,0,0,,It didn't.
+Dialogue: 0,0:08:32.62,0:08:38.26,Netflix,,0,0,0,,The truck barely burned,\Nand the fire station was right next door.
+Dialogue: 0,0:08:38.34,0:08:42.05,Netflix,,0,0,0,,Later that day, six of them sat\Nin a flat on Nedre Dalgate,
+Dialogue: 0,0:08:42.14,0:08:44.79,Netflix,,0,0,0,,a few hundred metres from the square,\Nwith the money.
+Dialogue: 0,0:08:44.87,0:08:49.29,Netflix,,0,0,0,,On the television, they learned\Nthat a police officer was dead.
+Dialogue: 0,0:08:57.34,0:08:59.08,Netflix,,0,0,0,,On the fourteenth of April,
+Dialogue: 0,0:08:59.17,0:09:03.10,Netflix,,0,0,0,,about six hundred police officers came\Nto Stavanger Cathedral.
+Dialogue: 0,0:09:03.18,0:09:05.93,Netflix,,0,0,0,,A helicopter flew low over the city.
+Dialogue: 0,0:09:06.01,0:09:09.98,Netflix,,0,0,0,,Arne Sigve Klungland had been married\Nsince nineteen seventy-seven.
+Dialogue: 0,0:09:10.06,0:09:12.35,Raised,,0,0,0,,He left a wife and two children.
+Dialogue: 0,0:09:20.22,0:09:23.06,Netflix,,0,0,0,,In the counting room,\Nthe police found an earplug.
+Dialogue: 0,0:09:23.14,0:09:25.29,Netflix,,0,0,0,,Toska had lost it.
+Dialogue: 0,0:09:25.38,0:09:26.54,Netflix,,0,0,0,,Inside was his DNA.
+Dialogue: 0,0:09:26.62,0:09:30.20,Netflix,,0,0,0,,And the barred gate to the main vault,
+Dialogue: 0,0:09:30.28,0:09:34.04,Netflix,,0,0,0,,the one they had battered and\Ncould not break, had never been locked.
+Dialogue: 0,0:09:34.13,0:09:38.57,Netflix,,0,0,0,,They could have reached\Nin and lifted the handle.
+Dialogue: 0,0:09:38.65,0:09:41.14,Netflix,,0,0,0,,Downstairs,\Nthree women had saved sixty million.
+Dialogue: 0,0:09:41.22,0:09:43.38,Netflix,,0,0,0,,More than the robbers took.
+Dialogue: 0,0:09:49.68,0:09:54.55,Netflix,,0,0,0,,Toska ran. To a village in southern Spain,\Nwith his partner and their baby.
+Dialogue: 0,0:09:54.64,0:09:58.04,Netflix,,0,0,0,,In Oslo, a police data\Nspecialist they called
+Dialogue: 0,0:09:58.12,0:10:00.57,Netflix,,0,0,0,,the Sharp Knife watched\Nthe internet cafés.
+Dialogue: 0,0:10:00.65,0:10:04.99,Netflix,,0,0,0,,They found his email address:\Nomaha beach, at postmaster.
+Dialogue: 0,0:10:05.08,0:10:09.61,Netflix,,0,0,0,,In Madrid, Spanish police reached\Na café five minutes too late.
+Dialogue: 0,0:10:09.69,0:10:12.33,Netflix,,0,0,0,,One reporter later called it a chess game.
+Dialogue: 0,0:10:12.41,0:10:16.98,Netflix,,0,0,0,,The Sharp Knife, against the man\Nthe press called the Mastermind.
+Dialogue: 0,0:10:21.34,0:10:24.41,Netflix,,0,0,0,,The fifth of April, two thousand and five.
+Dialogue: 0,0:10:24.50,0:10:26.40,Netflix,,0,0,0,,One year to the day.
+Dialogue: 0,0:10:26.48,0:10:28.54,Netflix,,0,0,0,,At the request of the Norwegian police,
+Dialogue: 0,0:10:28.62,0:10:31.45,Netflix,,0,0,0,,his email provider slowed\Nlogins across Europe.
+Dialogue: 0,0:10:31.53,0:10:35.67,Netflix,,0,0,0,,Toska stayed online longer than usual,\Nreading news from home,
+Dialogue: 0,0:10:35.75,0:10:38.28,Netflix,,0,0,0,,about the memorial\Nfor Arne Sigve Klungland.
+Dialogue: 0,0:10:38.36,0:10:41.43,Netflix,,0,0,0,,In Stavanger, that memorial was under way.
+Dialogue: 0,0:10:41.51,0:10:44.49,Netflix,,0,0,0,,In Málaga, police walked into the café.
+Dialogue: 0,0:10:44.57,0:10:49.62,Netflix,,0,0,0,,In Stavanger, the news went through\Nthe gathering like a murmur.
+Dialogue: 0,0:10:53.35,0:10:55.49,Netflix,,0,0,0,,Thirteen men were convicted.
+Dialogue: 0,0:10:55.57,0:10:58.86,Netflix,,0,0,0,,Schumann admitted firing the shots\Nthat killed Klungland.
+Dialogue: 0,0:10:58.94,0:11:00.88,Netflix,,0,0,0,,He says it was a mistake.
+Dialogue: 0,0:11:00.96,0:11:03.57,Netflix,,0,0,0,,The court found it was an aimed shot.
+Dialogue: 0,0:11:03.65,0:11:06.43,Netflix,,0,0,0,,Toska was sentenced to eighteen years.
+Dialogue: 0,0:11:07.77,0:11:10.41,Netflix,,0,0,0,,About fifty-one million kroner\Nhas never been found.
+Dialogue: 0,0:11:10.49,0:11:11.98,Netflix,,0,0,0,,Ten years later,
+Dialogue: 0,0:11:12.06,0:11:16.30,Netflix,,0,0,0,,thirty-two people who worked at NOKAS\Nstill carried that morning with them.
+Dialogue: 0,0:11:16.39,0:11:19.37,Netflix,,0,0,0,,He had planned for the glass.
+Dialogue: 0,0:11:19.46,0:11:20.50,Netflix,,0,0,0,,The police.
+Dialogue: 0,0:11:20.58,0:11:26.38,Netflix,,0,0,0,,The city. But the one thing that could\Nnever be replaced… was never on his board.

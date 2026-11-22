@@ -28,7 +28,7 @@ CARD, LEAD = 4.0, 1.0
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
-MIX = os.path.join(ROOT, os.environ.get("MIX", "07_AUDIO/mix_v008c/THE_GLASS_mix_v008c.flac"))
+MIX = os.path.join(ROOT, os.environ.get("MIX", "07_AUDIO/mix_v008d/THE_GLASS_mix_v008d.flac"))
 MOTION_DIR = os.path.join(ROOT, "06_AI_VIDEO/motion_v001/clips")
 MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 7022, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
           "S12_02": 12022, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,
@@ -72,7 +72,7 @@ for n in sorted(slots):
         used = LEAD + a + 6.0 + dur(os.path.join(ATLAS, f"S{n:02d}b.mp3"))
         s17_sil = LEAD + a
     # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
-    length[n] = slots[n] if n in (1, 13, 17, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
+    length[n] = slots[n] if n in (1, 13, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
 
 
 def S(name):
@@ -88,7 +88,7 @@ PORTRAIT = card("[ Portrait of Arne Sigve Klungland ]\\nwaiting for the family's
 # Each scene: list of (item, seconds or None=share the rest equally, extras)
 PLAN = {
     1: [(card("Stavanger, Norway  ·  Monday 5 April 2004  ·  08:02"), 3.0), (S("S01_03"), 6.0), (S("S01_04"), 5.0),
-        (S("S01_02"), 10.0), (S("S01_05"), 3.6), (card(""), 2.9), (card("THE GLASS", True), None)],
+        (S("S01_02"), 10.0), (S("S01_05"), 3.6), (card(""), 2.9), (card(os.environ.get("FILM_TITLE", "THE NOKAS ROBBERY"), True), None)],
     2: [(S("S02_01"), None), (S("S02_03"), None)],
     3: [(S("S03_01"), None), (S("S03_02"), None)],
     4: [(S("S04_01"), None), (S("S04_02"), None)],
