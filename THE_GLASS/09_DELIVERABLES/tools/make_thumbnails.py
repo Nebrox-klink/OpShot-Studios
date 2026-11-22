@@ -34,7 +34,15 @@ DESIGNS = [
      [("HE STAYED", WHITE, 1.0), ("ONLINE", AMBER, 1.25), ("TOO LONG.", WHITE, 1.0)], "left", None),
     ("T6b_stayed_online_desk", "SH_2203.png", (0.3, 0.5), 1.2, "THE NOKAS ROBBERY",
      [("HE STAYED", WHITE, 1.0), ("ONLINE", AMBER, 1.25), ("TOO LONG.", WHITE, 1.0)], "left", None),
+    # v003: robbery-focused (the morning itself, not the arrest)
+    ("T7_11_men_1_window", "SH_1301.png", (0.2, 0.45), 1.4, "STAVANGER · 5 APRIL 2004",
+     [("11 MEN.", WHITE, 1.0), ("1 WINDOW.", AMBER, 1.0), ("113 SHOTS.", WHITE, 1.0)], "left", None),
+    ("T8_8_minutes", "SH_1503.png", (0.15, 0.5), 1.45, "THE NOKAS ROBBERY",
+     [("THE PLAN:", WHITE, 0.6), ("8 MINUTES.", AMBER, 1.0), ("IT TOOK NEARLY 20.", WHITE, 0.55)], "left", None),
+    ("T9_60_million_saved", "SH_1401.png", (0.25, 0.5), 1.25, "THE NOKAS ROBBERY",
+     [("3 WOMEN", WHITE, 1.0), ("SAVED", WHITE, 1.0), ("60 MILLION", AMBER, 1.0)], "left", None),
 ]
+FLIP = {"T9_60_million_saved"}  # mirrored so the trolleys sit clear of the text (image has no lettering)
 ONLY = set(sys.argv[3].split(",")) if len(sys.argv) > 3 else None  # optional: comma-separated design names
 
 
@@ -101,7 +109,10 @@ def text_block(im, kicker, lines, side, sub):
 for name, still, focus, zoom, kicker, lines, side, sub in DESIGNS:
     if ONLY and name not in ONLY:
         continue
-    im = shade(base(still, focus, zoom), side)
+    im = base(still, focus, zoom)
+    if name in FLIP:
+        im = im.transpose(Image.FLIP_LEFT_RIGHT)
+    im = shade(im, side)
     im = text_block(im, kicker, lines, side, sub)
     p = os.path.join(OUT, name + ".jpg")
     im.save(p, quality=90, optimize=True)
