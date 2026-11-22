@@ -21,7 +21,7 @@ SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 SFX = os.path.join(ROOT, "07_AUDIO/sfx_v008")
 MUS = os.path.join(ROOT, "07_AUDIO/music_v008")
-VER = os.environ.get("MIXVER", "v008d")  # v008d: the tail after "He was fifty-three" (scene 17) halved like other scenes
+VER = os.environ.get("MIXVER", "v009")  # v008d: the tail after "He was fifty-three" (scene 17) halved like other scenes
 OUTDIR = os.path.join(ROOT, f"07_AUDIO/mix_{VER}")
 
 
@@ -58,25 +58,14 @@ for line in open(SCRIPT, encoding="utf-8"):
     if m := scene_re.match(line):
         n, _, a, b, c, d = m.groups()
         slots[int(n)] = (int(c) * 60 + int(d)) - (int(a) * 60 + int(b))
-starts, lengths, narr_parts = {}, {}, []
-t = CARD
-for n in sorted(slots):
-    one = os.path.join(ATLAS, f"S{n:02d}.mp3")
-    if os.path.isfile(one):
-        chunks = [(LEAD, load(one))]
-        used = LEAD + len(chunks[0][1]) / SR
-    else:
-        a = load(os.path.join(ATLAS, f"S{n:02d}a.mp3"))
-        b = load(os.path.join(ATLAS, f"S{n:02d}b.mp3"))
-        chunks = [(LEAD, a), (LEAD + len(a) / SR + 6.0, b)]
-        used = LEAD + len(a) / SR + 6.0 + len(b) / SR
-    # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
-    length = slots[n] if n in (1, 13, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
-    starts[n], lengths[n] = t, length
-    for off, au in chunks:
-        narr_parts.append((t + off, au))
-    t += length
-TOTAL = t
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import timing  # noqa: E402  shared timeline (mix, picture and subtitles agree)
+
+TL = timing.timeline(ROOT)
+starts = {n: v["start"] for n, v in TL["scenes"].items()}
+lengths = {n: v["length"] for n, v in TL["scenes"].items()}
+narr_parts = [(v["start"] + off, load(p)) for n, v in TL["scenes"].items() for _, off, p in v["chunks"]]
+TOTAL = TL["total"]
 N = int(TOTAL * SR) + SR
 narr = np.zeros(N, np.float32)
 for st, au in narr_parts:
@@ -178,8 +167,9 @@ CUES = [
 bed = np.zeros(N, np.float32)      # music + ambience (ducked)
 hits = np.zeros(N, np.float32)     # one-shot effects (lightly ducked)
 cache = {}
-s17_silence_start = starts[17] + LEAD + len(load(os.path.join(ATLAS, "S17a.mp3"))) / SR
-s17_silence_end = s17_silence_start + 6.0
+c17 = TL["scenes"][17]["chunks"]
+s17_silence_start = starts[17] + c17[1][1] - TL["SIL17"]
+s17_silence_end = starts[17] + c17[1][1]
 missing = []
 for scene, name, off, gain, kind, length, fin, fout in CUES:
     folder, base = name.split("/")
@@ -193,8 +183,11 @@ for scene, name, off, gain, kind, length, fin, fout in CUES:
     if off == "after_silence":
         st = s17_silence_end + 0.3
     else:
-        st = starts[scene] + off
+        st = starts[scene] + TL["warp"](scene, off)
     room = (starts[scene] + lengths[scene]) - st if length is None else length
+    if room <= 0.2:
+        missing.append(f"{base} (past the end of scene {scene})")
+        continue
     if kind == "loop":
         reps = int(np.ceil(room * SR / len(src))) + 1
         seg = np.tile(src, reps)[:int(room * SR)].copy()

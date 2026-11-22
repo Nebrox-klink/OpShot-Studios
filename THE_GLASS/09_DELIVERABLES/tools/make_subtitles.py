@@ -20,8 +20,6 @@ import sys
 ROOT, CLIPS, OUTB = os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2]), sys.argv[3]
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
-CARD, LEAD, SIL17 = 4.0, 1.0, 6.0
-FULL_SLOT = (1, 13, 24)  # keep in step with mix_sound_v008.py / build_stills_animatic.py
 MAXL, FPS = 42, 24
 NAMES = {"/ˈɑːrnə ˈsɪɡvə ˈkluːŋlænd/": "Arne Sigve Klungland", "/ˈkluːŋlænd/": "Klungland", "/ˈʃuːmən/": "Schumann",
          "/stɑːˈvɑːŋər/": "Stavanger", "/ˈhɔːlɑːn/": "Håland", "/ˈneːdrə ˈdɑːlɡɑːtə/": "Nedre Dalgate",
@@ -115,26 +113,13 @@ def fits(c):
     return all(len(x) <= MAXL for x in lines(c)) and len(lines(c)) <= 2
 
 
-# ---- timeline: same rule as the mix -----------------------------------------------------------------------------
-scene_re = re.compile(r"^#### Scene (\d+) · (.+?) \((\d+):(\d+)–(\d+):(\d+)\)")
-slots = {}
-for line in open(SCRIPT, encoding="utf-8"):
-    if m := scene_re.match(line):
-        n, _, a, b, c, d = m.groups()
-        slots[int(n)] = (int(c) * 60 + int(d)) - (int(a) * 60 + int(b))
+# ---- timeline: shared with the mix and the picture (timing.py) ---------------------------------------------------
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import timing  # noqa: E402
+
 prompts = {x["id"]: x["text"] for x in json.load(open(os.path.join(ATLAS, "atlas_prompts_v008.json"), encoding="utf-8"))}
-chunks, t = [], CARD
-for n in sorted(slots):
-    one = os.path.join(ATLAS, f"S{n:02d}.mp3")
-    if os.path.isfile(one):
-        chunks.append((f"S{n:02d}", t + LEAD, one))
-        used = LEAD + dur(one)
-    else:
-        a, b = (os.path.join(ATLAS, f"S{n:02d}{x}.mp3") for x in "ab")
-        chunks.append((f"S{n:02d}a", t + LEAD, a))
-        chunks.append((f"S{n:02d}b", t + LEAD + dur(a) + SIL17, b))
-        used = LEAD + dur(a) + SIL17 + dur(b)
-    t += slots[n] if n in FULL_SLOT else max(used + 0.5, used + (slots[n] - used) * 0.5)
+TL = timing.timeline(ROOT)
+chunks = [(cid, v["start"] + off, p) for n, v in sorted(TL["scenes"].items()) for cid, off, p in v["chunks"]]
 
 # ---- cues --------------------------------------------------------------------------------------------------------
 cues = []

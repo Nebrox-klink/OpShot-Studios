@@ -28,7 +28,7 @@ CARD, LEAD = 4.0, 1.0
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
-MIX = os.path.join(ROOT, os.environ.get("MIX", "07_AUDIO/mix_v008d/THE_GLASS_mix_v008d.flac"))
+MIX = os.path.join(ROOT, os.environ.get("MIX", "07_AUDIO/mix_v009/THE_GLASS_mix_v009.flac"))
 MOTION_DIR = os.path.join(ROOT, "06_AI_VIDEO/motion_v001/clips")
 MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 7022, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
           "S12_02": 12022, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,
@@ -55,24 +55,14 @@ def dur(p):
                                 capture_output=True, text=True, check=True).stdout)
 
 
-# ---- timeline (identical rule to the mix) -----------------------------------------------------------------------
-scene_re = re.compile(r"^#### Scene (\d+) · (.+?) \((\d+):(\d+)–(\d+):(\d+)\)")
-slots = {}
-for line in open(SCRIPT, encoding="utf-8"):
-    if m := scene_re.match(line):
-        n, _, a, b, c, d = m.groups()
-        slots[int(n)] = (int(c) * 60 + int(d)) - (int(a) * 60 + int(b))
-length, s17_sil = {}, None
-for n in sorted(slots):
-    one = os.path.join(ATLAS, f"S{n:02d}.mp3")
-    if os.path.isfile(one):
-        used = LEAD + dur(one)
-    else:
-        a = dur(os.path.join(ATLAS, f"S{n:02d}a.mp3"))
-        used = LEAD + a + 6.0 + dur(os.path.join(ATLAS, f"S{n:02d}b.mp3"))
-        s17_sil = LEAD + a
-    # v008b: halve the quiet tail after the narration; scenes whose sound design needs the full slot keep it.
-    length[n] = slots[n] if n in (1, 13, 24) else max(used + 0.5, used + (slots[n] - used) * 0.5)
+# ---- timeline: shared with the mix and the subtitles (timing.py) ------------------------------------------------
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import timing  # noqa: E402
+
+TL = timing.timeline(ROOT)
+length = {n: v["length"] for n, v in TL["scenes"].items()}
+SIL17 = TL["SIL17"]
+s17_sil = TL["scenes"][17]["chunks"][1][1] - SIL17  # lead-in + S17a: where the white silence starts
 
 
 def S(name):
@@ -104,7 +94,7 @@ PLAN = {
     14: [(S("S14_01"), None), (S("S14_02"), None), (card("08:08"), 2.0), (S("S14_04"), None)],
     15: [(S("S15_01"), None), (S("S15_02"), None), (S("S15_03"), None)],
     16: [(S("S16_01"), 14.0), (S("S16_02"), 12.0), (S("S16_03"), None, "as recounted to NRK (2024)")],
-    17: [(S("S17_01"), 8.0), (S("S17_02"), "SIL"), (card("", False, "white"), 6.0), (S("S17_04"), None)],
+    17: [(S("S17_01"), 8.0), (S("S17_02"), "SIL"), (card("", False, "white"), SIL17), (S("S17_04"), None)],
     18: [(S("S18_01"), None), (S("S18_02"), None), (S("S18_03"), None), (S("S18_04"), None)],
     19: [(S("S19_01"), None), (S("S19_02"), None), (S("S19_03"), None, "CAPTION:In memory of Arne Sigve Klungland  ·  1950 – 2004")],
     20: [(S("S20_01"), None), (S("S20_02"), None), (S("S14_02"), None)],

@@ -59,7 +59,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
 | Atlas narration | Done (25 chunks) | `07_AUDIO/atlas_v008/` |
 | Music | Done (5 cues) | `07_AUDIO/music_v008/` |
 | Sound effects | Done (35 usable) | `07_AUDIO/sfx_v008/` |
-| Mix (current) | **v008d**: scene 17 tail halved, −16.0 LUFS | `07_AUDIO/mix_v008d/THE_GLASS_mix_v008d.flac` |
+| Mix (current) | **v009**: tight timing (pauses ≤0.8 s, about 1.5 s between scenes, 3 s white silence), −15.9 LUFS; 9:55 | `07_AUDIO/mix_v009/THE_GLASS_mix_v009.flac` |
 | Style references | Approved | `02_VISUAL_DEVELOPMENT/style_refs_v001/` |
 | Shot stills | 65 finals (63 plus 2 officer stills) | `02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg/` |
 | Motion | 18 Seedance clips, all passed the check | `06_AI_VIDEO/motion_v001/clips/` |
@@ -169,10 +169,14 @@ The job ID of every still and clip is in `shot_stills_v001/jobs.tsv` and `motion
 4. **Animatic:** `python3 -I 09_DELIVERABLES/tools/build_stills_animatic.py THE_GLASS_ROOT`.
    - Shot order, durations, cards, lower-thirds, the 113 counter and the captions are set in its `PLAN` dict.
    - Motion clips are swapped in through its `MOTION` map; set `USE_MOTION=0` to use stills only.
-   - It reads `mix_v008d` (override with `MIX=`); the on-screen title comes from `FILM_TITLE` (default THE NOKAS ROBBERY) and writes to `animatic_motion_v008h`. Bump the output version before each new build.
+   - Timing comes from `09_DELIVERABLES/tools/timing.py`, shared by the mix, the picture and the subtitles (`TIMING=tight` by default; `TIMING=v008b` gives the old rule). It reads `mix_v009` (override with `MIX=`); the on-screen title comes from `FILM_TITLE` (default THE NOKAS ROBBERY) and writes to `animatic_motion_v008h`. Bump the output version before each new build.
    - Shrink the output with `crf 27` before committing; GitHub warns above 50 MB.
 
 ## 7. Lessons learned (do not repeat)
+
+**Feedback (22 Nov): "the pauses are very long, and the voice is flat and monotone."**
+- Pauses: fixed with tight timing (v009, film 11:31 → 9:55).
+- Voice: kept for now (the producer's choice). A re-voice with expressive direction ([tense], [urgent] and so on, lower stability) or a livelier narrator costs about 7,800 ElevenLabs credits for the whole film. Pilot the 30 s cold open first (about 1,300 credits for 3 versions).
 
 **Quality control:**
 - Check motion clips for text that a camera move reveals. M_1601 panned onto a readable shop sign ("THE DAAKG"); the check missed it because it used small thumbnails. Always check the last frame of every clip at 640 px or larger. 16.1 now uses its still.
