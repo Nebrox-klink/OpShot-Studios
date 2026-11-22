@@ -1,6 +1,6 @@
 # Final master v001 (1080p, pre-clearance) — superseded by v002
 
-> **v001 contains a rule break:** at about 7:17, motion clip M_1601 (16.1) pans onto a readable shop sign. **v002** (`../master_v002/`) uses the 16.1 still instead; everything else is identical. The animatics v008e–v008h have the same issue.
+> **v001 contains a rule break:** at 7:06–7:20, motion clip M_1601 (16.1) pans onto a readable shop sign. **v002** (`../master_v002/`) uses the 16.1 still instead; everything else is identical. The animatics v008e–v008h have the same issue.
 
 **File:** `THE_GLASS_MASTER_v001_1080p_PRE-CLEARANCE.mp4`. It is too large for git, so it is ignored here; rebuild it with the command below. It is technically finished but **not cleared for publication** (see "Before release").
 
@@ -12,7 +12,7 @@
   - Intermediates at CRF 14.
   - Stills are taken from the 2752×1536 final JPGs. Camera moves are rendered at 2× resolution, so they don't jitter.
 - **Motion clips:** generated at 720p and upscaled to 1080p in ffmpeg (Lanczos plus light unsharp). They are slightly softer than the stills. A native 1080p regeneration (Seedance `std`, about 22.5 credits per clip, about 970 for all 43) was not done, because the balance is about 148 credits.
-- **Audio:** the final mix `07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac`, at −16 LUFS integrated, encoded as AAC 320 kb/s. The credits run in silence.
+- **Audio:** the final mix `07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac` (mono, 44.1 kHz), encoded as AAC; the encoder delivers about 156 kb/s for mono. It measures −17.3 LUFS integrated in the master. The credits run in silence.
 - **Text:** all on-screen text (cards, lower-thirds, the 113 counter, captions) is drawn at 1080p. Its size scales from the 720p layout.
 
 ## Rebuild
