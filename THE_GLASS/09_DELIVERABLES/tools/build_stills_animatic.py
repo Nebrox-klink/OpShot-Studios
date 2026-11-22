@@ -21,9 +21,12 @@ MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 702, "S08_03": 
           "S12_02": 12022, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,
           "S18_04": 1804, "S19_02": 1902, "S21_01": 2101, "S22_02": 2202, "S24_01": 2401,
           # pilot 2 (22 Nov): ambient motion on former still-only shots
-          "S01_02": 102, "S06_01": 601, "S10_02": 1002, "S14_01": 1401, "S16_01": 1601, "S21_02": 2102}
+          "S01_02": 102, "S06_01": 601, "S10_02": 1002, "S14_01": 1401, "S16_01": 1601, "S21_02": 2102,
+          # core set (22 Nov)
+          "S02_03": 203, "S03_01": 301, "S07_01": 701, "S08_01": 801, "S09_01": 901, "S09_03": 903,
+          "S17_02": 1702, "S18_01": 1801, "S19_01": 1901, "S22_03": 2203}
 USE_MOTION = os.environ.get("USE_MOTION", "1") == "1"
-OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008e")
+OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008f")
 TMP = os.path.join(OUT, "clips")
 os.makedirs(TMP, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -190,7 +193,7 @@ with open(lst, "w") as fh:
     fh.writelines(f"file '{c}'\n" for c in clips)
 silent = os.path.join(OUT, "video_only.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent], check=True)
-final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008e.mp4")
+final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008f.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", silent, "-i", MIX, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final], check=True)
 print(f"video {total:.1f} s; WROTE {final}")

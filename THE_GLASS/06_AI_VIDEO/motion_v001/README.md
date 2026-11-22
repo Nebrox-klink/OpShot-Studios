@@ -1,6 +1,6 @@
 # Motion clips v001
 
-**Model:** Higgsfield `seedance_2_0`, image-to-video, 5 s, 720p, `mode: fast`, no generated audio. **Cost:** 225 credits (18 clips at 12.5 credits each). No redos were needed. **Pilot 2** (22 Nov): 6 more clips on shots that were stills only, 75 credits, all passed QC.
+**Model:** Higgsfield `seedance_2_0`, image-to-video, 5 s, 720p, `mode: fast`, no generated audio. **Cost:** 225 credits (18 clips at 12.5 credits each). No redos were needed. **Pilot 2** (22 Nov): 6 more clips on shots that were stills only, 75 credits, all passed QC. **Core set** (22 Nov): 10 more clips, 125 credits, all passed QC with no redos.
 **Start frames:** the approved stills from `02_VISUAL_DEVELOPMENT/shot_stills_v001` (job IDs in `jobs.tsv`).
 **Check:** every clip was inspected at its start, middle and end (`qc/`). No warping, morphing or face reveals; the style holds.
 
@@ -21,6 +21,16 @@
 | M_1401 | 14.1 corridor (pilot 2) | push-in, fluorescent flicker |
 | M_1601 | 16.1 square (pilot 2) | slow pan right, bus in the distance |
 | M_2102 | 21.2 Oslo café (pilot 2) | CRT glow, slow drift |
+| M_203 | 2.3 basement windows (core) | push-in along the street, mist |
+| M_301 | 3.1 townhouses (core) | snowfall, lit window |
+| M_701 | 7.1 Oslo street (core) | snow, push toward the lit door |
+| M_801 | 8.1 underpass (core) | mist; the small distant figure stays still |
+| M_901 | 9.1 police station (core) | clouds, drizzle |
+| M_903 | 9.3 patrol car (core) | push-in, mist, lamp |
+| M_1702 | 17.2 bus (core) | push-in, bus stationary |
+| M_1801 | 18.1 empty square (core) | mist, slight drift |
+| M_1901 | 19.1 cathedral (core) | slow arc toward the open doors |
+| M_2203 | 22.3 Málaga café (core) | screen glow; figure from behind, never turns |
 | M_1304 | 13.4 the hole | dust |
 | M_1402 | 14.2 lift | doors close (made from still 14.1) |
 | M_1404 | 14.4 square | police car drives in |
