@@ -18,6 +18,7 @@
 - **12.2** (`SH_12022`) and **18.3** (`SH_18032`): flat-fronted European cab-over truck, Volvo FH style. A small diagonal grille bar is visible; there is no readable badge.
 - **16.2** (`SH_16022_clean`, ref BG3): a Volvo V70 estate with the blue and black chequered stripe. Faint pseudo-letters on one vest were painted out locally (the unedited master is `SH_16022`).
 - **22.4** (`SH_22042`, ref 22.3): two backlit figures walk in toward the camera.
+- **11.1** (`SH_11012`): seen from the back of the room; backs of heads only, and the speaker is a featureless silhouette against the window. The shoulder patches carry a lion crest with tiny illegible marks.
 - The old JPGs are in `superseded/`.
 
 **Minor issues, acceptable for now; fix later if wanted:**
@@ -27,7 +28,6 @@
 | 7.2 | The figure at the lectern faces the camera, but is small and has no facial detail. |
 | 8.1 | A small walker appears in the underpass. |
 | 10.4 | The watch is on a sweater cuff, not a glove. |
-| 11.1 | The front row of officers shows partial side faces. The figure at the front stands in Klungland's role, but has no facial detail. |
 | 23.1 | The hall looks like an old church hall. |
 
 Everything is regenerable with `make_shot_prompts.py` (prompts) and `next.py` (queue).
