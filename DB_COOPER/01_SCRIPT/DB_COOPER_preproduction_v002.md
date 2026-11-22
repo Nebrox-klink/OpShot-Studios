@@ -2,7 +2,7 @@
 
 **Status:** script draft for review. Nothing has been generated: no images, voice or video. Waiting for producer feedback.
 **Changes since v001 (producer note):** the emotional core moves from the people on the plane to **the mystery itself**: the clues, the theories and the suspects. The film should be exciting but educational. Spectare doesn't make films that put victims or criminals in the spotlight; the channel makes films about puzzles.
-**Channel:** Spectare Animations · **Language:** English · **Audience:** adults, general audience · **Target length:** about 11:02 plus credits.
+**Channel:** Spectare Animations · **Language:** English · **Audience:** adults, general audience · **Target length:** about 11 minutes plus credits (confirmed by the producer).
 
 ---
 
