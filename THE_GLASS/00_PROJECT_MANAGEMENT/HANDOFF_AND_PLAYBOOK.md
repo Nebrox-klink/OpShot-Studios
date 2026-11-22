@@ -81,7 +81,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
    - final credits (NRK, Aftenblad, Aftenposten, Wikipedia, SNL, music and sound licences);
    - tick YouTube's AI-disclosure box;
    - **publication needs explicit approval.**
-6. **Final master:** the animatics are 720p. For a release, upscale the stills or regenerate at 4k, and consider Seedance `std` mode at 1080p (22.5+ credits per clip).
+6. **Final master:** **v002, 1080p, pre-clearance**, in `09_DELIVERABLES/master_v002/` (not in git; rebuild it with the command in `master_v001/README.md`, changing v001 to v002). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip), and a new 16.1 clip with a locked-off camera (12.5 credits).
 7. **Medium-confidence facts to confirm in *Dødsranet*:** F20 (15 seconds), F60 (chess), F08 (15 March), F16 (silence).
 
 ## 5. Accounts, IDs and balances (21 Nov 2026)
@@ -173,6 +173,9 @@ The job ID of every still and clip is in `shot_stills_v001/jobs.tsv` and `motion
    - Shrink the output with `crf 27` before committing; GitHub warns above 50 MB.
 
 ## 7. Lessons learned (do not repeat)
+
+**Quality control:**
+- Check motion clips for text that a camera move reveals. M_1601 panned onto a readable shop sign ("THE DAAKG"); the check missed it because it used small thumbnails. Always check the last frame of every clip at 640 px or larger. 16.1 now uses its still.
 
 **Generation and spending:**
 - ElevenLabs sound effects without `duration_seconds` come back 0.5–2 s long. About 660 credits were wasted this way.

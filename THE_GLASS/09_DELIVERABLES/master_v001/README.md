@@ -1,4 +1,6 @@
-# Final master v001 (1080p, pre-clearance)
+# Final master v001 (1080p, pre-clearance) — superseded by v002
+
+> **v001 contains a rule break:** at about 7:17, motion clip M_1601 (16.1) pans onto a readable shop sign. **v002** (`../master_v002/`) uses the 16.1 still instead; everything else is identical. The animatics v008e–v008h have the same issue.
 
 **File:** `THE_GLASS_MASTER_v001_1080p_PRE-CLEARANCE.mp4`. It is too large for git, so it is ignored here; rebuild it with the command below. It is technically finished but **not cleared for publication** (see "Before release").
 
