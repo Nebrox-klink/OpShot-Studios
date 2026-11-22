@@ -17,7 +17,7 @@ ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
 MIX = os.path.join(ROOT, "07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac")
 MOTION_DIR = os.path.join(ROOT, "06_AI_VIDEO/motion_v001/clips")
-MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 702, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
+MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 7022, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
           "S12_02": 12022, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,
           "S18_04": 1804, "S19_02": 1902, "S21_01": 2101, "S22_02": 2202, "S24_01": 2401,
           # pilot 2 (22 Nov): ambient motion on former still-only shots
@@ -27,9 +27,9 @@ MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 702, "S08_03": 
           "S17_02": 1702, "S18_01": 1801, "S19_01": 1901, "S22_03": 2203,
           # extended set (22 Nov)
           "S04_01": 401, "S04_02": 402, "S08_02": 802, "S09_02": 902, "S15_01": 1501, "S15_02": 1502,
-          "S17_01": 1701, "S20_02": 2002, "S23_01": 2301}
+          "S17_01": 1701, "S20_02": 2002, "S23_01": 23012}
 USE_MOTION = os.environ.get("USE_MOTION", "1") == "1"
-OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008g")
+OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008h")
 TMP = os.path.join(OUT, "clips")
 os.makedirs(TMP, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -196,7 +196,7 @@ with open(lst, "w") as fh:
     fh.writelines(f"file '{c}'\n" for c in clips)
 silent = os.path.join(OUT, "video_only.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent], check=True)
-final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008g.mp4")
+final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008h.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", silent, "-i", MIX, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
                 "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final], check=True)
 print(f"video {total:.1f} s; WROTE {final}")

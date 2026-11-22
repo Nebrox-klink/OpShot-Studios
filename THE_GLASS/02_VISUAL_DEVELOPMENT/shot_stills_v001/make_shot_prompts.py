@@ -18,7 +18,7 @@ S = [
  (502,"BG1","Close-up of greenish window glass at night with the faint ghostly reflection of a crouched dark silhouette lying over the warm lit room inside."),
  (601,"BG1 TOS","Night in the enclosed courtyard in February, frost on the flagstones, a slim man in a dark jacket lying low and crouched against the wall near the green window, seen from behind, face hidden. Deep night blue, frost white, breath vapour."),
  (701,"","An Oslo side street at night in winter, old apartment buildings, snow on the ground, one doorway with warm light behind a closed door. Empty street. Melancholy."),
- (702,"TOS","Inside a Norwegian church in winter with candles: a lone figure in a dark jacket standing at a lectern, seen from far behind, face not visible. Soft dim light."),
+ (702,"TOS","Inside a simple Norwegian church in winter, candles burning. Seen from the back of the nave between the pews: a lone figure in a dark jacket stands at a lectern near the altar with his back fully to the camera, facing the altar and away from us, only the back of his head and shoulders visible, no face, no profile. Soft dim candle light, cold window light."),  # v002 redo
  (731,"","A long empty wooden table under one bare hanging bulb in a dark room, four empty wooden chairs around it. Seen from a slightly high angle."),
  (704,"","Close-up of a strip of white cloth tape lying on a dark wooden table, low light."),
  (801,"","A gravel footpath through Norwegian woods at dawn leading to a concrete pedestrian underpass, mist, bare birches. Cold."),
@@ -63,7 +63,7 @@ S = [
  (2202,"","The front steps of a plain police station in the morning, many candles and flowers laid on the steps, no people. Soft warm grey and candle gold."),
  (2203,"TOS","A small internet cafe in southern Spain in 2005: the back of a slim man in a light shirt sitting at a CRT monitor with a blurred screen, face not visible, bright sunlight outside."),
  (2204,"","Inside a small dim Spanish internet cafe in 2005, looking toward the open street doorway full of bright sunlight. Two dark plain-clothes silhouettes have just stepped in over the threshold and walk into the room toward the camera, bodies facing us, backlit so no faces are visible. They are clearly arriving, coming inside, not leaving. Rows of glowing CRT monitors on the side."),  # v002 redo
- (2301,"","A large plain hall set up as a courtroom: empty rows of chairs facing a long table, muted slate light, no flags, no text."),
+ (2301,"","A modern, plain Norwegian congregation hall from the 1990s in a suburban business district, temporarily set up as a courtroom in 2005: low flat ceiling with recessed lights, light pine wall panelling, a wall of plain rectangular windows with grey daylight, linoleum floor, rows of identical stackable chairs facing a long raised table with simple chairs for judges, a smaller table for the defence at the side. Empty, no people. No arches, no old stone, no church architecture, no religious symbols, no flags, no text."),  # v002 redo
  (2401,"BG1","Morning. The courtyard window, intact clear new glass in a dark steel frame, warm morning light, soft reflections on the glass. Quiet and muted."),
 ]
 reqs = []

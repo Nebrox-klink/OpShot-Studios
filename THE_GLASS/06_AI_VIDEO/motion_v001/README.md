@@ -40,6 +40,8 @@
 | M_1701 | 17.1 street (extended) | rain, mist; the distant vehicle stays still |
 | M_2002 | 20.2 vault gate (extended) | push-in; the gate stays closed |
 | M_2301 | 23.1 hall (extended) | push-in, dust in the light |
+| M_7022 | 7.2 church, redo from still SH_7022 (replaces M_702) | candle flicker; the figure stays with his back to us |
+| M_23012 | 23.1 hall, redo from still SH_23012 (replaces M_2301) | slow drift across the modern hall |
 | M_1304 | 13.4 the hole | dust |
 | M_1402 | 14.2 lift | doors close (made from still 14.1) |
 | M_1404 | 14.4 square | police car drives in |
