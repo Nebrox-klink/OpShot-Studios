@@ -14,3 +14,14 @@ ffmpeg -i ../master_v002/video_only.mp4 -i ../../07_AUDIO/mix_v008c/THE_GLASS_mi
 For a future full rebuild, point `MIX` in `build_stills_animatic.py` at `mix_v008c`.
 
 It is **not cleared for publication**.
+
+## Stored in git (no re-render needed)
+
+The full master is committed in `parts/` as 7 pieces under GitHub's 100 MB limit. To reassemble it, from this folder:
+
+```
+cat parts/THE_GLASS_MASTER_v003_1080p.mp4.part* > THE_GLASS_MASTER_v003_1080p_PRE-CLEARANCE.mp4
+sha256sum -c parts/SHA256SUMS
+```
+
+(On Windows PowerShell: `cmd /c copy /b parts\THE_GLASS_MASTER_v003_1080p.mp4.part00+parts\THE_GLASS_MASTER_v003_1080p.mp4.part01+parts\THE_GLASS_MASTER_v003_1080p.mp4.part02+parts\THE_GLASS_MASTER_v003_1080p.mp4.part03+parts\THE_GLASS_MASTER_v003_1080p.mp4.part04+parts\THE_GLASS_MASTER_v003_1080p.mp4.part05+parts\THE_GLASS_MASTER_v003_1080p.mp4.part06 THE_GLASS_MASTER_v003_1080p_PRE-CLEARANCE.mp4`.)

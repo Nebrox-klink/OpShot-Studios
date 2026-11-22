@@ -81,7 +81,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
    - final credits (NRK, Aftenblad, Aftenposten, Wikipedia, SNL, music and sound licences);
    - tick YouTube's AI-disclosure box;
    - **publication needs explicit approval.**
-6. **Final master:** **v003, 1080p, pre-clearance, −16.0 LUFS**, in `09_DELIVERABLES/master_v003/` (not in git; its README has the rebuild steps). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip). 16.1 has used both of its attempts (M_1601: a sign; M_16012: the pram walker moves) and stays a still.
+6. **Final master:** **v003, 1080p, pre-clearance, −16.0 LUFS**, in `09_DELIVERABLES/master_v003/`. **It is stored in git as 7 parts** in `master_v003/parts/`; the README shows how to join them (checksum included), so no re-render is needed. Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip). 16.1 has used both of its attempts (M_1601: a sign; M_16012: the pram walker moves) and stays a still.
 7. **Medium-confidence facts to confirm in *Dødsranet*:** F20 (15 seconds), F60 (chess), F08 (15 March), F16 (silence).
 
 ## 5. Accounts, IDs and balances (21 Nov 2026)
