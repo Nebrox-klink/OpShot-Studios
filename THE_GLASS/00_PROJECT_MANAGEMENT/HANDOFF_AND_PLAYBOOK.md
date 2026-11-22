@@ -81,7 +81,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
    - final credits (NRK, Aftenblad, Aftenposten, Wikipedia, SNL, music and sound licences);
    - tick YouTube's AI-disclosure box;
    - **publication needs explicit approval.**
-6. **Final master:** **v004, titled THE NOKAS ROBBERY**, 1080p, −16 LUFS, with the scene 17 tail halved and English subtitles (an .srt plus a Netflix-style burned-in copy), in `09_DELIVERABLES/master_v004/` (its README has the details and rebuild steps). v003 (titled THE GLASS) is stored in git as parts in `master_v003/parts/`. `git push` asks the producer for approval (an ask rule in the local `.claude/settings.local.json`).
+6. **Final master:** **v005**, in `09_DELIVERABLES/master_v005/`: THE NOKAS ROBBERY, tight timing, 9:54 (10:30 with credits), 1080p, −15.9 LUFS, with English subtitles (an .srt plus a burned-in share copy) and a YouTube description with v005 chapter times. Its README has the details. v003 (titled THE GLASS) is stored in git as parts in `master_v003/parts/`. `git push` asks the producer for approval.
 7. **Medium-confidence facts to confirm in *Dødsranet*:** F20 (15 seconds), F60 (chess), F08 (15 March), F16 (silence).
 
 ## 5. Accounts, IDs and balances (21 Nov 2026)

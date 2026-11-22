@@ -160,6 +160,8 @@ for cid, t0, path in chunks:
                 part[lo:hi + 1] = [[part[lo][0], part[hi][1], merged]]
                 continue
         i += 1
+    if cid == "S17a":  # the white silence follows: the last line must leave with the voice, not hang on white
+        part[-1][1] = min(part[-1][1], t0 + dur(path) - 1 / FPS)
     cues += part
 
 gap = 2 / FPS
