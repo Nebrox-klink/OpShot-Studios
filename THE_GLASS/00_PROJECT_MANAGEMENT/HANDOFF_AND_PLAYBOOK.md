@@ -63,19 +63,16 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
 | Style references | Approved | `02_VISUAL_DEVELOPMENT/style_refs_v001/` |
 | Shot stills | 65 finals (63 plus 2 officer stills) | `02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg/` |
 | Motion | 18 Seedance clips, all passed the check | `06_AI_VIDEO/motion_v001/clips/` |
-| **Latest cut** | **Motion animatic v008b, 11:44** | `09_DELIVERABLES/animatic_motion_v008b/THE_GLASS_motion_animatic_v008b.mp4` |
+| **Latest cut** | **Motion animatic v008c, 11:44** (v008b plus the five still redos) | `09_DELIVERABLES/animatic_motion_v008c/THE_GLASS_motion_animatic_v008c.mp4` |
 
 **Abandoned:** the four Blender 3D sequences (dropped by the producer). Their files remain in `05_BLENDER/`, untouched.
 
 ## 4. Open items (next steps)
 
 1. **Producer review of the motion animatic.** Expect notes on timing, sound and stills.
-2. **Optional still redos (2 credits each):**
-   - 12.1: the security-camera street looks American;
-   - 16.2: the police car looks American;
-   - 12.2 / 18.3: the trucks are not 2004 Volvos;
-   - 22.4: the figures read as leaving rather than entering;
-   - 11.1: some officers show partial side faces.
+2. **Still redos:**
+   - **Done (22 Nov):** 12.1, 12.2, 16.2, 18.3 and 22.4. Details are in the shot stills README (v002 redos); 12.2 also got a new motion clip, M_12022.
+   - **Still open (optional, 2 credits each):** 11.1 (some officers show partial side faces), 7.2, 23.1.
 3. **Klungland:** the producer chose anonymous officer stills (9.4 and 19.3) over a portrait. The captions are "Arne Sigve Klungland" and "In memory of Arne Sigve Klungland · 1950 – 2004". If a reference photo is provided later, redo 9.4 / 19.3 to resemble it, but only with the family's consent.
 4. **Family letter** (`01_SCRIPT_STORYBOARD/phase4/THE_GLASS_klungland_family_letter_DRAFT_v001.md`): the producer sends it. Have a native speaker check the Norwegian first.
 5. **Before publication:**
@@ -104,7 +101,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
   - Imogen `jv41DhCf464zw0TI7I1w`
   - David `rSLmFOTRq9g87aTxSUr6`
 
-**Higgsfield** (Plus plan): **515 credits left**.
+**Higgsfield** (Plus plan): **about 492 credits left** (22 Nov, after the redos).
 
 **Style reference job IDs** (pass them as `image_references`):
 
@@ -171,7 +168,7 @@ The job ID of every still and clip is in `shot_stills_v001/jobs.tsv` and `motion
 4. **Animatic:** `python3 -I 09_DELIVERABLES/tools/build_stills_animatic.py THE_GLASS_ROOT`.
    - Shot order, durations, cards, lower-thirds, the 113 counter and the captions are set in its `PLAN` dict.
    - Motion clips are swapped in through its `MOTION` map; set `USE_MOTION=0` to use stills only.
-   - It reads `mix_v008b`.
+   - It reads `mix_v008b` and writes to `animatic_motion_v008c`. Bump the output version before each new build.
    - Shrink the output with `crf 27` before committing; GitHub warns above 50 MB.
 
 ## 7. Lessons learned (do not repeat)

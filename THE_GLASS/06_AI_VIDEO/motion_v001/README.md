@@ -13,7 +13,8 @@
 | M_803 | 8.3 red alarm light | blink |
 | M_905 | 9.5 coach bus | drives away |
 | M_1001 | 10.1 townhouses | headlight sweep |
-| M_1202 | 12.2 truck | smoke rising, flames confined to the cab |
+| M_1202 | 12.2 truck (v1, superseded by M_12022) | smoke rising, flames confined to the cab |
+| M_12022 | 12.2 truck, redo from still SH_12022 (European cab-over) | smoke drifts, glow confined to the cab, slow push-in |
 | M_1304 | 13.4 the hole | dust |
 | M_1402 | 14.2 lift | doors close (made from still 14.1) |
 | M_1404 | 14.4 square | police car drives in |

@@ -33,8 +33,8 @@ S = [
  (1003,"ROB","Close-up of a white cloth band taped around the dark sleeve of work overalls, torch light, night."),
  (1004,"","Close-up of a plain analog wristwatch with a blank dial and no numbers on a dark gloved wrist, cold light."),
  (1101,"","A police briefing room in early morning light: rows of uniformed officers seen from behind, seated, a figure at the front softly out of focus, no faces visible, nothing written on the walls."),
- (1201,"","High-angle grainy security-camera view of an empty city street at dawn, monochrome blue-green tint, no text or timecode."),
- (1202,"","A white truck with a covered flatbed in a driveway beside a plain building, thick grey smoke rising from the cab, no flames spreading. Fire orange glow against blue-grey."),
+ (1201,"BG4","High-angle grainy security-camera view looking down on an empty street in a small Norwegian coastal city at dawn in 2004: low white-painted wooden houses with pitched roofs and a plain concrete office building, wet asphalt, narrow pavement, one street lamp. Scandinavian architecture only, no fire escapes, no brick tenements, no American details. Monochrome blue-green tint, no text or timecode."),  # v002 redo
+ (1202,"","A white early-2000s Swedish heavy truck (Volvo FH style flat-fronted cab-over cab, no badges or lettering) with a covered flatbed, parked across a driveway beside a plain Norwegian industrial building, thick grey smoke rising from the cab, a small orange glow inside the cab only, no flames spreading. European truck, not an American long-nose truck. Fire orange glow against blue-grey morning."),  # v002 redo
  (1301,"BG1 ROB","The enclosed courtyard seen from behind three faceless dark-clad silhouettes standing at the wide green window, cold grey light with faint orange flashes on the walls. No weapon pointed at the viewer."),
  (1302,"BG1","Extreme close-up of thick green laminated security glass covered in white star-shaped impact marks, cracked but not broken, cold light."),
  (1304,"BG1","A ragged dark hole where the wide green window used to be in the courtyard wall, fragments of laminated glass hanging from the frame, dust hanging in the light."),
@@ -45,14 +45,14 @@ S = [
  (1502,"BG2","A heavy barred steel vault gate in a basement, a heavy steel battering ram lying on the floor in front of it, cold fluorescent light."),
  (1503,"","Close-up of a plain analog wristwatch with a blank dial and no numbers on a dark gloved wrist, harsh fluorescent light, blurred basement behind."),
  (1601,"BG3","The cathedral square, wide view on a weekday morning: a city bus crossing in the far background, a few small distant figures, one pushing a pram, no faces."),
- (1602,"BG3","A white police car seen from behind on a city square, two officer silhouettes crouched behind its open doors, tense morning light, no text."),
+ (1602,"BG3","A white Norwegian police car of 2004, a Volvo V70 estate with a blue and black chequered stripe along its side and a blue light bar, seen from behind at an angle on a cobbled city square, both front doors open, two officer silhouettes crouched behind the open doors, tense morning light. Not an American police car, no sedan, no lettering."),  # v002 redo
  (1603,"BG4 ROB","A city street corner in the morning; far away, a small dark faceless silhouette of a man holding a rifle, standing still. Cold, distant."),
  (1701,"BG4","A street with a plain modern hotel facade on a grey April morning; far down the street, a dark police van seen from behind. Almost fully desaturated, one muted warm tone."),
  (1702,"BG4","A city bus seen front-on from a low angle, stationary on a grey street, almost fully desaturated. No text, no route number."),
  (1704,"","A pale grey morning sky over wet rooftops of a Nordic city, quiet, almost white."),
  (1801,"BG3","The empty cathedral square after a shooting: tyre marks and a few spent cartridge cases on the wet cobbles, no people, no blood."),
  (1802,"","Woods seen from a distance with a single column of black smoke rising above the trees, grey sky."),
- (1803,"","A truck cab scorched but still standing beside a plain building, thin smoke rising, grey light."),
+ (1803,"","The burnt-out cab of a white early-2000s Swedish heavy truck (Volvo FH style flat-fronted cab-over cab, no badges or lettering), scorched black and blistered but still standing, beside a plain Norwegian industrial building, thin smoke rising, no flames, flat grey light. European truck, not an American long-nose truck."),  # v002 redo
  (1804,"","A small flat with drawn curtains: three dark silhouettes seen from behind, lit only by the blue glow of a television, sports bags on the floor. No faces."),
  (1901,"BG3","A large medieval grey stone cathedral on a grey April day, its doors open with warm light inside, wet paving. Soft warm grey and candle gold."),
  (1902,"","A small helicopter flying low over wet rooftops of a Nordic city, grey sky."),
@@ -62,7 +62,7 @@ S = [
  (2102,"","An internet cafe at night in 2004: a row of glowing CRT monitors on desks, empty chairs, screens blurred, office fluorescent green."),
  (2202,"","The front steps of a plain police station in the morning, many candles and flowers laid on the steps, no people. Soft warm grey and candle gold."),
  (2203,"TOS","A small internet cafe in southern Spain in 2005: the back of a slim man in a light shirt sitting at a CRT monitor with a blurred screen, face not visible, bright sunlight outside."),
- (2204,"","The doorway of a small cafe seen from inside, bright street light outside, two dark silhouettes entering, no faces."),
+ (2204,"","Inside a small dim Spanish internet cafe in 2005, looking toward the open street doorway full of bright sunlight. Two dark plain-clothes silhouettes have just stepped in over the threshold and walk into the room toward the camera, bodies facing us, backlit so no faces are visible. They are clearly arriving, coming inside, not leaving. Rows of glowing CRT monitors on the side."),  # v002 redo
  (2301,"","A large plain hall set up as a courtroom: empty rows of chairs facing a long table, muted slate light, no flags, no text."),
  (2401,"BG1","Morning. The courtyard window, intact clear new glass in a dark steel frame, warm morning light, soft reflections on the glass. Quiet and muted."),
 ]
