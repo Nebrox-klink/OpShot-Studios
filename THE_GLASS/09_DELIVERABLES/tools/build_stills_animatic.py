@@ -28,7 +28,7 @@ CARD, LEAD = 4.0, 1.0
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
 STILLS = os.path.join(ROOT, "02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg")
-MIX = os.path.join(ROOT, "07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac")
+MIX = os.path.join(ROOT, os.environ.get("MIX", "07_AUDIO/mix_v008c/THE_GLASS_mix_v008c.flac"))
 MOTION_DIR = os.path.join(ROOT, "06_AI_VIDEO/motion_v001/clips")
 MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 7022, "S08_03": 803, "S09_05": 905, "S10_01": 1001,
           "S12_02": 12022, "S13_04": 1304, "S14_02": 1402, "S14_04": 1404, "S17_04": 1704, "S18_02": 1802,

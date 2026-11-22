@@ -59,7 +59,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
 | Atlas narration | Done (25 chunks) | `07_AUDIO/atlas_v008/` |
 | Music | Done (5 cues) | `07_AUDIO/music_v008/` |
 | Sound effects | Done (35 usable) | `07_AUDIO/sfx_v008/` |
-| Mix (current) | **v008b**: tightened timing, 11:44 | `07_AUDIO/mix_v008b/THE_GLASS_mix_v008b.flac` |
+| Mix (current) | **v008c**: v008b normalised to −16.0 LUFS (v008b was −17.3) | `07_AUDIO/mix_v008c/THE_GLASS_mix_v008c.flac` |
 | Style references | Approved | `02_VISUAL_DEVELOPMENT/style_refs_v001/` |
 | Shot stills | 65 finals (63 plus 2 officer stills) | `02_VISUAL_DEVELOPMENT/shot_stills_v001/final_jpg/` |
 | Motion | 18 Seedance clips, all passed the check | `06_AI_VIDEO/motion_v001/clips/` |
@@ -81,7 +81,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
    - final credits (NRK, Aftenblad, Aftenposten, Wikipedia, SNL, music and sound licences);
    - tick YouTube's AI-disclosure box;
    - **publication needs explicit approval.**
-6. **Final master:** **v002, 1080p, pre-clearance**, in `09_DELIVERABLES/master_v002/` (not in git; rebuild it with the command in `master_v001/README.md`, changing v001 to v002). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip). 16.1 has used both of its attempts (M_1601: a sign; M_16012: the pram walker moves) and stays a still.
+6. **Final master:** **v003, 1080p, pre-clearance, −16.0 LUFS**, in `09_DELIVERABLES/master_v003/` (not in git; its README has the rebuild steps). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip). 16.1 has used both of its attempts (M_1601: a sign; M_16012: the pram walker moves) and stays a still.
 7. **Medium-confidence facts to confirm in *Dødsranet*:** F20 (15 seconds), F60 (chess), F08 (15 March), F16 (silence).
 
 ## 5. Accounts, IDs and balances (21 Nov 2026)
@@ -169,7 +169,7 @@ The job ID of every still and clip is in `shot_stills_v001/jobs.tsv` and `motion
 4. **Animatic:** `python3 -I 09_DELIVERABLES/tools/build_stills_animatic.py THE_GLASS_ROOT`.
    - Shot order, durations, cards, lower-thirds, the 113 counter and the captions are set in its `PLAN` dict.
    - Motion clips are swapped in through its `MOTION` map; set `USE_MOTION=0` to use stills only.
-   - It reads `mix_v008b` and writes to `animatic_motion_v008h`. Bump the output version before each new build.
+   - It reads `mix_v008c` (override with `MIX=`) and writes to `animatic_motion_v008h`. Bump the output version before each new build.
    - Shrink the output with `crf 27` before committing; GitHub warns above 50 MB.
 
 ## 7. Lessons learned (do not repeat)
