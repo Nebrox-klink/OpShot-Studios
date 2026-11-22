@@ -20,6 +20,7 @@
 | M_1002 | 10.2 woods (pilot 2) | torch beams sweep, slight camera drift, figures still |
 | M_1401 | 14.1 corridor (pilot 2) | push-in, fluorescent flicker |
 | M_1601 | 16.1 square (pilot 2) — **NOT USED**: the pan reveals a readable shop sign ("THE DAAKG"); the film uses the still | slow pan right, bus in the distance |
+| M_16012 | 16.1 square, 2nd and final attempt (locked-off) — **NOT USED**: no text, but the woman with the pram walks across the square (the script says "no figures move"); the film uses the still | locked-off, bus crosses |
 | M_2102 | 21.2 Oslo café (pilot 2) | CRT glow, slow drift |
 | M_203 | 2.3 basement windows (core) | push-in along the street, mist |
 | M_301 | 3.1 townhouses (core) | snowfall, lit window |

@@ -81,7 +81,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
    - final credits (NRK, Aftenblad, Aftenposten, Wikipedia, SNL, music and sound licences);
    - tick YouTube's AI-disclosure box;
    - **publication needs explicit approval.**
-6. **Final master:** **v002, 1080p, pre-clearance**, in `09_DELIVERABLES/master_v002/` (not in git; rebuild it with the command in `master_v001/README.md`, changing v001 to v002). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip), and a new 16.1 clip with a locked-off camera (12.5 credits).
+6. **Final master:** **v002, 1080p, pre-clearance**, in `09_DELIVERABLES/master_v002/` (not in git; rebuild it with the command in `master_v001/README.md`, changing v001 to v002). Its credits are a draft. Optional upgrades: native 1080p motion clips (Seedance `std`, about 22.5 credits per clip). 16.1 has used both of its attempts (M_1601: a sign; M_16012: the pram walker moves) and stays a still.
 7. **Medium-confidence facts to confirm in *Dødsranet*:** F20 (15 seconds), F60 (chess), F08 (15 March), F16 (silence).
 
 ## 5. Accounts, IDs and balances (21 Nov 2026)
@@ -102,7 +102,7 @@ The dramatic question changes from **"Will the plan work?"** to **"Who pays for 
   - Imogen `jv41DhCf464zw0TI7I1w`
   - David `rSLmFOTRq9g87aTxSUr6`
 
-**Higgsfield** (Plus plan): **about 148 credits left** (22 Nov, after the redos).
+**Higgsfield** (Plus plan): **about 136 credits left** (22 Nov, after the redos).
 
 **Style reference job IDs** (pass them as `image_references`):
 
