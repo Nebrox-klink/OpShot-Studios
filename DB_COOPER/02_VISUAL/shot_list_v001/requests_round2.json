@@ -1,0 +1,244 @@
+[
+ [
+  {
+   "index": 1501,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: The case board under the lamp: five cut-out black paper silhouettes of men pinned in a row, each a different simple outline, red strings from each to small pinned paintings. No faces, no writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1601,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A single cut-out paper silhouette of a young man, steel-blue accent colour, pinned on cork under a lamp. No face details, no writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1602,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A Boeing 727 at dawn flying over a vast Utah desert with red-brown mesas, the rear airstair under the tail lowered, a pale gold-blue sky. Generic livery.",
+    "medias": [
+     {
+      "value": "a54e85da-f465-46eb-b7aa-2330992beb60",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1701,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A single cut-out paper silhouette of a slight man, airline-red accent colour, pinned on cork under a lamp. No face details, no writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1702,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A small 1970s suburban house in the rain in Washington state, a wet lawn, warm light in one window, an unmarked airline uniform jacket hanging on a hook seen through the porch door. No people, no text.",
+    "medias": [
+     {
+      "value": "826a7f5f-2146-4512-a039-46fd29d84570",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1801,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A single cut-out paper silhouette of an older man, pale hospital-green accent, pinned on cork under a lamp. No face details, no writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1802,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A dark quiet bedroom at night, a single bedside lamp glowing, an empty bed with rumpled sheets, a glass of water. No people. Soft pale green and amber."
+   }
+  },
+  {
+   "index": 1901,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A single cut-out paper silhouette of a young man in a military cap, olive-drab accent, pinned on cork under a lamp. No face details, no writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ],
+ [
+  {
+   "index": 1902,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A 1960s military helicopter flying over misty green jungle hills, seen from a distance, faded and soft like an old memory. No markings.",
+    "medias": [
+     {
+      "value": "a54e85da-f465-46eb-b7aa-2330992beb60",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2001,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: On the cork board under the lamp: an empty dotted outline of a man's silhouette drawn on paper with nothing inside it, red strings hanging slack from it to the other pinned items. Eerie. No writing.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2101,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: Dense evergreen forest canopy from above in cold blue rain-light, a torn pale parachute canopy caught high in one tall tree far away, no person visible.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2102,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A muddy forest dirt road at first light in fog, golden dawn; far away a man in a dark raincoat walking away from the camera, small, seen from behind. Only the back of the head visible, no face, no profile, no ear.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     },
+     {
+      "value": "d0aaa0df-f31a-4943-85da-2cd62c9916ed",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2103,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: The Columbia River under a grey sky, a small dark bundle drifting in the current near a sandbar, muddy green water, bare trees. No people.",
+    "medias": [
+     {
+      "value": "a214d6dd-f881-4628-919a-206cefa1e4a0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2201,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A 1970s FBI archive room: tall metal shelves stacked with cardboard evidence boxes (blank labels), a single desk lamp, dust in the light. No people.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2202,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: The case board in the dark office after the lamp is switched off: only a faint streetlight through venetian blinds catching the red strings. Dark, quiet.",
+    "medias": [
+     {
+      "value": "7dae2e1d-e6bb-45e3-a9bb-8dc698d991a9",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2302,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: The empty 1971 airplane cabin at night: two empty seats side by side under one warm reading light, rain on the dark window, a thin wisp of smoke. No people. Quiet, final.",
+    "medias": [
+     {
+      "value": "28037ef8-ea01-4930-9c66-6c5e03dadf75",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+]
