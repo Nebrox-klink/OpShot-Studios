@@ -1,0 +1,23 @@
+# End credits, DRAFT v001. One card per block, 7 s each. Lines starting with # are ignored.
+# To be checked before publication: wording, the sources list and the licence terms of each tool.
+THE GLASS
+A dramatised reconstruction of the NOKAS robbery
+Stavanger, Norway · 5 April 2004
+
+In memory of
+Arne Sigve Klungland
+1950 – 2004
+
+Sources
+NRK: the Nokas-ranet series, parts 1–4, and the NRK chronology of the robbery
+Stavanger Aftenblad · Aftenposten · Store norske leksikon
+Wikipedia (Norwegian and English) · Klikk.no
+Quotes from Kjell Alrich Schumann and Erik Håland: NRK (2024)
+
+Made with
+Illustrations and motion: AI-assisted (Higgsfield)
+Narration: synthetic voice (ElevenLabs)
+Music and sound effects: AI-generated (ElevenLabs)
+No real person's face is depicted.
+
+OpShot Studios

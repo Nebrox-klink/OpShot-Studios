@@ -2,7 +2,14 @@
 
 Timeline = same as mix_sound_v008.py (4 s card, per-scene slots from Atlas chunk lengths).
 Usage: python -I build_stills_animatic.py THE_GLASS_ROOT
-Output: 09_DELIVERABLES/animatic_stills_v008/THE_GLASS_stills_animatic_v008.mp4
+Output: 09_DELIVERABLES/animatic_motion_v008h/THE_GLASS_motion_animatic_v008h.mp4 (720p review animatic).
+
+Master mode (env vars; the defaults keep the 720p animatic unchanged):
+  RES=1080            output height (1920x1080); text, captions and offsets scale with it
+  OUT_DIR=..., NAME=  output folder (relative to ROOT) and file name
+  CLIP_CRF=14         quality of the per-shot intermediates (default 20)
+  AUDIO_BR=320k       AAC bitrate of the final mux (default 192k)
+  CREDITS=path        text file of end credits; cards are separated by blank lines, 7 s each, after the fade-out
 """
 import os
 import re
@@ -10,7 +17,13 @@ import subprocess
 import sys
 
 ROOT = os.path.abspath(sys.argv[1])
-FPS, W, H = 24, 1280, 720
+FPS = 24
+H = int(os.environ.get("RES", "720"))
+W = H * 16 // 9
+SC = H / 720  # text and offset scale
+CLIP_CRF = os.environ.get("CLIP_CRF", "20")
+AUDIO_BR = os.environ.get("AUDIO_BR", "192k")
+CREDITS = os.environ.get("CREDITS")
 CARD, LEAD = 4.0, 1.0
 SCRIPT = os.path.join(ROOT, "01_SCRIPT_STORYBOARD/revised/THE_GLASS_script_v008.md")
 ATLAS = os.path.join(ROOT, "07_AUDIO/atlas_v008")
@@ -29,7 +42,8 @@ MOTION = {"S02_01": 201, "S03_02": 302, "S05_01": 501, "S07_02": 7022, "S08_03":
           "S04_01": 401, "S04_02": 402, "S08_02": 802, "S09_02": 902, "S15_01": 1501, "S15_02": 1502,
           "S17_01": 1701, "S20_02": 2002, "S23_01": 23012}
 USE_MOTION = os.environ.get("USE_MOTION", "1") == "1"
-OUT = os.path.join(ROOT, "09_DELIVERABLES/animatic_motion_v008h")
+OUT = os.path.join(ROOT, os.environ.get("OUT_DIR", "09_DELIVERABLES/animatic_motion_v008h"))
+NAME = os.environ.get("NAME", "THE_GLASS_motion_animatic_v008h.mp4")
 TMP = os.path.join(OUT, "clips")
 os.makedirs(TMP, exist_ok=True)
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -104,6 +118,19 @@ clips = []
 k = 0
 
 
+def px(v):
+    return int(round(v * SC))
+
+
+def textfile(t):
+    """drawtext reads text from a file, so commas, quotes and colons need no escaping."""
+    global k
+    p = os.path.join(TMP, f"t{k:03d}_{abs(hash(t)) % 10**8}.txt")
+    with open(p, "w", encoding="utf-8") as fh:
+        fh.write(t)
+    return p
+
+
 def render(item, secs, extra, move):
     global k
     k += 1
@@ -120,7 +147,8 @@ def render(item, secs, extra, move):
         mdur = dur(mclip)
         slow = min(2.0, max(1.0, secs / mdur))
         hold = max(0.0, secs - mdur * slow)
-        vf = f"scale={W}:{H},setpts={slow:.4f}*PTS,fps={FPS},tpad=stop_mode=clone:stop_duration={hold + 0.5:.2f},setsar=1"
+        up = ":flags=lanczos,unsharp=5:5:0.35" if H > 720 else ""
+        vf = f"scale={W}:{H}{up},setpts={slow:.4f}*PTS,fps={FPS},tpad=stop_mode=clone:stop_duration={hold + 0.5:.2f},setsar=1"
         inp = ["-i", mclip]
     elif item[0] == "img":
         if move % 3 == 0:
@@ -130,34 +158,47 @@ def render(item, secs, extra, move):
         else:
             z, x, y = "1.08-0.06*on/{d}", "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
         z, x = z.format(d=frames), x.format(d=frames)
-        vf = f"scale=2560:1440,zoompan=z='{z}':x='{x}':y='{y}':d={frames}:s={W}x{H}:fps={FPS},setsar=1"
+        vf = f"scale={W * 2}:{H * 2},zoompan=z='{z}':x='{x}':y='{y}':d={frames}:s={W}x{H}:fps={FPS},setsar=1"
         inp = ["-loop", "1", "-i", item[1]]
+    elif item[0] == "credits":
+        lines = item[1]
+        vf = "setsar=1"
+        lh = px(40)
+        for i, ln in enumerate(lines):
+            if not ln:
+                continue
+            first = i == 0
+            yy = f"(h/2)-{(len(lines) - 1) * lh // 2}+{i * lh}-text_h/2"
+            vf += (f",drawtext=fontfile={FONTB if first else FONT}:textfile={textfile(ln)}:fontsize={px(30 if first else 24)}:"
+                   f"fontcolor={'white' if first else '0xc8c8cc'}:x=(w-text_w)/2:y={yy}")
+        vf += f",fade=t=in:st=0:d=0.8,fade=t=out:st={max(0, secs - 0.8):.2f}:d=0.8"
+        inp = ["-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}"]
     else:
         _, text, big, color, fg = item
         vf = "setsar=1"
         if text:
-            fs = 64 if big else 34
+            fs = px(64 if big else 34)
             ff = FONTB if big else FONT
             lines = text.split("\\n")
             for i, ln in enumerate(lines):
-                yy = f"(h/2)-{(len(lines) - 1) * 26}+{i * 52}-text_h/2"
-                vf += f",drawtext=fontfile={ff}:text='{ln.replace(':', chr(92) + ':')}':fontsize={fs}:fontcolor={fg}:x=(w-text_w)/2:y={yy}"
+                yy = f"(h/2)-{(len(lines) - 1) * px(26)}+{i * px(52)}-text_h/2"
+                vf += f",drawtext=fontfile={ff}:textfile={textfile(ln)}:fontsize={fs}:fontcolor={fg}:x=(w-text_w)/2:y={yy}"
         inp = ["-f", "lavfi", "-i", f"color=c={color}:s={W}x{H}:r={FPS}"]
     if extra and extra.startswith("COUNT"):
         n = int(extra[5:])
         vf += (f",drawtext=fontfile={FONTB}:text='%{{eif\\:min({n}\\,floor(t*{n}/{secs - 1:.2f}))\\:d}}':"
-               f"fontsize=46:fontcolor=white@0.85:x=w-text_w-40:y=36")
+               f"fontsize={px(46)}:fontcolor=white@0.85:x=w-text_w-{px(40)}:y={px(36)}")
     elif extra and extra.startswith("CAPTION:"):
         txt = extra[8:]
-        vf += (f",drawtext=fontfile={FONTB}:text='{txt}':fontsize=34:fontcolor=white:box=1:boxcolor=black@0.45:"
-               f"boxborderw=16:x=(w-text_w)/2:y=h-110:alpha='min(1,t/1.5)'")
+        vf += (f",drawtext=fontfile={FONTB}:textfile={textfile(txt)}:fontsize={px(34)}:fontcolor=white:box=1:boxcolor=black@0.45:"
+               f"boxborderw={px(16)}:x=(w-text_w)/2:y=h-{px(110)}:alpha='min(1,t/1.5)'")
     elif extra == "FADEOUT":
         vf += f",fade=t=out:st={max(0, secs - 2.5):.2f}:d=2.5"
     elif extra:
-        vf += (f",drawtext=fontfile={FONT}:text='{extra}':fontsize=24:"
-               f"fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=10:x=50:y=h-80")
+        vf += (f",drawtext=fontfile={FONT}:textfile={textfile(extra)}:fontsize={px(24)}:"
+               f"fontcolor=white:box=1:boxcolor=black@0.55:boxborderw={px(10)}:x={px(50)}:y=h-{px(80)}")
     subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", *inp, "-vf", vf, "-frames:v", str(frames), "-r", str(FPS),
-                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], check=True)
+                    "-c:v", "libx264", "-preset", "veryfast", "-crf", CLIP_CRF, "-pix_fmt", "yuv420p", out], check=True)
     clips.append(out)
     return secs
 
@@ -191,12 +232,21 @@ for n in sorted(PLAN):
     total += scene_t
     print(f"scene {n:2d}: {len(items)} items, {scene_t:.2f}/{L:.2f} s", flush=True)
 
+audio_end = total
+if CREDITS:
+    cards = [c.strip("\n").split("\n") for c in open(CREDITS, encoding="utf-8").read().split("\n\n") if c.strip()]
+    cards = [[ln for ln in c if not ln.startswith("#")] for c in cards]
+    for c in [c for c in cards if c]:
+        total += render(("credits", c), 7.0, None, 0)
+    print(f"credits: {len(cards)} cards", flush=True)
+
 lst = os.path.join(TMP, "list.txt")
 with open(lst, "w") as fh:
     fh.writelines(f"file '{c}'\n" for c in clips)
 silent = os.path.join(OUT, "video_only.mp4")
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", silent], check=True)
-final = os.path.join(OUT, "THE_GLASS_motion_animatic_v008h.mp4")
+final = os.path.join(OUT, NAME)
+tail = ["-af", "apad", "-t", f"{total:.3f}"] if CREDITS else ["-shortest"]
 subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", silent, "-i", MIX, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", final], check=True)
+                "-c:a", "aac", "-b:a", AUDIO_BR, *tail, "-movflags", "+faststart", final], check=True)
 print(f"video {total:.1f} s; WROTE {final}")
