@@ -1,6 +1,6 @@
 """YouTube thumbnails (1280x720, JPEG < 2 MB) from approved stills: graded image + gradient + bold type.
 
-Usage: python3 -I make_thumbnails.py THE_GLASS_ROOT OUT_DIR
+Usage: python3 -I make_thumbnails.py THE_GLASS_ROOT OUT_DIR [NAME,NAME...]
 All hooks are facts stated in the film. Keep the bottom-right corner clear (YouTube's duration badge).
 """
 import os
@@ -29,7 +29,13 @@ DESIGNS = [
      [("THE NOKAS", WHITE, 1.0), ("ROBBERY", AMBER, 1.0)], "bottom", "An animated documentary"),
     ("T5_wouldnt_break", "SH_2401.png", (0.62, 0.55), 1.25, "THE NOKAS ROBBERY",
      [("THE GLASS", WHITE, 1.0), ("THAT WOULDN'T", WHITE, 1.0), ("BREAK", AMBER, 1.45)], "left", None),
+    # v002: chase thumbnails, to pair with the title "Police Slowed Logins Across Europe to Catch One Fugitive"
+    ("T6_stayed_online", "SH_22042.png", (0.3, 0.5), 1.3, "THE NOKAS ROBBERY",
+     [("HE STAYED", WHITE, 1.0), ("ONLINE", AMBER, 1.25), ("TOO LONG.", WHITE, 1.0)], "left", None),
+    ("T6b_stayed_online_desk", "SH_2203.png", (0.3, 0.5), 1.2, "THE NOKAS ROBBERY",
+     [("HE STAYED", WHITE, 1.0), ("ONLINE", AMBER, 1.25), ("TOO LONG.", WHITE, 1.0)], "left", None),
 ]
+ONLY = set(sys.argv[3].split(",")) if len(sys.argv) > 3 else None  # optional: comma-separated design names
 
 
 def base(still, focus, zoom):
@@ -93,6 +99,8 @@ def text_block(im, kicker, lines, side, sub):
 
 
 for name, still, focus, zoom, kicker, lines, side, sub in DESIGNS:
+    if ONLY and name not in ONLY:
+        continue
     im = shade(base(still, focus, zoom), side)
     im = text_block(im, kicker, lines, side, sub)
     p = os.path.join(OUT, name + ".jpg")
