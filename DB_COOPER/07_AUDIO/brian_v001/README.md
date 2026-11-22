@@ -9,7 +9,7 @@
 
 | Scene | Length | Longest pause | Note |
 |---|---|---|---|
-| S01 | 27.7 s | 0.81 s | The voice-pilot take (D_brian_free). It contains "8:13", which still needs a primary source (see the fact ledger). |
+| S01 | 27.7 s | 0.81 s | The voice-pilot take (D_brian_free). **Must be re-recorded:** it says "Eight-thirteen"; script v004 says "A little after eight" (the FBI wording). About 500 credits. |
 | S03 | 18.5 s | 0.64 s | |
 | S04 | 12.3 s | 0.83 s | Cooper's line ("Miss, you'd better look at that note…") is a separate voice, not yet recorded. |
 | S05 | 24.0 s | 0.58 s | |
@@ -21,7 +21,7 @@
 `../brian_v001_preview_S01-S10.mp3` strings these takes together with 1.5 s gaps (3:33), for listening only.
 
 ## Still to record, after the credits reset (12 Dec) or a top-up: about 5,500 characters
-- **S07:** contains 8:00 / 8:13 / 10:15, which need a primary source first.
+- **S07:** now uses "a little after eight" (script v004), so it is ready to record.
 - **S11–S14:** the remaining clues.
 - **S15:** "All of them have died" (confirm Rackstraw's death first).
 - **S16–S17,** and **S18** (decide on the line "She didn't know what it meant"), **S19–S23.**

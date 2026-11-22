@@ -1,9 +1,9 @@
 [
  {
   "id": "S01",
-  "title": "Cold open: 8:13 pm",
-  "text": "[low, close] Eight-thirteen in the evening. About ten thousand feet above the forests of southwest Washington.\nIn the cockpit, the crew feel a small jolt. The tail lifts.\n[beat] At the back of the plane, the stairs are open to the rain. And the man who opened them is gone.\n[pause] He has two hundred thousand dollars strapped to his body. He's wearing a business suit and loafers.\n[softly] And for more than fifty years, nobody has been able to say who he was.",
-  "chars": 461
+  "title": "Cold open: the jump",
+  "text": "[low, close] A little after eight in the evening. About ten thousand feet above the forests of southwest Washington.\nIn the cockpit, the crew feel a small jolt. The tail lifts.\n[beat] At the back of the plane, the stairs are open to the rain. And the man who opened them is gone.\n[pause] He has two hundred thousand dollars strapped to his body. He's wearing a business suit and loafers.\n[softly] And for more than fifty years, nobody has been able to say who he was.",
+  "chars": 467
  },
  {
   "id": "S03",
@@ -32,8 +32,8 @@
  {
   "id": "S07",
   "title": "The jump",
-  "text": "[natural storytelling] Seven-forty. They take off again. He sends the last flight attendant to the cockpit. She looks back, and sees him tying something around his waist.\nEight o'clock. A red light. The stairs are down.\n[pause] Eight-thirteen. [very quiet] The jolt.\n[long pause]\nTwo hours later, they land in Reno. The cabin is empty. He's taken the money and the briefcase. He's left behind two parachutes, a few cigarette butts, and a black clip-on tie.",
-  "chars": 456
+  "text": "[natural storytelling] Seven-forty. They take off again. He sends the last flight attendant to the cockpit. She looks back, and sees him tying something around his waist.\nNot long after, a red light comes on. The stairs are down.\n[pause] A little after eight. [very quiet] The jolt.\n[long pause]\nTwo hours later, they land in Reno. The cabin is empty. He's taken the money and the briefcase. He's left behind two parachutes, a few cigarette butts, and a black clip-on tie.",
+  "chars": 472
  },
  {
   "id": "S08",

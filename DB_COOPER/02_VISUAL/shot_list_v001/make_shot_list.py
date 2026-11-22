@@ -50,7 +50,7 @@ S = [
  (701, 7, 6, "BG3", 1, "NEW", "The Boeing 727 taking off from a wet runway at night into rain, runway lights streaking, seen from the side at a distance. Generic livery."),
  (702, 7, 8, "BG2 CH1", 1, "NEW", "Point of view down a dim airplane aisle at night: at the far end, the silhouette of a man in a dark suit standing in the aisle, tying a cloth bag around his waist with a cord, cigarette smoke drifting, a single reading light. Seen from far away, a dark silhouette only, no face."),
  (703, 7, 6, "BG2", 1, "NEW", "Close-up of a closed cockpit door from the cabin side at night, dim light, an old metal handle, ominous quiet. No people."),
- (704, 7, 7, "BG2", 1, "REUSE:102", "The open rear stairs (shot 102, held longer); the 8:13 beat."),
+ (704, 7, 7, "BG2", 1, "REUSE:102", "The open rear stairs (shot 102, held longer); the jump beat."),
  (705, 7, 8, "BG6", 1, "NEW", "The interior of an empty 1971 airliner cabin lit by harsh flashlight beams at night, as police look inside: an empty seat with a black clip-on tie left on it, two parachute packs on the floor, cigarette butts in an armrest ashtray. No people visible, just the light beams."),
  # --- 8 The case board (3:01-3:20) ---
  (801, 8, 10, "BG6", 1, "REUSE:BG6", "Case board master (BG6); slow lateral track in the edit."),
