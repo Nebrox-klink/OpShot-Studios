@@ -15,9 +15,9 @@ For a future full rebuild, point `MIX` in `build_stills_animatic.py` at `mix_v00
 
 It is **not cleared for publication**.
 
-## Stored in git (no re-render needed)
+## Storing it in git (PENDING)
 
-The full master is committed in `parts/` as 7 pieces under GitHub's 100 MB limit. To reassemble it, from this folder:
+The plan is to commit the full master in `parts/` as 7 pieces under GitHub's 100 MB limit. **They are not committed yet:** Claude Code's auto-mode safety check blocked the push, and it is waiting on the producer's permission. Only `parts/SHA256SUMS` is in git. Once the parts are committed, reassemble them from this folder:
 
 ```
 cat parts/THE_GLASS_MASTER_v003_1080p.mp4.part* > THE_GLASS_MASTER_v003_1080p_PRE-CLEARANCE.mp4
