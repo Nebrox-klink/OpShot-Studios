@@ -1,0 +1,124 @@
+{
+ "requests": [
+  {
+   "index": 1,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: Portland airport terminal, rainy grey November afternoon in 1971: wide establishing shot from the curb, low modernist terminal building with big glass windows glowing warm amber inside, wet pavement reflecting light, a few early-1970s American sedans and a taxi, small distant travellers with umbrellas and suitcases standing still. Palette: rain grey, warm amber, olive.",
+    "medias": [
+     {
+      "value": "d691a1fb-90d8-4292-8224-e33c22ceafbb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 2,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: Interior of an empty early-1970s Boeing 727 passenger cabin, seen from the middle of the aisle looking toward the rear: rows of seats with mustard and olive upholstery, cream walls and overhead bins, small round-cornered windows with grey rain outside, warm reading lights, cigarette smoke hanging in a beam of light, a closed door at the far rear. No people. Palette: 1971 Kodachrome amber, mustard, olive, cream.",
+    "medias": [
+     {
+      "value": "24d23986-fca7-451a-b2bb-03f602511b57",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 3,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: A silver-and-white Boeing 727 trijet seen from below and behind at night, flying low through rain and cloud above a black forest, landing gear down, the rear ventral airstair under the tail lowered and hanging open like a dark mouth, a faint red beacon light. Plain unmarked livery. Palette: deep indigo, black, cold silver, one red accent.",
+    "medias": [
+     {
+      "value": "d691a1fb-90d8-4292-8224-e33c22ceafbb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 4,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: Aerial view looking down at endless dense evergreen forest of southwest Washington at night in heavy rain, low clouds, a winding river faintly visible, no lights anywhere, no people. Vast, empty, cold. Palette: rain-night indigo, black-green, cold grey.",
+    "medias": [
+     {
+      "value": "d691a1fb-90d8-4292-8224-e33c22ceafbb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 5,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: A wide pale sandy beach on the Columbia River in winter, grey water, cottonwood trees bare on the far bank, low overcast light, driftwood, a small campfire ring of stones on the sand, no people. Quiet, mysterious. Palette: pale winter gold sand, slate grey water, muted green.",
+    "medias": [
+     {
+      "value": "d691a1fb-90d8-4292-8224-e33c22ceafbb",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 6,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: A dim 1970s FBI field office at night: a large cork board on the wall covered with pinned small paintings and photographs (all blank or abstract, no writing), connected by red string; an olive-green desk lamp throwing warm tungsten light, a rotary phone, a typewriter, stacked cardboard evidence boxes, cigarette smoke, rain on the window behind venetian blinds. No people. Palette: warm tungsten, cork brown, red string accent.",
+    "medias": [
+     {
+      "value": "24d23986-fca7-451a-b2bb-03f602511b57",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 7,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: Character reference sheet on a neutral warm-grey background: the same man shown three times, a slim man in his mid-forties about 180 cm tall, short dark hair, dark business suit, white shirt, narrow black clip-on tie with a small pearl tie clip, dark raincoat over his arm, brown loafers, carrying a black attach\u00e9 case. View 1: full figure seen directly from behind. View 2: from behind at three-quarters, face turned away and hidden. View 3: seated figure in deep shadow wearing dark wraparound sunglasses, face almost fully in silhouette. Never a clear face. Palette: charcoal, white, black.",
+    "medias": [
+     {
+      "value": "24d23986-fca7-451a-b2bb-03f602511b57",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 8,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic. Match ONLY the brushwork, texture and painterly style of the reference image, not its content, location or colours. United States, 1971, period-accurate. No text, letters, numbers, signs, logos or airline livery. No blood. SHOT: Character reference sheet on a neutral warm-grey background: a young 1971 American airline flight attendant in a generic period uniform (fitted teal jacket, short skirt, small scarf, small cap, no insignia or logos), dark hair pinned up. View 1: full figure from behind. View 2: from behind at three-quarters, face turned away. View 3: small figure in a wide cabin aisle seen from behind. Never a clear face. Palette: muted teal, cream.",
+    "medias": [
+     {
+      "value": "24d23986-fca7-451a-b2bb-03f602511b57",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}
