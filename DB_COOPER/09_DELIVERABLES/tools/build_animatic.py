@@ -12,7 +12,9 @@ import sys
 ROOT = os.path.abspath(sys.argv[1])
 OUT = os.path.abspath(sys.argv[2])
 SCENES = [int(x) for x in (sys.argv[3] if len(sys.argv) > 3 else "1,2,3,4,5,6,7,8,9,10").split(",")]
-W, H, FPS = 1280, 720, 25
+W, H, FPS = int(os.environ.get("DBC_W", 1280)), int(os.environ.get("DBC_H", 720)), 25
+K = H / 720  # text sizes are designed at 720p and scaled
+CRF = os.environ.get("DBC_CRF", "")
 LEAD, TAIL = 1.0, 0.5
 FONT = "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf"
 FONT2 = "/usr/share/fonts/opentype/inter/InterDisplay-Medium.otf"
@@ -59,20 +61,20 @@ def overlays(seconds, card, note):
     vf = []
     if card and card[0] == "D.B. COOPER":  # the film title: big title, small subtitle under it, whole shot
         al = f"if(lt(t,0.6),t/0.6,if(lt(t,{seconds - 0.6:.2f}),1,max(0,({seconds:.2f}-t)/0.6)))"
-        vf.append(f"drawtext=fontfile={FONT}:text='{esc(card[0])}':fontsize=110:fontcolor=white:x=(w-tw)/2:y=h/2-80"
+        vf.append(f"drawtext=fontfile={FONT}:text='{esc(card[0])}':fontsize={round(110 * K)}:fontcolor=white:x=(w-tw)/2:y=h/2-{round(80 * K)}"
                   f":alpha='{al}'")
-        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(card[1])}':fontsize=30:fontcolor=0xF2B134:x=(w-tw)/2"
-                  f":y=h/2+50:alpha='{al}'")
+        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(card[1])}':fontsize={round(30 * K)}:fontcolor=0xF2B134:x=(w-tw)/2"
+                  f":y=h/2+{round(50 * K)}:alpha='{al}'")
     elif card:
         big, small = card
         vf.append(f"drawbox=x=0:y=0:w=iw:h=ih:color=black@0.35:t=fill:enable='lt(t,3.2)'")
-        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(big)}':fontsize=34:fontcolor=0xF2B134:x=(w-tw)/2:y=h/2-70"
+        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(big)}':fontsize={round(34 * K)}:fontcolor=0xF2B134:x=(w-tw)/2:y=h/2-{round(70 * K)}"
                   f":alpha='if(lt(t,0.4),t/0.4,if(lt(t,2.8),1,max(0,(3.2-t)/0.4)))':enable='lt(t,3.2)'")
-        vf.append(f"drawtext=fontfile={FONT}:text='{esc(small)}':fontsize=72:fontcolor=white:x=(w-tw)/2:y=h/2-20"
+        vf.append(f"drawtext=fontfile={FONT}:text='{esc(small)}':fontsize={round(72 * K)}:fontcolor=white:x=(w-tw)/2:y=h/2-{round(20 * K)}"
                   f":alpha='if(lt(t,0.4),t/0.4,if(lt(t,2.8),1,max(0,(3.2-t)/0.4)))':enable='lt(t,3.2)'")
     if note:
-        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(note)}':fontsize=22:fontcolor=white@0.8:x=24:y=h-44"
-                  f":box=1:boxcolor=black@0.5:boxborderw=8")
+        vf.append(f"drawtext=fontfile={FONT2}:text='{esc(note)}':fontsize={round(22 * K)}:fontcolor=white@0.8:x={round(24 * K)}:y=h-{round(44 * K)}"
+                  f":box=1:boxcolor=black@0.5:boxborderw={round(8 * K)}")
     return vf
 
 
@@ -87,7 +89,7 @@ def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
               f"setpts={k:.4f}*PTS", f"tpad=stop_mode=clone:stop_duration={seconds:.2f}", f"trim=0:{seconds:.3f}",
               "setpts=PTS-STARTPTS", fade] + overlays(seconds, card, note)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", motion, "-an", "-vf", ",".join(vf), "-r", str(FPS),
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], check=True)
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", CRF or "20", "-pix_fmt", "yuv420p", out], check=True)
         return out
     pre = f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},setsar=1"
     if move == "push":
@@ -100,7 +102,7 @@ def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
               f":fps={FPS}")
     vf = [pre, zp, fade] + overlays(seconds, card, note)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", path, "-t", f"{seconds:.3f}", "-vf", ",".join(vf),
-                    "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", out],
+                    "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", CRF or "22", "-pix_fmt", "yuv420p", out],
                    check=True)
     return out
 
