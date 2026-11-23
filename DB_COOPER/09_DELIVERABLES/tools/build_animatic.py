@@ -31,6 +31,8 @@ REUSE = {"BG1": os.path.join(REF, "BG1_portland_airport_clean.png"), "BG3": os.p
 CARDS = {2: ("D.B. COOPER", "THE CASE THAT WON'T CLOSE"), 9: ("CLUE 1", "THE NAME"), 10: ("CLUE 2", "WHAT HE KNEW"),
          11: ("CLUE 3", "THE NIGHT"), 12: ("CLUE 4", "THE MONEY"), 13: ("CLUE 5", "THE RIVER"), 14: ("CLUE 6", "THE TIE")}
 PLACEHOLDER = {2: 6.0, 7: 14.0}
+KCLIPS = os.path.join(ROOT, "06_AI_VIDEO/kling_pack_v001/clips")
+MOTION = {"102": "K01.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
 
 
 def dur(p):
@@ -49,8 +51,18 @@ def esc(t):
     return t.replace("\\", "\\\\").replace(":", "\\:").replace("'", "’")
 
 
-def shot_clip(i, path, seconds, move, card=None, note=None):
+def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
     n = max(1, round(seconds * FPS))
+    if motion:  # approved motion clip: fit to frame, slow down (at most 2x) to fill the shot, then hold the last frame
+        md = dur(motion)
+        k = min(2.0, max(1.0, seconds / md))
+        vf = [f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps={FPS}",
+              f"setpts={k:.4f}*PTS", f"tpad=stop_mode=clone:stop_duration={seconds:.2f}", f"trim=0:{seconds:.3f}",
+              f"fade=in:st=0:d=0.35,fade=out:st={max(0, seconds - 0.35):.2f}:d=0.35"]
+        out = os.path.join(TMP, f"v{i:03d}.mp4")
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", motion, "-an", "-vf", ",".join(vf), "-r", str(FPS),
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], check=True)
+        return out
     pre = f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},setsar=1"
     if move == "push":
         zp = f"zoompan=z='1+0.10*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
@@ -112,7 +124,9 @@ def main():
             acc = end
             card = CARDS.get(sc) if j == 0 else None
             note = None if has_audio or sc == 2 else f"Scene {sc}: narration not yet recorded"
-            clips.append(shot_clip(k, src(sid, source), seconds, moves[k % 4], card, note))
+            key = source.split(":")[1] if source.startswith("REUSE:") else str(sid)
+            mo = os.path.join(KCLIPS, MOTION[key]) if key in MOTION and os.path.isfile(os.path.join(KCLIPS, MOTION[key])) else None
+            clips.append(shot_clip(k, src(sid, source), seconds, moves[k % 4], card, note, mo))
             log.append(f"{start:7.2f}  scene {sc:2d}  shot {sid}  {seconds:5.2f}s")
             k += 1
         t += length
