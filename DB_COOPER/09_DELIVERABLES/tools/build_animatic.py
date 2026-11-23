@@ -31,6 +31,7 @@ REUSE = {"BG1": os.path.join(REF, "BG1_portland_airport_clean.png"), "BG3": os.p
 CARDS = {2: ("D.B. COOPER", "THE CASE THAT WON'T CLOSE"), 9: ("CLUE 1", "THE NAME"), 10: ("CLUE 2", "WHAT HE KNEW"),
          11: ("CLUE 3", "THE NIGHT"), 12: ("CLUE 4", "THE MONEY"), 13: ("CLUE 5", "THE RIVER"), 14: ("CLUE 6", "THE TIE")}
 PLACEHOLDER = {2: 6.0, 7: 14.0}
+PENDING = os.path.join(TMP, "pending.png")
 KCLIPS = os.path.join(ROOT, "06_AI_VIDEO/kling_pack_v001/clips")
 MOTION = {"102": "K01.mp4", "BG3": "K02.mp4", "BG4": "K03.mp4", "401": "K04.mp4", "502": "K05.mp4", "BG6": "K06.mp4",
           "1101": "K07.mp4", "BG5": "K08.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
@@ -103,6 +104,8 @@ def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
 
 
 def main():
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", REUSE["BG6"], "-vf", "eq=brightness=-0.25:saturation=0.4",
+                    "-frames:v", "1", PENDING], check=True)
     moves = ["push", "panr", "pull", "panl"]
     clips, auds, t, k, log = [], [], 0.0, 0, []
     for sc in SCENES:
@@ -130,9 +133,12 @@ def main():
             acc = end
             card = CARDS.get(sc) if j == 0 else None
             note = None if has_audio or sc == 2 else f"Scene {sc}: narration not yet recorded"
+            path = src(sid, source)
+            if not os.path.isfile(path):  # round-2 still not generated yet: dimmed case board + label
+                path, note = PENDING, f"Shot {sid}: still pending (round 2)"
             key = source.split(":")[1] if source.startswith("REUSE:") else str(sid)
             mo = os.path.join(KCLIPS, MOTION[key]) if key in MOTION and os.path.isfile(os.path.join(KCLIPS, MOTION[key])) else None
-            clips.append(shot_clip(k, src(sid, source), seconds, moves[k % 4], card, note, mo))
+            clips.append(shot_clip(k, path, seconds, moves[k % 4], card, note, mo))
             log.append(f"{start:7.2f}  scene {sc:2d}  shot {sid}  {seconds:5.2f}s")
             k += 1
         t += length

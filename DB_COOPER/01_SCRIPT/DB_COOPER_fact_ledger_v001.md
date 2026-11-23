@@ -55,8 +55,8 @@ Checked on 22 November 2026 against the script `DB_COOPER_preproduction_v002.md`
 |---|---|---|---|
 | S1 | **Richard McCoy**: 7 Apr 1972, United Flight 855, $500,000, jumped over Utah, arrested days later; born Dec 1942 (29) | ✅ ✏️ | The FBI ruled him out: "didn't match the nearly identical physical descriptions… and for other reasons" (an alibi is reported). Researchers still dispute this. [FBI famous cases](https://www.fbi.gov/history/famous-cases/richard-floyd-mccoy-jr); [Stars and Stripes 2024](https://stripes.com/history/2024-02-20/richard-mccoy-db-cooper-skyjacking-13064153.html) |
 | S2 | **Kenneth Christiansen**: former paratrooper, Northwest employee (mechanic, flight attendant, purser); bought a house with cash about a year later; his brother Lyle came forward; died 1994; 5 ft 8 in and 150 lb, too small for the description | ✅ ✏️ ("about a year after") | [Star Tribune](https://www.startribune.com/how-the-d-b-cooper-mystery-got-a-minnesota-twist/11592341); [Fox News](https://www.foxnews.com/media/brad-meltzer-d-b-coopers-fox-nation-greatest-conspiracies) |
-| S3 | **Duane Weber**: died 1995; deathbed "I'm Dan Cooper" per his widow Jo; excluded by DNA | ✅ | [NPR 2000](https://www.npr.org/2000/08/19/1080901/d-b-cooper-a-death-bed-confession); FBI 2007. "She didn't know what it meant" is dramatised; keep it soft or cut it. |
-| S4 | **Robert Rackstraw**: Vietnam veteran; questioned in 1978 and cleared in 1979 (AP); aged 28 in 1971; a flight attendant didn't pick him from mugshots; Thomas Colbert's 2016 case; denied it | ✅ ✏️ (age added) | [Press Herald / AP](https://www.pressherald.com/?p=967813); [Rolling Stone 2018](https://www.rollingstone.com/culture/culture-news/d-b-cooper-investigators-claim-theyve-discovered-skyjackers-identity-693912/). ⚠ Year of death (2019) to confirm. |
+| S3 | **Duane Weber**: died 1995; deathbed "I'm Dan Cooper" per his widow Jo; excluded by DNA | ✅ | [NPR 2000](https://www.npr.org/2000/08/19/1080901/d-b-cooper-a-death-bed-confession); FBI 2007. "She didn't know what it meant" is dramatised; the producer chose to keep it (23 Nov). |
+| S4 | **Robert Rackstraw**: Vietnam veteran; questioned in 1978 and cleared in 1979 (AP); aged 28 in 1971; a flight attendant didn't pick him from mugshots; Thomas Colbert's 2016 case; denied it | ✅ ✏️ (age added) | [Press Herald / AP](https://www.pressherald.com/?p=967813); [Rolling Stone 2018](https://www.rollingstone.com/culture/culture-news/d-b-cooper-investigators-claim-theyve-discovered-skyjackers-identity-693912/). ✅ Died 9 July 2019, San Diego ([The Columbian / AP, 11 Jul 2019](https://www.columbian.com/news/2019/jul/11/d-b-cooper-suspect-robert-rackstraw-dies/); [Fox News](https://www.foxnews.com/us/san-diego-man-thought-to-be-db-cooper-dies-report)). Confirmed 23 Nov. |
 | S5 | **"The man who died that night"**: the FBI and Himmelsbach view | ✅ | Presented as the majority view of investigators, not as fact. |
 
 ## Not used, but worth knowing
@@ -67,5 +67,5 @@ Checked on 22 November 2026 against the script `DB_COOPER_preproduction_v002.md`
 
 ## Before the voice is recorded
 1. Download or read the FBI Vault NORJAK summary for the H12 times (8:00 / 8:13 / 10:15).
-2. Confirm Rackstraw's year of death (S4).
+2. ~~Confirm Rackstraw's year of death (S4).~~ Done: 9 July 2019.
 3. Optional: the Cooper vane date (C15).

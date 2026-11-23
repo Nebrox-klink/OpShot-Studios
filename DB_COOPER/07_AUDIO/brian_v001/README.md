@@ -20,9 +20,29 @@
 
 `../brian_v001_preview_S01-S10.mp3` strings these takes together with 1.5 s gaps (3:33), for listening only.
 
-## Still to record, after the credits reset (12 Dec) or a top-up: about 5,500 characters
-- **S07:** now uses "a little after eight" (script v004), so it is ready to record.
-- **S11–S14:** the remaining clues.
-- **S15:** "All of them have died" (confirm Rackstraw's death first).
-- **S16–S17,** and **S18** (decide on the line "She didn't know what it meant"), **S19–S23.**
-- **Cooper's two lines:** a separate quiet, flat voice through an intercom filter.
+## Recorded (23 Nov 2026, Creator plan): S01 re-record, S07, S11–S23
+
+15 takes, about 6,270 credits, 1 take each. The prompts sent use the JSON text plus direction tags ([building], [slower], [curious, lifting], [firm, slower], [quiet]).
+
+| Scene | Length | Longest pause | Note |
+|---|---|---|---|
+| S01 | 27.1 s | 0.82 s | Re-recorded with "A little after eight". The old take is in `superseded/S01_v1_eight-thirteen.mp3`. |
+| S07 | 29.9 s | 1.83 s | The long pause after "The jolt" is scripted. |
+| S11 | 38.0 s | 0.95 s | |
+| S12 | 24.5 s | 0.79 s | |
+| S13 | 44.4 s | 0.79 s | |
+| S14 | 36.0 s | 0.63 s | |
+| S15 | 11.3 s | 0.62 s | "All of them have died": Rackstraw's death (9 Jul 2019) is now confirmed in the ledger. |
+| S16 | 26.8 s | 0.59 s | |
+| S17 | 20.1 s | 0.72 s | |
+| S18 | 13.5 s | 0.68 s | Keeps "She didn't know what it meant" (the producer's decision, 23 Nov). |
+| S19 | 21.6 s | 0.66 s | |
+| S20 | 15.4 s | 0.65 s | |
+| S21 | 32.0 s | 0.92 s | |
+| S22 | 18.8 s | 0.58 s | |
+| S23 | 16.5 s | 1.35 s | The long pause is scripted. |
+
+Speaking rate ranges from 127 to 182 words a minute across all scenes, so no take looks like it skipped text. Not yet checked by ear: the producer should listen.
+
+## Still to record
+- **Cooper's line** (scene 4, "Miss, you'd better look at that note. I have a bomb."): three test voices are in `../cooper_voice_test_v001/`; waiting for the producer's pick.
