@@ -32,7 +32,7 @@ CARDS = {2: ("D.B. COOPER", "THE CASE THAT WON'T CLOSE"), 9: ("CLUE 1", "THE NAM
          11: ("CLUE 3", "THE NIGHT"), 12: ("CLUE 4", "THE MONEY"), 13: ("CLUE 5", "THE RIVER"), 14: ("CLUE 6", "THE TIE")}
 PLACEHOLDER = {2: 6.0, 7: 14.0}
 KCLIPS = os.path.join(ROOT, "06_AI_VIDEO/kling_pack_v001/clips")
-MOTION = {"102": "K01.mp4", "BG4": "K03.mp4", "401": "K04.mp4", "502": "K05.mp4", "BG6": "K06.mp4",
+MOTION = {"102": "K01.mp4", "BG3": "K02.mp4", "BG4": "K03.mp4", "401": "K04.mp4", "502": "K05.mp4", "BG6": "K06.mp4",
           "1101": "K07.mp4", "BG5": "K08.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
 
 

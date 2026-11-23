@@ -14,3 +14,4 @@ Built with `../tools/build_animatic.py . OUT.mp4 [scenes]`. It is free: local ff
 ## v002 and v003
 - **v002:** K01 (the open rear stairs) as motion at shots 102 and 704.
 - **v003:** adds K03 (104), K04 (401), K05 (502) and K06 (801). Same timing and length as v001/v002 (233.5 s). Cards now draw over motion clips too. K07 (1101) and K08 (1301) are wired in and appear once scenes 11 and 13 have narration. K02 (103) is still pending.
+- **v004:** adds K02 (103). Shots 102, 103, 104, 401, 502, 704 and 801 are now motion clips. Same length, 233.5 s.

@@ -17,4 +17,6 @@
 | K07 | 1101 the storm | `SGP_PROD_ai_web_327421100531247` | 1101 (scene 11) | Strong swirling clouds and diagonal rain; the treeline is steady. Stylised but in keeping. Clean. |
 | K08 | BG5 sandbar (1301) | `SGP_PROD_ai_web_327421135537089` | 1301 (scene 13) | The river flows, mist drifts and the branches move slightly. Clean. |
 
-K02 (the 727 at night, shot 103) hasn't arrived yet; shot 103 still uses the still with a push-in.
+| K02 | BG3 the 727 at night (103) | `SGP_PROD_ai_web_327420785656644` | 103 | Arrived separately, watermark-free, audio removed. **Approved.** The plane flies slowly away into the rain with the stairs and gear down and the red light on. No warping or markings. |
+
+All eight round-1 clips are approved.
