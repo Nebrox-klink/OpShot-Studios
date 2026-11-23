@@ -7,3 +7,5 @@ Line: "Miss, you'd better look at that note. I have a bomb." Direction: [quiet, 
 - **C: Roger** (`CwhRBWXzGAHq8TQ4Fs17`), laid-back and resonant.
 
 `*_raw.mp3` is the ElevenLabs output. `*_intercom.mp3` adds the intercom-style filter (300–3,400 Hz band, light compression). `../cooper_voice_test_v001_ABC_intercom.mp3` plays A, B and C in order with 1 s gaps.
+
+**Picked (23 Nov): A, Callum, with the intercom filter.** It is copied to `../cooper_v001/C04_miss_note_bomb.mp3`. It sits about 4 LU under Brian (−25.8 vs −21.6 LUFS), which is deliberately quiet. Revisit at the sound mix.

@@ -122,7 +122,7 @@
     "model": "nano_banana_2_1",
     "resolution": "2k",
     "aspect_ratio": "16:9",
-    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: A 1960s military helicopter flying over misty green jungle hills, seen from a distance, faded and soft like an old memory. No markings.",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. United States, 1971 unless stated, period-accurate. No text, letters, numbers, signs, logos or airline livery anywhere. No blood. SHOT: Misty green jungle hills at dusk in Southeast Asia, layered ridges fading into haze, faded and soft like an old memory. No aircraft, no people, no markings.",
     "medias": [
      {
       "value": "a54e85da-f465-46eb-b7aa-2330992beb60",

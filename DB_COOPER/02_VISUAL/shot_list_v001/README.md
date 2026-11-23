@@ -29,3 +29,14 @@
 
 ## Cost
 42 + 4 redos = 46 images × 2 = **92 Higgsfield credits**.
+
+## Round 2 (23 Nov 2026): 16 stills, 32 credits, all approved first try
+
+- **Changes made at submission:**
+  - 1902 no longer shows a military helicopter, because the ledger only supports "Vietnam veteran with parachute training". It is now misty jungle hills with no aircraft.
+  - 1802 is set in the mid-1990s (Weber died in 1995) and has BG6 added as a style reference.
+- **QC (contact sheet at 640 px, crops at full resolution):** no readable text or faces. 2102's walking man is seen only from behind. 2201's box labels are blank. 1802's clock is blank.
+- **1702:** the parked car's licence plate had partly legible characters. I painted them out locally. The original is in `superseded/SH_1702_v1_plate.png` (gitignored, like all PNGs).
+- `round2_contact_sheet.jpg` shows all 16.
+
+All 65 shots in the shot list now have an image.

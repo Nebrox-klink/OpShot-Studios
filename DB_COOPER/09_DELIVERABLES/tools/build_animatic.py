@@ -32,6 +32,8 @@ CARDS = {2: ("D.B. COOPER", "THE CASE THAT WON'T CLOSE"), 9: ("CLUE 1", "THE NAM
          11: ("CLUE 3", "THE NIGHT"), 12: ("CLUE 4", "THE MONEY"), 13: ("CLUE 5", "THE RIVER"), 14: ("CLUE 6", "THE TIE")}
 PLACEHOLDER = {2: 6.0, 7: 14.0}
 PENDING = os.path.join(TMP, "pending.png")
+DIALOGUE = {4: os.path.join(ROOT, "07_AUDIO/cooper_v001/C04_miss_note_bomb.mp3")}  # Callum, intercom filter
+GAP = 0.4  # silence between the narration and the dialogue line
 KCLIPS = os.path.join(ROOT, "06_AI_VIDEO/kling_pack_v001/clips")
 MOTION = {"102": "K01.mp4", "BG3": "K02.mp4", "BG4": "K03.mp4", "401": "K04.mp4", "502": "K05.mp4", "BG6": "K06.mp4",
           "1101": "K07.mp4", "BG5": "K08.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
@@ -112,6 +114,13 @@ def main():
         shots = [s for s in msl.S if s[1] == sc]
         a = os.path.join(AUD, f"S{sc:02d}.mp3")
         has_audio = os.path.isfile(a)
+        if has_audio and sc in DIALOGUE:  # narration, a short gap, then the character line
+            comb = os.path.join(TMP, f"n{sc:02d}.wav")
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-i", DIALOGUE[sc], "-filter_complex",
+                            f"[0]aformat=sample_rates=44100:channel_layouts=stereo,apad=pad_dur={GAP}[n];"
+                            "[1]aformat=sample_rates=44100:channel_layouts=stereo[d];[n][d]concat=n=2:v=0:a=1",
+                            comb], check=True)
+            a = comb
         length = (LEAD + dur(a) + TAIL) if has_audio else PLACEHOLDER.get(sc, 10.0)
         wsum = sum(s[2] for s in shots)
         # audio for this scene: lead silence + voice + tail, padded/trimmed to the exact scene length

@@ -97,7 +97,7 @@ S = [
  (1802, 18, 10, "", 2, "NEW", "A dark quiet bedroom at night, a single bedside lamp glowing, an empty bed with rumpled sheets, a glass of water. No people. Soft pale green and amber."),
  # --- 19 Rackstraw (8:58-9:21) ---
  (1901, 19, 10, "BG6", 2, "NEW", "A single cut-out paper silhouette of a young man in a military cap, olive-drab accent, pinned on cork under a lamp. No face details, no writing."),
- (1902, 19, 13, "BG3", 2, "NEW", "A 1960s military helicopter flying over misty green jungle hills, seen from a distance, faded and soft like an old memory. No markings."),
+ (1902, 19, 13, "BG3", 2, "NEW", "Misty green jungle hills at dusk in Southeast Asia, layered ridges fading into haze, faded and soft like an old memory. No aircraft, no people, no markings."),
  # --- 20 The one who never existed (9:21-9:42) ---
  (2001, 20, 21, "BG6", 2, "NEW", "On the cork board under the lamp: an empty dotted outline of a man's silhouette drawn on paper with nothing inside it, red strings hanging slack from it to the other pinned items. Eerie. No writing."),
  # --- 21 Three endings (9:42-10:21) ---
