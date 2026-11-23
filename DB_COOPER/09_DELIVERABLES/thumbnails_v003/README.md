@@ -48,3 +48,9 @@ These are the videos getting the most views compared with their channel's normal
 **Recommendation:** run T8 against T6 in YouTube Test & Compare. T8 has the name and the central question. T6 has the strongest visual hook: a pointer to the exact door.
 
 **Open question for the producer:** the FBI composite sketch is the most recognisable image of the case and appears on most of the winning thumbnails. As a work of the US government, it is in the public domain. Using it, or a painted version in our style, would bend the "no faces" rule, which is why it is not used here.
+
+## Added: T10 and T11, with the FBI composite sketch (the producer said yes, 23 Nov)
+- **T10_sketch_never_found:** the pinned sketch (left) + the 727 at night + D.B. COOPER · [NEVER FOUND.] + a ring on the stairs.
+- **T11_sketch_from_here:** the pinned sketch (left) + the open rear door + THE D.B. COOPER CASE · HE JUMPED · [FROM HERE] + arrow and ring on the door.
+- The sketch is an AI reproduction of FBI Composite B (public domain). Details are in `../../02_VISUAL/sketch_v001/README.md`.
+- **Recommendation, updated:** test **T10 against T8**: the sketch and the name against the question. The niche study suggests the sketch is the strongest single element.

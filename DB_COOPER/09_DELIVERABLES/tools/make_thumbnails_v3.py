@@ -147,8 +147,50 @@ def t9(im):  # the 727 at night, stairs down
     return im
 
 
+SKETCH = os.path.join(ROOT, "02_VISUAL/sketch_v001/SK1_pinned_pencil.png")  # AI reproduction of FBI Composite B
+
+
+def sketch(im, x, y, h, angle=-3):
+    """Pin the sketch sheet onto the picture, slightly rotated, with a drop shadow."""
+    sk = Image.open(SKETCH).convert("RGBA")
+    sk = sk.crop((int(sk.width * 0.06), int(sk.height * 0.05), int(sk.width * 0.95), int(sk.height * 0.95)))
+    sk = sk.resize((int(sk.width * h / sk.height), h), Image.LANCZOS)
+    sk = ImageEnhance.Contrast(sk).enhance(1.15)
+    sk = sk.rotate(angle, expand=True, resample=Image.BICUBIC)
+    sh = Image.new("RGBA", sk.size, (0, 0, 0, 0))
+    sh.putalpha(sk.getchannel("A").point(lambda v: int(v * 0.75)))
+    sh = sh.filter(ImageFilter.GaussianBlur(14))
+    base = im.convert("RGBA")
+    base.alpha_composite(sh, (x + 14, y + 18))
+    base.alpha_composite(sk, (x, y))
+    return base.convert("RGB")
+
+
+def t10(im):  # the sketch + the 727 at night
+    im = shade(im, (440, 400, 1180, 720), 190)
+    im = sketch(im, 26, 24, 672)
+    d = ImageDraw.Draw(im)
+    outlined(d, (530, 425), "D.B. COOPER", 142)
+    boxed(d, (536, 600), "NEVER FOUND.", 76)
+    ring(d, (720, 330, 870, 470), width=10)
+    return im
+
+
+def t11(im):  # the sketch + the open rear door
+    im = shade(im, (760, 60, 1280, 640), 190)
+    im = sketch(im, 26, 24, 672)
+    d = ImageDraw.Draw(im)
+    tag(d, (850, 70), "THE D.B. COOPER CASE", 36)
+    outlined(d, (850, 160), "HE JUMPED", 96)
+    boxed(d, (854, 300), "FROM HERE", 80)
+    ring(d, (668, 255, 822, 505))
+    arrow(d, (960, 470), (828, 420), width=18, head=50)
+    return im
+
+
 DESIGNS = [("T6_jumped_from_here", "SH_102.png", t6), ("T7_5800_in_the_sand", "SH_1303.png", t7),
-           ("T8_who_was_db_cooper", "SH_2001.png", t8), ("T9_jumped_never_found", "BG3_727_night.png", t9)]
+           ("T8_who_was_db_cooper", "SH_2001.png", t8), ("T9_jumped_never_found", "BG3_727_night.png", t9),
+           ("T10_sketch_never_found", "BG3_727_night.png", t10), ("T11_sketch_from_here", "SH_102.png", t11)]
 
 for name, still, fn in DESIGNS:
     if ONLY and name not in ONLY:
