@@ -32,7 +32,8 @@ CARDS = {2: ("D.B. COOPER", "THE CASE THAT WON'T CLOSE"), 9: ("CLUE 1", "THE NAM
          11: ("CLUE 3", "THE NIGHT"), 12: ("CLUE 4", "THE MONEY"), 13: ("CLUE 5", "THE RIVER"), 14: ("CLUE 6", "THE TIE")}
 PLACEHOLDER = {2: 6.0, 7: 14.0}
 KCLIPS = os.path.join(ROOT, "06_AI_VIDEO/kling_pack_v001/clips")
-MOTION = {"102": "K01.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
+MOTION = {"102": "K01.mp4", "BG4": "K03.mp4", "401": "K04.mp4", "502": "K05.mp4", "BG6": "K06.mp4",
+          "1101": "K07.mp4", "BG5": "K08.mp4"}  # still id -> approved motion clip; shots that reuse the still (REUSE:102) get it too
 
 
 def dur(p):
@@ -51,28 +52,8 @@ def esc(t):
     return t.replace("\\", "\\\\").replace(":", "\\:").replace("'", "’")
 
 
-def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
-    n = max(1, round(seconds * FPS))
-    if motion:  # approved motion clip: fit to frame, slow down (at most 2x) to fill the shot, then hold the last frame
-        md = dur(motion)
-        k = min(2.0, max(1.0, seconds / md))
-        vf = [f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps={FPS}",
-              f"setpts={k:.4f}*PTS", f"tpad=stop_mode=clone:stop_duration={seconds:.2f}", f"trim=0:{seconds:.3f}",
-              f"fade=in:st=0:d=0.35,fade=out:st={max(0, seconds - 0.35):.2f}:d=0.35"]
-        out = os.path.join(TMP, f"v{i:03d}.mp4")
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", motion, "-an", "-vf", ",".join(vf), "-r", str(FPS),
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], check=True)
-        return out
-    pre = f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},setsar=1"
-    if move == "push":
-        zp = f"zoompan=z='1+0.10*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
-    elif move == "pull":
-        zp = f"zoompan=z='1.10-0.10*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
-    else:  # pan left->right (or right->left)
-        a, b = ("0", "1") if move == "panr" else ("1", "0")
-        zp = (f"zoompan=z=1.12:x='(iw-iw/zoom)*({a}+({b}-{a})*on/{n})':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}"
-              f":fps={FPS}")
-    vf = [pre, zp, f"fade=in:st=0:d=0.35,fade=out:st={max(0, seconds - 0.35):.2f}:d=0.35"]
+def overlays(seconds, card, note):
+    vf = []
     if card and card[0] == "D.B. COOPER":  # the film title: big title, small subtitle under it, whole shot
         al = f"if(lt(t,0.6),t/0.6,if(lt(t,{seconds - 0.6:.2f}),1,max(0,({seconds:.2f}-t)/0.6)))"
         vf.append(f"drawtext=fontfile={FONT}:text='{esc(card[0])}':fontsize=110:fontcolor=white:x=(w-tw)/2:y=h/2-80"
@@ -89,7 +70,32 @@ def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
     if note:
         vf.append(f"drawtext=fontfile={FONT2}:text='{esc(note)}':fontsize=22:fontcolor=white@0.8:x=24:y=h-44"
                   f":box=1:boxcolor=black@0.5:boxborderw=8")
+    return vf
+
+
+def shot_clip(i, path, seconds, move, card=None, note=None, motion=None):
+    n = max(1, round(seconds * FPS))
+    fade = f"fade=in:st=0:d=0.35,fade=out:st={max(0, seconds - 0.35):.2f}:d=0.35"
     out = os.path.join(TMP, f"v{i:03d}.mp4")
+    if motion:  # approved motion clip: fit to frame, slow down (at most 2x) to fill the shot, then hold the last frame
+        md = dur(motion)
+        k = min(2.0, max(1.0, seconds / md))
+        vf = [f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},setsar=1,fps={FPS}",
+              f"setpts={k:.4f}*PTS", f"tpad=stop_mode=clone:stop_duration={seconds:.2f}", f"trim=0:{seconds:.3f}",
+              "setpts=PTS-STARTPTS", fade] + overlays(seconds, card, note)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", motion, "-an", "-vf", ",".join(vf), "-r", str(FPS),
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", out], check=True)
+        return out
+    pre = f"scale={W * 2}:{H * 2}:force_original_aspect_ratio=increase,crop={W * 2}:{H * 2},setsar=1"
+    if move == "push":
+        zp = f"zoompan=z='1+0.10*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
+    elif move == "pull":
+        zp = f"zoompan=z='1.10-0.10*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
+    else:  # pan left->right (or right->left)
+        a, b = ("0", "1") if move == "panr" else ("1", "0")
+        zp = (f"zoompan=z=1.12:x='(iw-iw/zoom)*({a}+({b}-{a})*on/{n})':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}"
+              f":fps={FPS}")
+    vf = [pre, zp, fade] + overlays(seconds, card, note)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", path, "-t", f"{seconds:.3f}", "-vf", ",".join(vf),
                     "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", out],
                    check=True)
