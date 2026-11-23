@@ -1,0 +1,225 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Netflix,Inter Medium,50,&H00FFFFFF,&H00FFFFFF,&H00101010,&H8C000000,0,0,0,0,100,100,0,0,1,1.6,2.2,2,160,160,72,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:03.27,Netflix,,0,0,0,,A little after eight in the evening.
+Dialogue: 0,0:00:03.35,0:00:07.25,Netflix,,0,0,0,,About ten thousand feet above the forests\Nof southwest Washington.
+Dialogue: 0,0:00:07.33,0:00:10.25,Netflix,,0,0,0,,In the cockpit,\Nthe crew feel a small jolt.
+Dialogue: 0,0:00:10.33,0:00:11.77,Netflix,,0,0,0,,The tail lifts.
+Dialogue: 0,0:00:11.85,0:00:15.13,Netflix,,0,0,0,,At the back of the plane,\Nthe stairs are open to the rain.
+Dialogue: 0,0:00:15.21,0:00:17.82,Netflix,,0,0,0,,And the man who opened them is gone.
+Dialogue: 0,0:00:17.90,0:00:21.28,Netflix,,0,0,0,,He has two hundred thousand dollars\Nstrapped to his body.
+Dialogue: 0,0:00:21.36,0:00:23.69,Netflix,,0,0,0,,He's wearing a business suit and loafers.
+Dialogue: 0,0:00:23.77,0:00:28.34,Netflix,,0,0,0,,And for more than fifty years,\Nnobody has been able to say who he was.
+Dialogue: 0,0:00:35.59,0:00:36.96,Netflix,,0,0,0,,Portland, Oregon.
+Dialogue: 0,0:00:37.04,0:00:39.60,Netflix,,0,0,0,,The day before Thanksgiving,\Nnineteen seventy-one.
+Dialogue: 0,0:00:39.68,0:00:43.26,Netflix,,0,0,0,,A man in a dark suit buys\Na one-way ticket to Seattle.
+Dialogue: 0,0:00:43.34,0:00:44.73,Netflix,,0,0,0,,A thirty-minute flight.
+Dialogue: 0,0:00:44.81,0:00:46.06,Netflix,,0,0,0,,He pays cash.
+Dialogue: 0,0:00:46.14,0:00:48.43,Netflix,,0,0,0,,He gives his name as Dan Cooper.
+Dialogue: 0,0:00:48.51,0:00:50.24,Netflix,,0,0,0,,Keep that name in mind.
+Dialogue: 0,0:00:50.32,0:00:52.08,Netflix,,0,0,0,,It's our first clue.
+Dialogue: 0,0:00:52.16,0:00:54.36,Netflix,,0,0,0,,And it's wrong in more ways than one.
+Dialogue: 0,0:00:55.61,0:00:57.40,Netflix,,0,0,0,,He orders a bourbon and soda.
+Dialogue: 0,0:00:57.48,0:00:58.84,Netflix,,0,0,0,,Lights a cigarette.
+Dialogue: 0,0:00:58.92,0:01:02.15,Netflix,,0,0,0,,Just after takeoff,\Nhe hands a flight attendant a folded note.
+Dialogue: 0,0:01:02.23,0:01:06.71,Netflix,,0,0,0,,She thinks it's his phone number,\Nand pockets it without reading it.
+Dialogue: 0,0:01:06.79,0:01:08.14,Netflix,,0,0,0,,He leans over.
+Dialogue: 0,0:01:08.25,0:01:11.39,Netflix,,0,0,0,,{\i1}Miss, you'd better look at that note.
+Dialogue: 0,0:01:11.47,0:01:12.86,Netflix,,0,0,0,,{\i1}I have a bomb.
+Dialogue: 0,0:01:14.07,0:01:17.26,Netflix,,0,0,0,,In his briefcase: red cylinders,\Nwires, a battery.
+Dialogue: 0,0:01:17.34,0:01:20.59,Netflix,,0,0,0,,He wants two hundred thousand dollars.
+Dialogue: 0,0:01:20.67,0:01:24.21,Netflix,,0,0,0,,Four parachutes.\NAnd a fuel truck waiting in Seattle.
+Dialogue: 0,0:01:24.29,0:01:28.18,Netflix,,0,0,0,,The plane circles for two hours\Nwhile the FBI gathers the cash.
+Dialogue: 0,0:01:28.26,0:01:30.42,Netflix,,0,0,0,,Ten thousand twenty-dollar bills.
+Dialogue: 0,0:01:30.50,0:01:34.81,Netflix,,0,0,0,,And before they hand it over,\Nagents photograph every single one.
+Dialogue: 0,0:01:34.89,0:01:36.40,Netflix,,0,0,0,,Every serial number.
+Dialogue: 0,0:01:36.48,0:01:38.35,Netflix,,0,0,0,,Remember that, too.
+Dialogue: 0,0:01:39.60,0:01:43.26,Netflix,,0,0,0,,In Seattle, he trades the passengers\Nfor the money and the parachutes.
+Dialogue: 0,0:01:43.34,0:01:46.44,Netflix,,0,0,0,,Then he gives the crew\Na very specific flight plan.
+Dialogue: 0,0:01:46.52,0:01:47.82,Netflix,,0,0,0,,Head for Mexico.
+Dialogue: 0,0:01:47.90,0:01:49.54,Netflix,,0,0,0,,Fly low, below ten thousand feet.
+Dialogue: 0,0:01:49.62,0:01:50.79,Netflix,,0,0,0,,Landing gear down.
+Dialogue: 0,0:01:50.87,0:01:52.07,Netflix,,0,0,0,,Flaps lowered.
+Dialogue: 0,0:01:52.15,0:01:54.87,Netflix,,0,0,0,,As slow as the plane can go.
+Dialogue: 0,0:01:54.95,0:01:56.53,Netflix,,0,0,0,,And the rear stairs… open.
+Dialogue: 0,0:01:56.61,0:01:59.26,Netflix,,0,0,0,,It's an odd set of instructions.
+Dialogue: 0,0:01:59.34,0:02:02.21,Netflix,,0,0,0,,Not something most people\Nwould think to ask for.
+Dialogue: 0,0:02:02.29,0:02:04.90,Netflix,,0,0,0,,Which brings us to clue number two.
+Dialogue: 0,0:02:06.49,0:02:09.31,Netflix,,0,0,0,,Seven-forty. They take off again.
+Dialogue: 0,0:02:09.39,0:02:12.07,Netflix,,0,0,0,,He sends the last flight\Nattendant to the cockpit.
+Dialogue: 0,0:02:12.15,0:02:15.77,Netflix,,0,0,0,,She looks back, and sees him\Ntying something around his waist.
+Dialogue: 0,0:02:15.85,0:02:18.01,Netflix,,0,0,0,,Not long after, a red light comes on.
+Dialogue: 0,0:02:18.09,0:02:20.04,Netflix,,0,0,0,,The stairs are down.
+Dialogue: 0,0:02:20.12,0:02:22.43,Netflix,,0,0,0,,A little after eight.
+Dialogue: 0,0:02:22.51,0:02:24.26,Netflix,,0,0,0,,The jolt.
+Dialogue: 0,0:02:24.34,0:02:27.06,Netflix,,0,0,0,,Two hours later, they land in Reno.
+Dialogue: 0,0:02:27.14,0:02:28.57,Netflix,,0,0,0,,The cabin is empty.
+Dialogue: 0,0:02:28.65,0:02:31.07,Netflix,,0,0,0,,He's taken the money and the briefcase.
+Dialogue: 0,0:02:31.15,0:02:33.18,Netflix,,0,0,0,,He's left behind two parachutes,
+Dialogue: 0,0:02:33.26,0:02:36.63,Netflix,,0,0,0,,a few cigarette butts,\Nand a black clip-on tie.
+Dialogue: 0,0:02:37.88,0:02:41.61,Netflix,,0,0,0,,That night, one of the longest\Ninvestigations in FBI history begins.
+Dialogue: 0,0:02:41.69,0:02:44.23,Netflix,,0,0,0,,And it starts with almost nothing.
+Dialogue: 0,0:02:44.31,0:02:45.50,Netflix,,0,0,0,,No face.
+Dialogue: 0,0:02:45.58,0:02:46.84,Netflix,,0,0,0,,No real name.
+Dialogue: 0,0:02:46.92,0:02:49.81,Netflix,,0,0,0,,No body. No parachute.
+Dialogue: 0,0:02:49.89,0:02:52.88,Netflix,,0,0,0,,Just a handful of clues.
+Dialogue: 0,0:02:52.96,0:02:55.68,Netflix,,0,0,0,,Let's go through them, one at a time.
+Dialogue: 0,0:02:56.93,0:03:00.70,Netflix,,0,0,0,,Police question a man in Portland\Nwhose name really is D.B. Cooper.
+Dialogue: 0,0:03:00.78,0:03:02.97,Netflix,,0,0,0,,He has nothing to do with it.
+Dialogue: 0,0:03:03.05,0:03:04.81,Netflix,,0,0,0,,But a reporter hears the name,
+Dialogue: 0,0:03:04.89,0:03:08.59,Netflix,,0,0,0,,and the hijacker who called\Nhimself Dan becomes "D.B." Cooper.
+Dialogue: 0,0:03:08.67,0:03:10.64,Netflix,,0,0,0,,A name that was never his.
+Dialogue: 0,0:03:10.72,0:03:13.58,Netflix,,0,0,0,,Years later,\Ninvestigators notice something else.
+Dialogue: 0,0:03:13.66,0:03:17.05,Netflix,,0,0,0,,In the nineteen-fifties\Nand sixties there was a popular
+Dialogue: 0,0:03:17.13,0:03:20.32,Netflix,,0,0,0,,comic book about a heroic\NCanadian air force pilot.
+Dialogue: 0,0:03:20.40,0:03:22.28,Netflix,,0,0,0,,His name was Dan Cooper.
+Dialogue: 0,0:03:22.36,0:03:24.63,Netflix,,0,0,0,,The comic was published in French.
+Dialogue: 0,0:03:24.71,0:03:25.92,Netflix,,0,0,0,,Never in English.
+Dialogue: 0,0:03:26.00,0:03:28.73,Netflix,,0,0,0,,So did our man pick a random name?
+Dialogue: 0,0:03:28.81,0:03:32.05,Netflix,,0,0,0,,Or had he spent time in Europe\Nor Canada… and borrowed
+Dialogue: 0,0:03:32.13,0:03:35.14,Netflix,,0,0,0,,his alias from a hero\Nwho parachutes out of planes?
+Dialogue: 0,0:03:36.39,0:03:37.87,Netflix,,0,0,0,,Look at what he asked for.
+Dialogue: 0,0:03:37.95,0:03:39.90,Netflix,,0,0,0,,Four parachutes, not one.
+Dialogue: 0,0:03:39.98,0:03:42.73,Netflix,,0,0,0,,Possibly so the FBI wouldn't\Ndare give him a faulty one,
+Dialogue: 0,0:03:42.81,0:03:45.26,Netflix,,0,0,0,,in case he took someone with him.
+Dialogue: 0,0:03:45.34,0:03:48.16,Netflix,,0,0,0,,A speed and flap setting\Nthat suited a jump.
+Dialogue: 0,0:03:48.24,0:03:49.79,Netflix,,0,0,0,,And the rear stairs.
+Dialogue: 0,0:03:49.87,0:03:52.24,Netflix,,0,0,0,,The Boeing seven-twenty-seven\Nwas one of the
+Dialogue: 0,0:03:52.32,0:03:54.70,Netflix,,0,0,0,,few airliners you could jump\Nfrom in flight.
+Dialogue: 0,0:03:54.78,0:03:57.10,Netflix,,0,0,0,,Very few people knew that.
+Dialogue: 0,0:03:57.18,0:04:00.06,Netflix,,0,0,0,,Some researchers point out\Nthat the same type of plane had
+Dialogue: 0,0:04:00.14,0:04:03.55,Netflix,,0,0,0,,been used for secret parachute drops\Nin Southeast Asia.
+Dialogue: 0,0:04:03.63,0:04:06.38,Netflix,,0,0,0,,On the way,\Nhe even recognised Tacoma from the air,
+Dialogue: 0,0:04:06.46,0:04:08.93,Netflix,,0,0,0,,and knew where the air force base was.
+Dialogue: 0,0:04:09.01,0:04:11.88,Netflix,,0,0,0,,This was not a random man\Nwith a random plan.
+Dialogue: 0,0:04:11.96,0:04:14.83,Netflix,,0,0,0,,He knew planes. Maybe the military.
+Dialogue: 0,0:04:16.08,0:04:17.62,Netflix,,0,0,0,,Now picture the jump.
+Dialogue: 0,0:04:17.70,0:04:19.94,Netflix,,0,0,0,,At night. In rain.
+Dialogue: 0,0:04:20.02,0:04:21.40,Netflix,,0,0,0,,Into a freezing wind.
+Dialogue: 0,0:04:21.48,0:04:23.73,Netflix,,0,0,0,,Over dense forest, with no lights below.
+Dialogue: 0,0:04:23.81,0:04:26.02,Netflix,,0,0,0,,In a business suit.
+Dialogue: 0,0:04:26.10,0:04:26.65,Netflix,,0,0,0,,And loafers.
+Dialogue: 0,0:04:26.73,0:04:31.75,Netflix,,0,0,0,,The FBI agent who led the case,\NRalph Himmelsbach, was a pilot himself.
+Dialogue: 0,0:04:31.83,0:04:34.30,Netflix,,0,0,0,,He never believed Cooper survived.
+Dialogue: 0,0:04:34.38,0:04:37.45,Netflix,,0,0,0,,Neither did the agents who came after him.
+Dialogue: 0,0:04:37.53,0:04:41.33,Netflix,,0,0,0,,And one of the two parachutes he jumped\Nwith was a training reserve.
+Dialogue: 0,0:04:41.41,0:04:42.45,Netflix,,0,0,0,,Sewn shut.
+Dialogue: 0,0:04:42.53,0:04:45.48,Netflix,,0,0,0,,Useless. An expert might have noticed.
+Dialogue: 0,0:04:45.56,0:04:47.63,Netflix,,0,0,0,,But here's the thing.
+Dialogue: 0,0:04:47.71,0:04:50.58,Netflix,,0,0,0,,Hundreds of soldiers\Nsearched those woods, twice.
+Dialogue: 0,0:04:50.66,0:04:52.89,Netflix,,0,0,0,,Not one of them found a body.
+Dialogue: 0,0:04:52.97,0:04:54.28,Netflix,,0,0,0,,Or a parachute.
+Dialogue: 0,0:04:55.53,0:04:57.53,Netflix,,0,0,0,,Remember the serial numbers.
+Dialogue: 0,0:04:57.61,0:05:01.86,Netflix,,0,0,0,,The FBI sent the list to banks,\Ncasinos and businesses across the country.
+Dialogue: 0,0:05:01.94,0:05:05.80,Netflix,,0,0,0,,If Cooper spent his money,\Na bill should turn up somewhere.
+Dialogue: 0,0:05:05.88,0:05:07.19,Netflix,,0,0,0,,A store.
+Dialogue: 0,0:05:07.27,0:05:09.89,Netflix,,0,0,0,,A bank. A racetrack.
+Dialogue: 0,0:05:09.97,0:05:12.73,Netflix,,0,0,0,,As far as we know, not one ever did.
+Dialogue: 0,0:05:12.81,0:05:16.60,Netflix,,0,0,0,,For eight years, not a single bill\Nfrom the ransom was found anywhere.
+Dialogue: 0,0:05:16.68,0:05:20.24,Netflix,,0,0,0,,And then,\Nin nineteen eighty, some of it was.
+Dialogue: 0,0:05:21.49,0:05:23.19,Netflix,,0,0,0,,February, nineteen eighty.
+Dialogue: 0,0:05:23.27,0:05:27.19,Netflix,,0,0,0,,An eight-year-old boy is digging\Non a sandy bank of the Columbia River.
+Dialogue: 0,0:05:27.27,0:05:32.20,Netflix,,0,0,0,,He finds bundles of old twenty-dollar\Nbills, rotting, still held together.
+Dialogue: 0,0:05:32.28,0:05:34.89,Netflix,,0,0,0,,Five thousand eight hundred dollars.
+Dialogue: 0,0:05:34.97,0:05:37.19,Netflix,,0,0,0,,And the serial numbers match.
+Dialogue: 0,0:05:37.27,0:05:39.24,Netflix,,0,0,0,,It should have solved the case.
+Dialogue: 0,0:05:39.32,0:05:41.57,Netflix,,0,0,0,,It made it stranger.
+Dialogue: 0,0:05:41.65,0:05:43.97,Netflix,,0,0,0,,The geologist\Nwho studied the site believed
+Dialogue: 0,0:05:44.05,0:05:46.19,Netflix,,0,0,0,,the money arrived years\Nafter the hijacking,
+Dialogue: 0,0:05:46.27,0:05:48.58,Netflix,,0,0,0,,above a layer of dredged sand.
+Dialogue: 0,0:05:48.66,0:05:51.25,Netflix,,0,0,0,,Others have since challenged that.
+Dialogue: 0,0:05:51.33,0:05:55.04,Netflix,,0,0,0,,And in twenty twenty, a scientist\Nfound microscopic algae on the bills.
+Dialogue: 0,0:05:55.12,0:05:57.18,Netflix,,0,0,0,,A kind that blooms in spring.
+Dialogue: 0,0:05:57.26,0:05:59.67,Netflix,,0,0,0,,Not in November, when Cooper jumped.
+Dialogue: 0,0:05:59.75,0:06:03.11,Netflix,,0,0,0,,So how did a bundle\Nof Cooper's money end up in the river,
+Dialogue: 0,0:06:03.19,0:06:06.17,Netflix,,0,0,0,,months or years later…\Nand only part of it?
+Dialogue: 0,0:06:07.42,0:06:10.06,Netflix,,0,0,0,,The last clue is the one he left behind.
+Dialogue: 0,0:06:10.14,0:06:11.44,Netflix,,0,0,0,,The black tie.
+Dialogue: 0,0:06:11.52,0:06:15.54,Netflix,,0,0,0,,In two thousand one, the FBI pulled\Na partial DNA profile from it.
+Dialogue: 0,0:06:15.62,0:06:17.68,Netflix,,0,0,0,,Then in the twenty-tens,
+Dialogue: 0,0:06:17.76,0:06:22.54,Netflix,,0,0,0,,a team of volunteer scientists looked\Nat the tie under an electron microscope.
+Dialogue: 0,0:06:22.62,0:06:25.87,Netflix,,0,0,0,,They found more\Nthan a hundred thousand tiny particles.
+Dialogue: 0,0:06:25.95,0:06:29.32,Netflix,,0,0,0,,Including pure titanium,\Nand the rare earth metal cerium.
+Dialogue: 0,0:06:29.40,0:06:33.67,Netflix,,0,0,0,,In nineteen seventy-one,\Nthose were used in only a few places.
+Dialogue: 0,0:06:33.75,0:06:35.57,Netflix,,0,0,0,,Like aerospace plants.
+Dialogue: 0,0:06:35.65,0:06:38.62,Netflix,,0,0,0,,Places where engineers wore ties to work.
+Dialogue: 0,0:06:38.70,0:06:40.63,Netflix,,0,0,0,,The FBI's answer was careful.
+Dialogue: 0,0:06:40.71,0:06:43.72,Netflix,,0,0,0,,They don't know for sure the tie was his.
+Dialogue: 0,0:06:44.97,0:06:49.00,Netflix,,0,0,0,,Over the years, the FBI looked\Nat more than eight hundred suspects.
+Dialogue: 0,0:06:49.08,0:06:51.69,Netflix,,0,0,0,,Five of them come up again and again.
+Dialogue: 0,0:06:51.77,0:06:54.03,Netflix,,0,0,0,,All of them have died.
+Dialogue: 0,0:06:54.11,0:06:56.53,Netflix,,0,0,0,,None was ever proven to be Cooper.
+Dialogue: 0,0:06:57.78,0:07:01.92,Netflix,,0,0,0,,Five months after Cooper,\Na man hijacked another seven-twenty-seven,
+Dialogue: 0,0:07:02.00,0:07:05.27,Netflix,,0,0,0,,took half a million dollars,\Nand jumped out over Utah.
+Dialogue: 0,0:07:05.35,0:07:06.49,Netflix,,0,0,0,,Same method.
+Dialogue: 0,0:07:06.57,0:07:07.82,Netflix,,0,0,0,,Same stairs.
+Dialogue: 0,0:07:07.90,0:07:09.21,Netflix,,0,0,0,,Richard McCoy.
+Dialogue: 0,0:07:09.29,0:07:11.74,Netflix,,0,0,0,,A former soldier, a skydiver.
+Dialogue: 0,0:07:11.82,0:07:13.53,Netflix,,0,0,0,,He was caught within days.
+Dialogue: 0,0:07:13.61,0:07:14.91,Netflix,,0,0,0,,Perfect fit?
+Dialogue: 0,0:07:14.99,0:07:16.40,Netflix,,0,0,0,,The FBI said no.
+Dialogue: 0,0:07:16.48,0:07:17.70,Netflix,,0,0,0,,McCoy was twenty-nine,
+Dialogue: 0,0:07:17.78,0:07:21.88,Netflix,,0,0,0,,and he didn't match what the two\Nflight attendants described.
+Dialogue: 0,0:07:21.96,0:07:24.60,Netflix,,0,0,0,,Some researchers still argue about it.
+Dialogue: 0,0:07:26.11,0:07:29.76,Netflix,,0,0,0,,Kenneth Christiansen worked\Nfor the very airline that was hijacked.
+Dialogue: 0,0:07:29.84,0:07:31.51,Netflix,,0,0,0,,He had been a paratrooper.
+Dialogue: 0,0:07:31.59,0:07:36.30,Netflix,,0,0,0,,About a year after the hijacking,\Nhe bought a house, reportedly with cash.
+Dialogue: 0,0:07:36.38,0:07:40.19,Netflix,,0,0,0,,After he died,\Nhis own brother came to suspect him.
+Dialogue: 0,0:07:40.27,0:07:43.46,Netflix,,0,0,0,,But he was shorter and slighter\Nthan the man on the plane,
+Dialogue: 0,0:07:43.54,0:07:46.47,Netflix,,0,0,0,,and the FBI did not find\Nenough to name him.
+Dialogue: 0,0:07:47.72,0:07:53.04,Netflix,,0,0,0,,Duane Weber, on his deathbed, reportedly\Ntold his wife: "I'm Dan Cooper."
+Dialogue: 0,0:07:53.12,0:07:55.59,Netflix,,0,0,0,,She didn't know what it meant.
+Dialogue: 0,0:07:55.67,0:07:59.45,Netflix,,0,0,0,,The FBI compared his DNA\Nwith the profile from the tie.
+Dialogue: 0,0:07:59.53,0:08:01.45,Netflix,,0,0,0,,It didn't match.
+Dialogue: 0,0:08:02.70,0:08:03.84,Netflix,,0,0,0,,Robert Rackstraw.
+Dialogue: 0,0:08:03.92,0:08:07.00,Netflix,,0,0,0,,A Vietnam veteran with parachute training.
+Dialogue: 0,0:08:07.08,0:08:11.05,Netflix,,0,0,0,,Decades later, a team of amateur\Ninvestigators built a case around him,
+Dialogue: 0,0:08:11.13,0:08:14.13,Netflix,,0,0,0,,and he became one\Nof the best-known suspects of all.
+Dialogue: 0,0:08:14.21,0:08:17.79,Netflix,,0,0,0,,But in nineteen seventy-one\Nhe was only twenty-eight.
+Dialogue: 0,0:08:17.87,0:08:22.43,Netflix,,0,0,0,,The FBI had questioned him in the\Nseventies, and dropped him as a suspect.
+Dialogue: 0,0:08:22.51,0:08:24.32,Netflix,,0,0,0,,He always denied it.
+Dialogue: 0,0:08:25.83,0:08:28.63,Netflix,,0,0,0,,And then there's the suspect\Nmost investigators favour.
+Dialogue: 0,0:08:28.71,0:08:31.29,Netflix,,0,0,0,,A man whose name we've never heard.
+Dialogue: 0,0:08:31.37,0:08:33.17,Netflix,,0,0,0,,Who died that night in the forest.
+Dialogue: 0,0:08:33.25,0:08:37.32,Netflix,,0,0,0,,And who was never missed by anyone\Nwho connected him to a hijacking.
+Dialogue: 0,0:08:37.40,0:08:38.80,Netflix,,0,0,0,,He fits every clue.
+Dialogue: 0,0:08:38.88,0:08:41.16,Netflix,,0,0,0,,Which is exactly the problem.
+Dialogue: 0,0:08:42.72,0:08:44.24,Netflix,,0,0,0,,So here are the endings.
+Dialogue: 0,0:08:44.32,0:08:45.80,Netflix,,0,0,0,,Pick one.
+Dialogue: 0,0:08:45.88,0:08:47.57,Netflix,,0,0,0,,One. He didn't make it.
+Dialogue: 0,0:08:47.65,0:08:51.91,Netflix,,0,0,0,,He landed in the dark,\Nin the cold, somewhere in that forest.
+Dialogue: 0,0:08:51.99,0:08:53.46,Netflix,,0,0,0,,And the forest kept him.
+Dialogue: 0,0:08:53.54,0:08:54.71,Netflix,,0,0,0,,Two.
+Dialogue: 0,0:08:54.79,0:08:56.22,Netflix,,0,0,0,,He made it.
+Dialogue: 0,0:08:56.30,0:08:58.67,Netflix,,0,0,0,,He walked out of the woods, hid the money,
+Dialogue: 0,0:08:58.75,0:09:02.20,Netflix,,0,0,0,,and lived a quiet life,\Nknowing something nobody else knew.
+Dialogue: 0,0:09:02.28,0:09:03.43,Netflix,,0,0,0,,Three.
+Dialogue: 0,0:09:03.51,0:09:05.04,Netflix,,0,0,0,,Something in between.
+Dialogue: 0,0:09:05.12,0:09:08.37,Netflix,,0,0,0,,He made it to the river, or the money did.
+Dialogue: 0,0:09:08.45,0:09:10.74,Netflix,,0,0,0,,And the river kept the rest.
+Dialogue: 0,0:09:10.82,0:09:13.13,Netflix,,0,0,0,,Every one of them fits some of the clues.
+Dialogue: 0,0:09:13.21,0:09:14.67,Netflix,,0,0,0,,None of them fits all.
+Dialogue: 0,0:09:16.24,0:09:18.47,Netflix,,0,0,0,,In twenty sixteen, after forty-five years,
+Dialogue: 0,0:09:18.55,0:09:20.89,Netflix,,0,0,0,,the FBI stopped actively investigating.
+Dialogue: 0,0:09:20.97,0:09:25.16,Netflix,,0,0,0,,It's still the only unsolved hijacking\Nin American commercial aviation.
+Dialogue: 0,0:09:25.24,0:09:28.01,Netflix,,0,0,0,,But the case board never really came down.
+Dialogue: 0,0:09:28.09,0:09:30.39,Netflix,,0,0,0,,People are still out there.
+Dialogue: 0,0:09:30.47,0:09:32.14,Netflix,,0,0,0,,Checking the river.
+Dialogue: 0,0:09:32.22,0:09:33.52,Netflix,,0,0,0,,Testing the tie.
+Dialogue: 0,0:09:33.60,0:09:35.33,Netflix,,0,0,0,,Reading the old files.
+Dialogue: 0,0:09:36.58,0:09:38.85,Netflix,,0,0,0,,Somewhere out there is the answer.
+Dialogue: 0,0:09:38.93,0:09:41.16,Netflix,,0,0,0,,A name. A grave.
+Dialogue: 0,0:09:41.24,0:09:45.03,Netflix,,0,0,0,,Or a bundle of twenty-dollar bills,\Nstill waiting in the sand.
+Dialogue: 0,0:09:45.11,0:09:47.62,Netflix,,0,0,0,,He planned everything.
+Dialogue: 0,0:09:47.70,0:09:50.11,Netflix,,0,0,0,,Except one thing he couldn't control.
+Dialogue: 0,0:09:50.19,0:09:53.06,Netflix,,0,0,0,,Whether we'd ever stop looking.

@@ -17,3 +17,11 @@ Built with `../tools/build_animatic.py . OUT.mp4 [scenes]`. It is free: local ff
 - **v004:** adds K02 (103). Shots 102, 103, 104, 401, 502, 704 and 801 are now motion clips. Same length, 233.5 s.
 - **v005 (FULL, scenes 1–23, 9:49):** all narration by Brian, all 8 Kling motion clips (K07 under CLUE 3, K08 under CLUE 5). The 16 round-2 shots (scenes 15–23) are a dimmed case board with a "still pending (round 2)" label. Not in yet: Cooper's line, music, sound effects, subtitles. Video and audio are both 588.7 s.
 - **v006 (FULL, 9:53):** all 65 shots are real images (round 2 is done; no placeholders left). Cooper's line (Callum, intercom filter) plays 0.4 s after Brian's "He leans over." in scene 4, over shot 403, where he is seen from behind with no mouth visible. Tight pacing kept, as the producer decided. Not in yet: music, sound effects, subtitles. Video and audio are both 593.5 s.
+- **v007 (SOUND, 9:53):** v006 picture with the full mix (`tools/mix_sound_v001.py`):
+  - Brian, Cooper's line, music M1–M5 and 17 sound effects.
+  - The bed is ducked 9 dB and one-shots 4 dB under the voice.
+  - Loudness-normalised to −16 LUFS. The measured result is −16.6 LUFS, LRA 3.4.
+  - The narration lines up with v006 to within 1 ms at five check points.
+  - The mix is also saved as `07_AUDIO/mix_v001/DB_COOPER_mix_v001.flac`.
+  - **Subtitles are not burned in:** they are a separate file for YouTube, `../subtitles_v001/DB_COOPER_en.srt`.
+  - Not checked by ear yet.
