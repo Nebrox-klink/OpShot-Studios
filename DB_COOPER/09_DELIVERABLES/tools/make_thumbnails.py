@@ -21,14 +21,14 @@ AMBER, WHITE, RED = (242, 177, 52), (255, 255, 255), (214, 48, 39)
 # name, still, crop focus (x, y as 0-1), zoom, kicker, headline lines [(text, colour)], text side, sub line
 # name, still, crop focus (x, y as 0-1), zoom, kicker, headline lines [(text, colour, scale)], text side, sub line
 # Every hook is a fact stated in the film (see 01_SCRIPT/DB_COOPER_fact_ledger_v001.md).
-DESIGNS = [
-    ("T1_who_was_he", "SH_2001.png", (0.45, 0.45), 1.35, "THE D.B. COOPER CASE",
+DESIGNS = [  # v002: no kicker on T1-T4 (unreadable at mobile size), black outline on all text, T2 shortened
+    ("T1_who_was_he", "SH_2001.png", (0.45, 0.45), 1.35, None,
      [("WHO", WHITE, 1.0), ("WAS", WHITE, 1.0), ("HE?", AMBER, 1.35)], "left", None),
-    ("T2_jumped_never_found", "SH_102.png", (0.5, 0.5), 1.15, "24 NOVEMBER 1971",
-     [("HE JUMPED", WHITE, 1.0), ("WITH $200,000.", AMBER, 0.82), ("NEVER FOUND.", WHITE, 1.0)], "left", None),
-    ("T3_5800_in_the_sand", "SH_1303.png", (0.5, 0.5), 1.1, "THE D.B. COOPER CASE",
-     [("$5,800", AMBER, 1.5), ("IN THE SAND.", WHITE, 1.0), ("WHERE'S THE REST?", WHITE, 0.62)], "left", None),
-    ("T4_800_suspects", "SH_1501.png", (0.5, 0.4), 1.05, "THE D.B. COOPER CASE",
+    ("T2_jumped_never_found", "SH_102.png", (0.5, 0.5), 1.15, None,
+     [("HE JUMPED.", WHITE, 1.0), ("$200,000.", AMBER, 1.15), ("NEVER FOUND.", WHITE, 0.86)], "left", None),
+    ("T3_5800_in_the_sand", "SH_1303.png", (0.5, 0.5), 1.1, None,
+     [("$5,800", AMBER, 1.5), ("IN THE SAND.", WHITE, 1.0), ("WHERE'S", WHITE, 1.0), ("THE REST?", AMBER, 1.0)], "left", None),
+    ("T4_800_suspects", "SH_1501.png", (0.5, 0.4), 1.05, None,
      [("800+", AMBER, 1.6), ("SUSPECTS.", WHITE, 1.0), ("NO ANSWER.", WHITE, 1.0)], "left", None),
     ("T5_title", "BG3_727_night.png", (0.55, 0.45), 1.05, "AN ANIMATED MYSTERY",
      [("D.B. COOPER", WHITE, 1.0)], "bottom", "The case that won't close"),
@@ -99,16 +99,17 @@ def text_block(im, kicker, lines, side, sub):
         size -= 4
     sizes = [max(10, int(size * k)) for _, _, k in lines]
     heights = [int(z * 0.98) for z in sizes]
-    block = 46 + sum(heights) + (50 if sub else 0)
+    block = (46 if kicker else 0) + sum(heights) + (50 if sub else 0)
     x = 64
     y = (H - block) // 2 if side == "left" else H - block - 60
-    d.text((x, y), " ".join(kicker), font=fk, fill=AMBER)  # tracked caps kicker
-    y += 46
+    if kicker:
+        d.text((x, y), " ".join(kicker), font=fk, fill=AMBER)  # tracked caps kicker
+        y += 46
     for (t, col, _), z, h in zip(lines, sizes, heights):
         f = ImageFont.truetype(BLACK, z)
         sh = max(2, z // 30)
         d.text((x + sh, y + sh + 1), t, font=f, fill=(0, 0, 0))
-        d.text((x, y), t, font=f, fill=col)
+        d.text((x, y), t, font=f, fill=col, stroke_width=max(3, z // 22), stroke_fill=(0, 0, 0))  # outline
         y += h
     if sub:
         d.text((x + 2, y + 8), sub, font=ImageFont.truetype(XBOLD, 34), fill=(225, 225, 230))
