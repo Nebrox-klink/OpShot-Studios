@@ -8,3 +8,4 @@
   - SH_703: E/F letters on the fuel gauge painted out.
 - Checked and kept: SH_402 (crowd only from behind), SH_904 (dark silhouettes, no features), SH_706 (deputies from behind), SH_1501 (blank sign with an arrow only).
 - Motion: KU 6 (producer's Kling, `../../06_AI_VIDEO/kling_pack_v001/`), KH 25 (Higgsfield Kling 3.0 std, 7.5 credits each ≈ 188), L 42 (local), G 6 (edit graphics).
+- SH_1501 regenerated 25 Nov (v2, job `cb8a75cd…`): v1 showed the car facing down toward the valley, the opposite of the story. v1 is in `superseded/`.

@@ -29,6 +29,7 @@ All 25 approved on the first try. Notes for the edit:
 | 1303 | marker flags flutter | motion is small: add a local push-in |
 | 1306 | search party walks away (from behind) | |
 | 1354 | watch hand moves, then stops | |
+| 1501 | the car climbs away up the mountain road and disappears | added 25 Nov: new start still SH_1501 v2 (car from behind, turning up the mountain), replaces the producer's K_1501 (wrong direction). Image 2 + clip 7.5 credits |
 | 1502 | snowcat crawls away leaving tracks | |
 | 1505 | the five trudge away through deep snow | figures overlap at times; the first 2 s show all five clearly |
 | 1801 | ball rolls off into the shadow | |
