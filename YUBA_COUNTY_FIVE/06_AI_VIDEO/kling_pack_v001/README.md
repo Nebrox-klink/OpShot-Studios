@@ -17,3 +17,14 @@ Add this to the end of every prompt:
 | 1504 | `SH_1504.jpg` | The five small figures walk slowly away from the camera up the moonlit snow tunnel between the tall drifts, leaving footprints, snow drifting down. Camera pushes slowly forward behind them. | The five walking away |
 
 The other 25 moving shots are made through Higgsfield (Kling 3.0) and locally. See `../../02_VISUAL/shot_list_v001/shot_list_v001.md`.
+
+## Received 25 Nov 2026 (producer's Kling, 1280×720, 3 s, audio stripped)
+
+| ID | Status | Note |
+|---|---|---|
+| 401 | ✅ `clips/K_401.mp4` | The car drives away down the valley road. |
+| 904 | ✅ `clips/K_904.mp4` | The headlights go out; silhouettes only. |
+| 905 | ✅ `clips/K_905.mp4` | The flashlight beams fade out. |
+| 1101 | ✅ `clips/K_1101.mp4` | The motorcyclists ride away, from behind. |
+| 1504 | ✅ `clips/K_1504.mp4` | Made from a different start image (moon and rock walls), not ST5. Exactly five figures throughout, from behind. A little flatter and more cartoon-like than the rest; grade it to match in the edit. |
+| 1501 | ❌ `rejected/K_1501_v1_wrong_direction.mp4` | The car drives off the mountain road and down the valley road, the opposite of the story (they turned up into the mountains). The start still itself has the car facing down toward the valley, so a new prompt alone won't fix it: it needs a new start still. |
