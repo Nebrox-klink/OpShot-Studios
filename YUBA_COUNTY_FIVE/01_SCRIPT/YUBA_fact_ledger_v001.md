@@ -1,6 +1,6 @@
 # THE YUBA COUNTY FIVE: fact ledger v001
 
-Checked on 24 November 2026 against `YUBA_preproduction_v001.md`.
+Checked on 24 November 2026 against `YUBA_preproduction_v001.md`; rows S15–S20 added for v002.
 
 **Status key:**
 - ✅ confirmed by at least two independent sources;
@@ -72,7 +72,7 @@ Checked on 24 November 2026 against `YUBA_preproduction_v001.md`.
 | S1 | 4 June 1978: motorcyclists found a Forest Service trailer, about 20 miles (19.4) from the car, with Ted Weiher inside | ✅ | WP (WaPo); GR; search summaries |
 | S2 | The trailer's window had been broken | ✅ 🔶 | WP; search summaries mention a break-in through a window |
 | S3 | He had survived for weeks, by his beard growth perhaps around three months; he died of starvation and cold | ✅ 🔶 | WP ("slightly more than three months"); search summaries "8 to 13 weeks". Film: "for weeks, maybe months". |
-| S4 | He lay under eight sheets | ⚠ | WP (WaPo, LAT) |
+| S4 | He lay under eight sheets, including over his head; investigators reasoned that with his feet in that state he could not have pulled them over himself, so someone else was probably there | ⚠ | WP (WaPo; reasoning from LAT) |
 | S5 | Matches and paperbacks for the fireplace, unused; heavy forestry clothing, unused | ✅ | WP (WaPo); search summaries ("fireplace, matches, and plenty of paper") |
 | S6 | About three dozen C-ration cans from a shed outside had been eaten; a locker in the same shed with enough dried food to last a year was never opened | ✅ | WP (WaPo); search summaries |
 | S7 | A propane/butane tank in a nearby shed could have heated the trailer; the valve was never opened | ⚠ | WP (WaPo) ("butane"). Film: "a fuel tank for the heater". |
@@ -83,7 +83,13 @@ Checked on 24 November 2026 against `YUBA_preproduction_v001.md`.
 | S12 | Three Forest Service blankets and a flashlight by the road near the trailer; not known how long they had been there | ⚠ | WP (WaPo) |
 | S13 | Gary Mathias has never been found | ✅ | All sources |
 | S14 | Mathias had schizophrenia, was on medication and doing well by 1978 | ✅ | WP (WaPo); search summaries. **Film:** mentioned only as "he needed daily medication", no diagnosis label. |
-| ⛔ | Condition of the remains, animals, smell | ⛔ | Not used: channel rule (no focus on victims; no gore). |
+| S15 | Weiher had lost nearly half of his roughly 200 lb body weight | ⚠ | WP (WaPo 1978) |
+| S16 | His feet were badly frostbitten, close to gangrene | ⚠ | WP (WaPo, LAT) |
+| S17 | On the table: his wallet with cash in it, a ring engraved "Ted", a gold necklace; also a gold watch with a broken crystal that his family said was not his, and a partly melted candle | ⚠ | WP (WaPo, LAT) |
+| S18 | Madruga and Sterling were found on opposite sides of the road; animals had reached both, and only bones remained of Sterling | ✅ ⚠ | WP (WaPo); scavenging also in search summaries ("only bones were left … as a result of scavenging animals") |
+| S19 | Huett's remains were found by a search party that included his father; his shoes, jeans and later dental records identified him | ⚠ | WP (WaPo, LAT) |
+| S20 | No wounds and no weapon were found; no evidence of foul play | ✅ | Search summaries (KCRA/ATI: "no bullet holes, no stab wounds, no weapon"); WP |
+| — | **Producer decision, 24 Nov:** the narration states the condition of the bodies where it bears on the evidence (how long they survived, what was on them, what was not). The pictures stay non-graphic: no bodies are shown. | — | |
 
 ## Investigation and theories
 
