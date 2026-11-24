@@ -265,7 +265,7 @@ All three were believed to have died of hypothermia.
 **GRAPHIC:** a coroner-style checklist built line by line in the edit: "WOUNDS: NONE · WEAPON: NONE · CAUSE: COLD AND HUNGER".
 **NARRATION:**
 So what did the bodies tell investigators?
-No wounds. No weapon. No sign that anyone had been attacked. The coroner put the deaths down to the cold, and in Ted's case, to hunger as well.
+No wounds. No weapon. No sign that anyone had been attacked. The deaths were put down to the cold, and in Ted's case, to hunger as well.
 [beat] Robbery doesn't fit either. Ted's wallet was on the table, with cash still in it, next to a ring engraved with his name and his gold necklace.
 But two things on that table don't add up.
 Ted was wrapped in eight sheets, all the way over his head. With his feet in that condition, investigators believed the pain would have kept him from pulling them over himself. [beat] That suggests someone else was there with him, most likely Gary.
@@ -284,7 +284,7 @@ A Yuba County undersheriff summed it up for reporters: [beat] "This case is biza
 **VISUAL:** The wide mountain-road plate, graded cold blue: five small silhouettes, from behind, walking up a tunnel of snow between high drifts.
 **NARRATION:**
 The investigators' best guess was this. A wrong turn somewhere near Oroville, maybe on the way to visit friends of Gary's in a nearby town. The car gets stuck. In the dark, someone sees tracks in the snow.
-The day before, a Forest Service snowcat had driven up that road to clear the trailer's roof. Its tracks led uphill, between drifts as tall as a person. The five may have followed them, believing shelter was close.
+The day before, a Forest Service snowcat had driven up that road to clear the trailer's roof. Its tracks led on up the road, between drifts as tall as a person. The five may have followed them, believing shelter was close.
 Cold doesn't only freeze the body. It slows thinking and judgment.
 [beat] And the trailer was locked. Maybe they were afraid of being in trouble for using what wasn't theirs.
 **SOUND:** Wind, footsteps in snow.
@@ -293,7 +293,7 @@ Cold doesn't only freeze the body. It slows thinking and judgment.
 **CARD:** THEORY B · SOMEONE ELSE
 **VISUAL:** The same plate graded amber: headlights in the distance, shapes beside a car, then darkness.
 **NARRATION:**
-But if they were lost, why leave a car that ran, and walk uphill into deeper snow instead of down toward the lodge?
+But if they were lost, why leave a car that ran, and keep going deeper into the mountains, away from the lodge they had just driven past?
 Who were the people Joseph Schons saw, and why did they go quiet when he called for help? Who covered Ted with the sheets, and whose watch was on the table?
 [beat] The bodies showed no violence at all. No one was shot or stabbed. But no one has explained those lights.
 **SOUND:** A low drone, a click, silence.
@@ -302,7 +302,7 @@ Who were the people Joseph Schons saw, and why did they go quiet when he called 
 **CARD:** THEORY C · GARY
 **VISUAL:** The same plate graded grey dawn: one set of footprints leading away from the trailer into the trees.
 **NARRATION:**
-And Gary. He needed daily medication, and he had none with him. If he walked out of that trailer, where did he go?
+And Gary. He needed daily medication, and up there he would have gone without it. If he walked out of that trailer, where did he go?
 His photo was sent to hospitals across California. Nearly fifty years later, the case is still open.
 **SOUND:** Meltwater, a single bird.
 

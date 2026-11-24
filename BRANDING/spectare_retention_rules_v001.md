@@ -20,6 +20,7 @@ D.B. Cooper: 65 shots in 9:53, an **average of 9.1 seconds per shot**, with 8 mo
 | 8 | **Sound never sits still:** effects on every cut and graphic (whoosh, paper, pin, typewriter), ambience changes per location, music that changes with each chapter. | Every cut has a sound |
 | 9 | **Contrast, not chaos:** short, designed silences (1–2 s) before the biggest reveals. The drop is itself a stimulus. | 3–5 per film |
 | 10 | **Chapters every 60–90 s:** clue cards reset attention and make good YouTube chapters. | 8–10 per film |
+| 11 | **One big moving thing per shot (producer, 24 Nov):** every shot has one large, clearly visible subject that moves or changes: the car's headlights snap on, the trailer door swings open, a wall of snow sweeps across, the five walk into frame, a fire flares, the map unfolds. Background drift alone (snow, fog) is not enough. Small details don't count; it has to read on a phone. | 100% of shots; write the "big thing" in every shot-list row |
 
 ## What this means for THE YUBA COUNTY FIVE (10 min)
 - **About 150–170 cuts** (instead of 65).
