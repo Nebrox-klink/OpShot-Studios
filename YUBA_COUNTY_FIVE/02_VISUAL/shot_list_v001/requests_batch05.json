@@ -1,0 +1,124 @@
+{
+ "requests": [
+  {
+   "index": 908,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A rustic 1970s mountain lodge at dawn in snow, smoke rising from the chimney, one warm lit window, a wooden porch.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1002,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A tiny 1970s mountain-town general store with a wooden porch and a blank sign, a red pickup truck parked in front, pines, slush on the ground.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1003,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Heavy snow falling on dense pines, branches bowed under thick snow, soft grey light, quiet.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1101,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Late spring in the mountains: three motorcyclists seen from behind riding up a gravel forest road, snow patches in the shade, sunlight through pines. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1103,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Close on the broken window of an old 1970s camper trailer, jagged glass, a faded curtain inside, spring light, pine needles.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1104,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Inside a dim old camper trailer seen from the doorway: a narrow bed at the far end under a pile of white sheets (only the sheets, nothing visible under them), a small table, dust in the air. Calm and respectful.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1105,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: The same forest clearing in deep winter: the old camper trailer and shed buried in snow up to the windows, pines heavy with snow, grey sky.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1201,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A small cold iron fireplace inside the trailer, a box of matches and a stack of paperback books beside it with blank covers, grey light.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}

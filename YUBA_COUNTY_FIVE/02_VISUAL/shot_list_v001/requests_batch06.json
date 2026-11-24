@@ -1,0 +1,124 @@
+{
+ "requests": [
+  {
+   "index": 1202,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Heavy green-and-brown forestry coats and boots hanging on hooks inside the trailer, dim light from a window.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1203,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Inside a wooden storage shed: a pile of opened empty olive-drab army ration cans on the floor, light through gaps in the planks, no labels or text.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1204,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Inside the same shed: a tall closed metal locker, untouched, dust on top, stacked boxes, light through the plank gaps.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1205,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A propane tank in a second small shed with its valve closed, cold blue light, frost on the metal, cobwebs.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1206,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Night in deep winter: the camper trailer in the snowy clearing, all windows completely dark, no smoke, falling snow, cold blue.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1301,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A pair of worn white tennis shoes alone on the plank floor of the trailer, pale light from the doorway.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1302,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A single line of footprints in melting snow leading from the trailer's doorstep into the pine forest, grey dawn light.",
+    "medias": [
+     {
+      "value": "8ed86d86-0edf-40ab-a92a-de0ee888d7b8",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 1303,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A spring roadside in the mountains with snowmelt, small red survey marker flags on wires stuck in the ground along the road, pines, overcast. No people, no bodies.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}

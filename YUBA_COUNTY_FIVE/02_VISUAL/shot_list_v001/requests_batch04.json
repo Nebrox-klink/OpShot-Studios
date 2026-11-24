@@ -1,0 +1,124 @@
+{
+ "requests": [
+  {
+   "index": 801,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A whiteout snowstorm on a mountain road, a tracked 1970s snowcat with two headlights barely visible through the driving snow, wind streaks.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 901,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Dusk on the snowy mountain road: a dark 1970s sedan stuck in snow, a man in a parka seen from behind standing beside it with a shovel planted upright in the snow, pines, last blue light. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 902,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Inside a 1970s sedan at night seen from the passenger side: a man lying across the front seat seen only as a dark coat and the back of his shoulder, dashboard glowing green, engine running, fogged windows. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 903,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Through a fogged rear car window at night: the dark snowy road behind, black pines, total darkness except two headlights of another car shining from behind.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 904,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: In the blinding glare of a car's headlights on a snowy road at night, a small group of dark human silhouettes stands beside the car, one figure appearing to hold a bundle in its arms. Silhouettes only, no faces, shapes blurred by glare.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 905,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A dark pine forest at night beside a snowy road, three small flashlight beams among the trees, cold blue, misty.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 906,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Grey dawn on a snowy mountain road, a single man in a parka seen from far behind walking downhill alone, pines, mist. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 907,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Grey dawn: the car empty and dusted with fresh snow on the mountain road, a line of footprints passing beside it, mist in the pines. The car is a 1969 Mercury Montego two-door coupe, turquoise body with a white roof, exactly as in the reference.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}

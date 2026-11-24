@@ -1,0 +1,124 @@
+{
+ "requests": [
+  {
+   "index": 603,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Daylight, overcast: a forest ranger in a green 1970s uniform and hat seen from behind, standing on a snowy forest road a few metres from the parked car. The car is a 1969 Mercury Montego two-door coupe, turquoise body with a white roof, exactly as in the reference. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 604,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: A corkboard in a 1970s ranger station with a single paper flyer pinned in the centre: five blank grey rectangles where photos would be and blank lines, no writing at all, a desk lamp glow.",
+    "medias": [
+     {
+      "value": "75238cbc-f868-4654-8b16-1b93298774e0",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 605,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Two cross-country skiers seen from behind in the distance on a snowy forest road, sunny winter day, pines heavy with snow. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "9de80d91-7999-4146-be0c-6d5052d9cfbf",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 702,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Close on the rear tyre of the car spun into a shallow snowdrift, ruts and churned snow around it, daylight, grey sky. The car is a 1969 Mercury Montego two-door coupe, turquoise body with a white roof, exactly as in the reference.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 703,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Close on the car's 1969 dashboard: a round fuel gauge with the needle at empty (no numbers or letters), the ignition with no key and two loose wires hanging below, cold daylight.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 704,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: View from under the car: a clean undamaged undercarriage and low-hanging muffler above a rough rutted snowy dirt road, light from the sides.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 705,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: The car's front bench seat seen from above: a neatly folded road map, two blank game programmes, sweet wrappers and empty milk cartons, daylight through the window. No text on anything.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  },
+  {
+   "index": 706,
+   "params": {
+    "model": "nano_banana_2_1",
+    "resolution": "2k",
+    "aspect_ratio": "16:9",
+    "prompt": "Painterly 2D gouache illustration for a serious animated documentary, graphic-novel lighting, visible brush strokes, muted palette, atmospheric haze, cinematic composition, not photorealistic; match the style of the reference images. Northern California, 1978, period-accurate cars and clothing. No text, letters, numbers, signs, logos or licence plates anywhere. No blood, no bodies. SHOT: Two sheriff's deputies in 1970s uniforms seen from behind standing at the closed driver's door of the car on the snowy road, daylight. The car is a 1969 Mercury Montego two-door coupe, turquoise body with a white roof, exactly as in the reference. People only from behind or as distant silhouettes: no faces, no profiles.",
+    "medias": [
+     {
+      "value": "d323f4d5-8d3e-4dca-8275-58e3a5a64ef2",
+      "role": "image_references"
+     }
+    ]
+   }
+  }
+ ]
+}
