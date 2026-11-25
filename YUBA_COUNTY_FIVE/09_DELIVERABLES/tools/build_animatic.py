@@ -32,7 +32,9 @@ INTER = "/usr/share/fonts/opentype/inter/InterDisplay-Bold.otf"
 TMP = os.path.join(os.path.dirname(OUT), "_animatic_tmp")
 os.makedirs(TMP, exist_ok=True)
 sys.path.insert(0, SL)
+_cwd = os.getcwd(); os.chdir(SL)  # the shot-list module writes its request files next to itself
 import make_shot_list as msl  # noqa: E402
+os.chdir(_cwd)
 
 YEL, RED, BLK, WHT = (255, 212, 0), (214, 38, 32), (0, 0, 0), (255, 255, 255)
 AUDIO = {1: "S01", 3: "S03", 4: "S04", 5: "S05", 6: "S06", 7: "S07", 8: "S08", 9: "S09", 10: "S10", 11: "S11",
@@ -57,7 +59,7 @@ REUSE_CLIP = {1601: 904}  # a reuse shot that plays another still's clip
 # local effects for L/G stills: list of (kind, params)
 FX = {102: [("squall", {})], 105: [("fog", {})], 201: [("lighton", {})], 301: [("glowon", {"x": .30, "y": .55})],
       302: [("lighton", {})], 304: [("glowon", {"x": .64, "y": .17})], 402: [("flash", {})],
-      403: [("lightoff", {})], 404: [("flicker", {}), ("lightoff", {"at": .7})], 405: [("tick", {})],
+      403: [("lightoff", {"depth": .22})], 404: [("flicker", {}), ("lightoff", {"at": .7})], 405: [("tick", {})],
       501: [("snow0", {})], 502: [("shake", {})], 602: [("snow", {})], 604: [("slide", {})], 605: [("snow", {})],
       701: [("squall", {})], 704: [("snow0", {})], 705: [("rings", {})], 901: [("glowon", {"x": .64, "y": .68})],
       907: [("snow", {})], 1001: [("slide", {})], 1003: [("snow", {"heavy": 1})], 1102: [("lighton", {})],
@@ -67,10 +69,10 @@ FX = {102: [("squall", {})], 105: [("fog", {})], 201: [("lighton", {})], 301: [(
       1355: [("rings", {})], 1401: [("snow0", {})], 1503: [("snow", {})], 1506: [("rings", {})],
       1602: [("glowflicker", {"x": .20, "y": .45})], 1603: [("rings", {})], 1701: [("lighton", {}), ("flicker", {})],
       1702: [("fog", {})], 1803: [("lightoff", {"at": .55})]}
-RINGS = {705: [(.66, .30, .10), (.37, .47, .10), (.62, .58, .08), (.73, .62, .07)],
-         1204: [(.31, .57, .20)], 1205: [(.49, .40, .10)], 1301: [(.58, .78, .20)], 1302: [(.70, .78, .14)],
-         1352: [(.33, .52, .09), (.46, .62, .05), (.60, .62, .08), (.59, .28, .07)], 1355: [(.50, .72, .20)],
-         1506: [(.53, .33, .07)], 1603: [(.60, .62, .08)], 703: [(.47, .32, .12)]}
+RINGS = {705: [(.43, .42, .09), (.42, .65, .09), (.60, .56, .07), (.71, .70, .07)],
+         1204: [(.39, .48, .22)], 1205: [(.56, .33, .07)], 1301: [(.55, .76, .17)], 1302: [(.47, .72, .12)],
+         1352: [(.33, .50, .09), (.51, .67, .05), (.72, .67, .09), (.66, .36, .08)], 1355: [(.50, .72, .20)],
+         1506: [(.53, .33, .07)], 1603: [(.72, .67, .09)], 703: [(.41, .47, .13)]}
 LABEL = {401: "FRIDAY · 24 FEBRUARY 1978", 403: "BEHR'S MARKET · CHICO", 405: "JUST BEFORE 10 PM",
          302: "THE GATEWAY GATORS", 602: "OVER 4,000 FT", 603: "SEEN THE DAY AFTER THE GAME", 703: "A QUARTER TANK",
          704: "NOT A SCRATCH", 702: "STUCK · BUT NOT BADLY", 801: "SEARCH CALLED OFF", 902: "A HEART ATTACK",
@@ -131,10 +133,13 @@ def snow_layer(path, secs=8, heavy=False):
     return path
 
 
-def ring_png(path, rings, scale=1.0):
+def ring_png(path, rings, frame=(1, 1, .5, .5)):
+    """Rings are given in still coordinates; map them through the cut's framing (mean zoom of the move)."""
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    for cx, cy, r in rings:
-        rr = r * H * scale
+    zm = (frame[0] + frame[1]) / 2
+    for px, py, r in rings:
+        cx, cy = px * zm - (zm - 1) * frame[2], py * zm - (zm - 1) * frame[3]
+        rr = r * H * zm
         box = (cx * W - rr * 1.25, cy * H - rr, cx * W + rr * 1.25, cy * H + rr)
         d.ellipse(box, outline=(0, 0, 0, 200), width=int(11 * K))
         d.ellipse(box, outline=RED + (255,), width=int(6 * K))
@@ -238,9 +243,9 @@ def map_video(path, base, secs, pins):
             if t > 2.0:
                 pin(d, P["TRAILER"], YEL); tag(d, P["TRAILER"], "TRAILER · ≈ 20 MI")
             if t > 3.0:
-                pin(d, (.67, .30)); tag(d, (.67, .30), "MADRUGA · STERLING · 11 MI")
+                pin(d, (.67, .30)); tag(d, (.67, .34), "MADRUGA · STERLING · 11 MI")
             if t > 4.2:
-                pin(d, (.72, .15)); tag(d, (.60, .10), "HUETT · 2 MI FROM TRAILER")
+                pin(d, (.73, .13)); tag(d, (.36, .11), "HUETT · 2 MI FROM THE TRAILER")
         if zoom != 1:
             zw, zh = int(W / zoom), int(H / zoom)
             im = im.crop(((W - zw) // 2, (H - zh) // 2, (W - zw) // 2 + zw, (H - zh) // 2 + zh)).resize((W, H))
@@ -334,7 +339,8 @@ def render_cut(out, base, is_video, secs, frame, fx, overlays, card, v_offset=0.
             chains.append(f"[{cur}]eq=brightness='-0.35*max(0,1-t/0.5)':eval=frame[{nx}]"); inputs += []
         elif kind == "lightoff":
             at = prm.get("at", .5) * secs
-            chains.append(f"[{cur}]eq=brightness='if(gt(t,{at:.2f}),-0.42*min(1,(t-{at:.2f})/0.15),0)':eval=frame[{nx}]")
+            dp = prm.get("depth", .42)
+            chains.append(f"[{cur}]eq=brightness='if(gt(t,{at:.2f}),-{dp}*min(1,(t-{at:.2f})/0.15),0)':eval=frame[{nx}]")
         elif kind == "flicker":
             chains.append(f"[{cur}]eq=brightness='0.10*sin(t*37)*sin(t*11)*lt(t,1.6)':eval=frame[{nx}]")
         elif kind == "flash":
@@ -427,8 +433,7 @@ def main():
                     fx = []
                 ovs = []
                 if sid in RINGS and c == cuts - 1:
-                    ovs.append((ring_png(os.path.join(TMP, f"ring{sid}_{c}.png"), RINGS[sid],
-                                         1.0 / ((fr[0] + fr[1]) / 2) if fr == FRAMES[0] else 1.0), .3, secs))
+                    ovs.append((ring_png(os.path.join(TMP, f"ring{sid}_{c}.png"), RINGS[sid], fr), .3, secs))
                 if sid in LABEL and c == min(1, cuts - 1):
                     ovs.append((label_png(os.path.join(TMP, f"lab{sid}.png"), LABEL[sid]), .25, secs))
                 if sid in QUOTE:
