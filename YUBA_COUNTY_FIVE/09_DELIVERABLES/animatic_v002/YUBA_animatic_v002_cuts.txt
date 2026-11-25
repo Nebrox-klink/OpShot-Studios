@@ -1,0 +1,152 @@
+   0.00  scene  1  shot 101  cut 1/2   4.12s  KH  a gust drives a wall of snow across the car
+   4.12  scene  1  shot 101  cut 2/2   4.12s  KH  a gust drives a wall of snow across the car
+   8.24  scene  1  shot 102  cut 1/1   2.96s  L  snow slides off the front fender in a clump
+  11.20  scene  1  shot 103  cut 1/1   1.60s  KH  the dashboard lights flare on as the engine catches
+  12.80  scene  1  shot 104  cut 1/2   3.64s  KH  exhaust bursts from the tailpipe and the tail lights glow red
+  16.44  scene  1  shot 104  cut 2/2   3.64s  KH  exhaust bursts from the tailpipe and the tail lights glow red
+  20.08  scene  1  shot 105  cut 1/1   3.80s  L  clouds rush past as the camera flies over the peaks
+  23.86  scene  2  shot 201  cut 1/2   3.00s  L  the desk lamp clicks on and lights the board
+  26.86  scene  2  shot 201  cut 2/2   3.00s  L  the desk lamp clicks on and lights the board
+  29.86  scene  3  shot 301  cut 1/2   3.00s  L  a 1970s station wagon drives through frame
+  32.86  scene  3  shot 301  cut 2/2   3.00s  L  a 1970s station wagon drives through frame
+  35.86  scene  3  shot 303  cut 1/3   3.84s  KH  the ball rolls slowly across the floor
+  39.70  scene  3  shot 303  cut 2/3   3.88s  KH  the ball rolls slowly across the floor
+  43.58  scene  3  shot 303  cut 3/3   3.84s  KH  the ball rolls slowly across the floor
+  47.42  scene  3  shot 304  cut 1/1   2.92s  L  the front door light snaps on, flooding the porch
+  50.34  scene  3  shot 305  cut 1/1   4.48s  KH  a basketball drops through the net and the net swishes
+  54.82  scene  3  shot 302  cut 1/2   2.72s  L  the bedside lamp clicks on
+  57.54  scene  3  shot 302  cut 2/2   2.76s  L  the bedside lamp clicks on
+  60.30  scene  3  shot 304  cut 1/1   3.08s  L  the front door light snaps on, flooding the porch
+  63.39  scene  4  shot 401  cut 1/2   3.12s  KU  the car drives away down the road, tail lights shrinking
+  66.51  scene  4  shot 401  cut 2/2   3.12s  KU  the car drives away down the road, tail lights shrinking
+  69.63  scene  4  shot 402  cut 1/1   1.96s  L  camera flashes pop across the bleachers
+  71.59  scene  4  shot 401  cut 1/1   4.52s  KU  the car drives away down the road, tail lights shrinking
+  76.11  scene  4  shot 403  cut 1/1   3.32s  L  the shop lights switch off one bank at a time
+  79.43  scene  4  shot 405  cut 1/1   2.00s  L  the clock's minute hand jumps to ten
+  81.43  scene  4  shot 404  cut 1/3   3.16s  L  the fluorescent light above the counter flickers off
+  84.59  scene  4  shot 404  cut 2/3   3.12s  L  the fluorescent light above the counter flickers off
+  87.71  scene  4  shot 404  cut 3/3   3.16s  L  the fluorescent light above the counter flickers off
+  90.85  scene  5  shot 502  cut 1/1   4.44s  L  the receiver rattles on its hook as the phone rings
+  95.29  scene  5  shot 501  cut 1/2   3.16s  G  red pins drop onto the map and the string snaps tight
+  98.45  scene  5  shot 501  cut 2/2   3.16s  G  red pins drop onto the map and the string snaps tight
+ 101.60  scene  6  shot 601  cut 1/2   3.20s  G  the route draws itself south, then bends north-east into the mountains
+ 104.80  scene  6  shot 601  cut 2/2   3.24s  G  the route draws itself south, then bends north-east into the mountains
+ 108.04  scene  6  shot 602  cut 1/3   3.72s  L  the camera rushes up the winding road
+ 111.76  scene  6  shot 602  cut 2/3   3.76s  L  the camera rushes up the winding road
+ 115.52  scene  6  shot 602  cut 3/3   3.72s  L  the camera rushes up the winding road
+ 119.24  scene  6  shot 603  cut 1/1   4.64s  KH  the ranger walks up to the car
+ 123.88  scene  6  shot 605  cut 1/1   3.60s  L  two skiers glide across the frame
+ 127.48  scene  6  shot 604  cut 1/1   2.80s  L  a flyer slides onto the corkboard
+ 130.27  scene  7  shot 702  cut 1/1   3.72s  KH  snow sprays up from the spinning rear tyre
+ 133.99  scene  7  shot 701  cut 1/1   2.36s  L  snow squall sweeps across
+ 136.35  scene  7  shot 706  cut 1/1   1.48s  KH  the driver's door swings open
+ 137.83  scene  7  shot 703  cut 1/2   2.76s  KH  the gauge needle swings up to a quarter as the dash lights come on
+ 140.59  scene  7  shot 703  cut 2/2   2.76s  KH  the gauge needle swings up to a quarter as the dash lights come on
+ 143.35  scene  7  shot 704  cut 1/2   3.64s  L  the camera slides along the clean underside
+ 146.99  scene  7  shot 704  cut 2/2   3.64s  L  the camera slides along the clean underside
+ 150.63  scene  7  shot 705  cut 1/4   3.12s  L  red circles snap onto each object
+ 153.75  scene  7  shot 705  cut 2/4   3.12s  L  red circles snap onto each object
+ 156.87  scene  7  shot 705  cut 3/4   3.12s  L  red circles snap onto each object
+ 159.99  scene  7  shot 705  cut 4/4   3.12s  L  red circles snap onto each object
+ 163.09  scene  8  shot 801  cut 1/3   3.20s  KH  the snowcat's headlights fade into the white
+ 166.29  scene  8  shot 801  cut 2/3   3.16s  KH  the snowcat's headlights fade into the white
+ 169.45  scene  8  shot 801  cut 3/3   3.20s  KH  the snowcat's headlights fade into the white
+ 172.63  scene  9  shot 901  cut 1/4   3.68s  L  the stuck car's headlights switch on
+ 176.31  scene  9  shot 901  cut 2/4   3.68s  L  the stuck car's headlights switch on
+ 179.99  scene  9  shot 901  cut 3/4   3.64s  L  the stuck car's headlights switch on
+ 183.63  scene  9  shot 901  cut 4/4   3.68s  L  the stuck car's headlights switch on
+ 187.31  scene  9  shot 902  cut 1/2   4.00s  KH  frost creeps across the windscreen
+ 191.31  scene  9  shot 902  cut 2/2   3.96s  KH  frost creeps across the windscreen
+ 195.27  scene  9  shot 903  cut 1/1   3.00s  KH  two headlights snap on in the darkness behind, then go out
+ 198.27  scene  9  shot 904  cut 1/3   3.08s  KU  the figures shift in the glare
+ 201.35  scene  9  shot 904  cut 2/3   3.12s  KU  the figures shift in the glare
+ 204.47  scene  9  shot 904  cut 3/3   3.08s  KU  the figures shift in the glare
+ 207.55  scene  9  shot 905  cut 1/2   3.08s  KU  flashlight beams sweep through the trees and go out
+ 210.63  scene  9  shot 905  cut 2/2   3.12s  KU  flashlight beams sweep through the trees and go out
+ 213.75  scene  9  shot 906  cut 1/1   4.92s  KH  the man walks away down the road
+ 218.67  scene  9  shot 908  cut 1/1   3.68s  KH  the lodge door opens and warm light spills out
+ 222.35  scene  9  shot 907  cut 1/1   4.12s  L  the camera pushes past the empty car
+ 226.48  scene 10  shot 1001  cut 1/1   5.04s  G  flyers slide onto the board one by one
+ 231.52  scene 10  shot 1002  cut 1/2   3.08s  KH  a red pickup truck pulls away from the store
+ 234.60  scene 10  shot 1002  cut 2/2   3.08s  KH  a red pickup truck pulls away from the store
+ 237.68  scene 10  shot 1003  cut 1/1   2.28s  L  a heavy branch dumps its load of snow
+ 239.95  scene 11  shot 1101  cut 1/1   4.28s  KU  three motorcyclists ride up the gravel road
+ 244.23  scene 11  shot 1102  cut 1/2   3.84s  L  the camera rushes toward the trailer
+ 248.07  scene 11  shot 1102  cut 2/2   3.88s  L  the camera rushes toward the trailer
+ 251.95  scene 11  shot 1103  cut 1/1   1.76s  KH  a torn curtain blows out through the broken window
+ 253.71  scene 11  shot 1104  cut 1/1   4.00s  L  a shaft of light swings across the room as the door opens
+ 257.71  scene 11  shot 1105  cut 1/4   4.08s  L  the clearing changes from deep winter to spring
+ 261.79  scene 11  shot 1105  cut 2/4   4.08s  L  the clearing changes from deep winter to spring
+ 265.87  scene 11  shot 1105  cut 3/4   4.12s  L  the clearing changes from deep winter to spring
+ 269.99  scene 11  shot 1105  cut 4/4   4.08s  L  the clearing changes from deep winter to spring
+ 274.07  scene 11  shot 1104  cut 1/2   3.60s  L  a shaft of light swings across the room as the door opens
+ 277.67  scene 11  shot 1104  cut 2/2   3.60s  L  a shaft of light swings across the room as the door opens
+ 281.26  scene 12  shot 1201  cut 1/2   4.04s  KH  a draught swirls cold ash in the fireplace
+ 285.30  scene 12  shot 1201  cut 2/2   4.08s  KH  a draught swirls cold ash in the fireplace
+ 289.38  scene 12  shot 1202  cut 1/1   3.76s  L  the heavy coats sway on their hooks
+ 293.14  scene 12  shot 1203  cut 1/2   2.80s  KH  an empty ration can topples and rolls
+ 295.94  scene 12  shot 1203  cut 2/2   2.84s  KH  an empty ration can topples and rolls
+ 298.78  scene 12  shot 1204  cut 1/2   3.80s  L  a red ring snaps around the closed locker
+ 302.58  scene 12  shot 1204  cut 2/2   3.80s  L  a red ring snaps around the closed locker
+ 306.38  scene 12  shot 1205  cut 1/2   3.12s  L  frost spreads over the closed valve
+ 309.50  scene 12  shot 1205  cut 2/2   3.12s  L  frost spreads over the closed valve
+ 312.62  scene 12  shot 1206  cut 1/1   3.56s  L  a snow squall blows past the dark trailer
+ 316.17  scene 13  shot 1355  cut 1/1   3.44s  L  a red ring around the empty floor
+ 319.61  scene 13  shot 1301  cut 1/2   3.04s  L  a red ring snaps around the shoes
+ 322.65  scene 13  shot 1301  cut 2/2   3.00s  L  a red ring snaps around the shoes
+ 325.65  scene 13  shot 1302  cut 1/2   3.20s  L  footprints appear one by one, leading away
+ 328.85  scene 13  shot 1302  cut 2/2   3.16s  L  footprints appear one by one, leading away
+ 332.01  scene 13  shot 1303  cut 1/1   4.36s  KH  the red marker flags flutter in the wind
+ 336.37  scene 13  shot 1304  cut 1/1   4.96s  G  pins drop on the map with distance counters
+ 341.33  scene 13  shot 1305  cut 1/1   5.08s  L  a gust shakes the manzanita bush
+ 346.41  scene 13  shot 1306  cut 1/3   3.72s  KH  the search party walks up the forest road
+ 350.13  scene 13  shot 1306  cut 2/3   3.68s  KH  the search party walks up the forest road
+ 353.81  scene 13  shot 1306  cut 3/3   3.72s  KH  the search party walks up the forest road
+ 357.53  scene 13  shot 1304  cut 1/1   3.88s  G  pins drop on the map with distance counters
+ 361.41  scene 13  shot 1307  cut 1/1   2.80s  L  fog rolls in and swallows the path
+ 364.19  scene 14  shot 1351  cut 1/1   4.12s  L  a torch beam sweeps across the bed
+ 368.31  scene 14  shot 1353  cut 1/3   3.28s  G  a checklist types itself line by line
+ 371.59  scene 14  shot 1353  cut 2/3   3.24s  G  a checklist types itself line by line
+ 374.83  scene 14  shot 1353  cut 3/3   3.28s  G  a checklist types itself line by line
+ 378.11  scene 14  shot 1352  cut 1/3   3.76s  L  red circles snap onto each object
+ 381.87  scene 14  shot 1352  cut 2/3   3.80s  L  red circles snap onto each object
+ 385.67  scene 14  shot 1352  cut 3/3   3.76s  L  red circles snap onto each object
+ 389.43  scene 14  shot 1351  cut 1/4   3.44s  L  a torch beam sweeps across the bed
+ 392.87  scene 14  shot 1351  cut 2/4   3.44s  L  a torch beam sweeps across the bed
+ 396.31  scene 14  shot 1351  cut 3/4   3.40s  L  a torch beam sweeps across the bed
+ 399.71  scene 14  shot 1351  cut 4/4   3.44s  L  a torch beam sweeps across the bed
+ 403.15  scene 14  shot 1354  cut 1/2   4.24s  KH  the second hand twitches, then stops
+ 407.39  scene 14  shot 1354  cut 2/2   4.24s  KH  the second hand twitches, then stops
+ 411.64  scene 15  shot 1401  cut 1/2   4.12s  G  the red string snaps between car, trailer and road
+ 415.76  scene 15  shot 1401  cut 2/2   4.16s  G  the red string snaps between car, trailer and road
+ 419.91  scene 16  shot 1501  cut 1/3   3.96s  KU  the car's headlights swing onto the mountain road
+ 423.87  scene 16  shot 1501  cut 2/3   3.96s  KU  the car's headlights swing onto the mountain road
+ 427.83  scene 16  shot 1501  cut 3/3   3.96s  KU  the car's headlights swing onto the mountain road
+ 431.79  scene 16  shot 1503  cut 1/1   2.52s  L  the camera pushes along the tracks
+ 434.31  scene 16  shot 1502  cut 1/2   2.64s  KH  the snowcat crawls up the road leaving tracks
+ 436.95  scene 16  shot 1502  cut 2/2   2.68s  KH  the snowcat crawls up the road leaving tracks
+ 439.63  scene 16  shot 1503  cut 1/1   4.72s  L  the camera pushes along the tracks
+ 444.35  scene 16  shot 1504  cut 1/1   3.92s  KU  the five walk away up the snow tunnel
+ 448.27  scene 16  shot 1505  cut 1/2   2.68s  KH  the five trudge forward through deep snow
+ 450.95  scene 16  shot 1505  cut 2/2   2.68s  KH  the five trudge forward through deep snow
+ 453.63  scene 16  shot 1506  cut 1/2   3.12s  L  a red ring snaps around the padlock
+ 456.75  scene 16  shot 1506  cut 2/2   3.08s  L  a red ring snaps around the padlock
+ 459.83  scene 17  shot 1602  cut 1/3   3.08s  L  the distant lodge lights flicker
+ 462.91  scene 17  shot 1602  cut 2/3   3.08s  L  the distant lodge lights flicker
+ 465.99  scene 17  shot 1602  cut 3/3   3.08s  L  the distant lodge lights flicker
+ 469.07  scene 17  shot 1601  cut 1/2   2.60s  L  the lights in the glare go dark
+ 471.67  scene 17  shot 1601  cut 2/2   2.60s  L  the lights in the glare go dark
+ 474.27  scene 17  shot 1603  cut 1/1   4.12s  L  a question card slams in
+ 478.39  scene 17  shot 1601  cut 1/2   3.48s  L  the lights in the glare go dark
+ 481.87  scene 17  shot 1601  cut 2/2   3.48s  L  the lights in the glare go dark
+ 485.37  scene 18  shot 1702  cut 1/3   3.40s  L  the fog parts and reveals the deep forest
+ 488.77  scene 18  shot 1702  cut 2/3   3.44s  L  the fog parts and reveals the deep forest
+ 492.21  scene 18  shot 1702  cut 3/3   3.40s  L  the fog parts and reveals the deep forest
+ 495.61  scene 18  shot 1701  cut 1/1   3.44s  L  fluorescent lights flicker on down the corridor
+ 499.05  scene 18  shot 1702  cut 1/1   3.80s  L  the fog parts and reveals the deep forest
+ 502.83  scene 19  shot 1801  cut 1/2   3.20s  KH  the ball rolls off the court into shadow
+ 506.03  scene 19  shot 1801  cut 2/2   3.16s  KH  the ball rolls off the court into shadow
+ 509.19  scene 19  shot 1802  cut 1/2   3.08s  KH  the car's headlights flick on, then off
+ 512.27  scene 19  shot 1802  cut 2/2   3.08s  KH  the car's headlights flick on, then off
+ 515.35  scene 19  shot 1803  cut 1/2   3.52s  L  the lamp clicks off
+ 518.87  scene 19  shot 1803  cut 2/2   3.48s  L  the lamp clicks off
